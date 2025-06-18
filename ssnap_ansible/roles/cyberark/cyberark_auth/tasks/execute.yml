@@ -1,0 +1,106 @@
+
+---
+ 
+- set_fact:
+      service_start_time: "{{ lookup('pipe', 'date +%Y%m%d%H%M%S') }}"
+ 
+- name: "BLOCKnRESCUE: CYBERARK-AIM-GETPW"
+  block:
+     - name: "Creating a list of all hostnames"
+       set_fact:
+        resources: "{{resources + item.value }}"
+       with_dict: "{{request}}" 
+ 
+     - name: "command for ontap"
+       shell: "{{ontap_command}}"
+       delegate_to: "{{cyberark['ontap'].delegate_to}}"
+       remote_user: "{{cyberark['ontap'].remote_user}}"
+       register: role_result
+ 
+     - name: "Build the login credentials"
+       set_fact:
+        cred_temp: "{{cred_temp | combine({ item['hostname']: {'username': cyberark['ontap']['username'],'password': role_result.stdout }}) }}"
+       loop: "{{resources}}"
+       when:
+         - role_result.stdout != ""
+         - role_result.stderr == ""
+         - item['hostname'] is defined
+ 
+     - name: "combine with vault"
+       set_fact:
+         vault: "{{ vault | combine({'clusters':cred_temp})}}"
+    
+     - name: "command for AD"
+       shell: "{{ad_command}}"
+       delegate_to: "{{cyberark['sim_ad_group'].delegate_to}}"
+       remote_user: "{{cyberark['sim_ad_group'].remote_user}}"
+       register: role_result
+ 
+     - name: "combine with vault"
+       set_fact:
+         vault: "{{ vault | combine({'active_directory':{'username': cyberark['sim_ad_group']['username'],'password': role_result.stdout }})}}"
+       when:
+         - role_result.stdout != ""
+         - role_result.stderr == ""
+   
+     - name: "command for Windows"
+       shell: "{{windows_command}}"
+       delegate_to: "{{cyberark['windows'].delegate_to}}"
+       remote_user: "{{cyberark['windows'].remote_user}}"
+       register: role_result
+ 
+     - name: "combine with vault"
+       set_fact:
+         vault: "{{ vault | combine({'delegate_to':{'windows':{'username': cyberark['windows']['username'],'password': role_result.stdout }}})}}"
+       when:
+         - role_result.stdout != ""
+         - role_result.stderr == ""
+ 
+  rescue:
+     - name: Set Play Status
+       set_fact:
+         playbook_status:   "failed"
+ 
+  always:
+     - name: add log msg
+       vars:
+         role_log:
+           role: "CYBERARK"
+           timestamp:
+            start_time: "{{service_start_time}}"
+            end_time: "{{ lookup('pipe', 'date +%Y-%m-%d@%H:%M:%S') }}"
+           service_status: "{{ playbook_status }}"
+           result: "{{role_result}}"  
+       set_fact:
+         global_log_msgs:   "{{ global_log_msgs + [ role_log ] }}"
+ 
+ 
+ 
+#tasks/main.yml
+ 
+---
+ 
+- name: 'show args'
+  include_tasks: test.yml
+  when: mode == 'test' and status == "success"
+ 
+- name: 'execute the request'
+  include_tasks: execute.yml
+  when: mode != 'test' and status == "success"
+ 
+ 
+# vars/main.yml
+ 
+ 
+---
+# vars file for cybrark
+ 
+ontap_query: "Safe={{ cyberark['ontap']['query']['safe'] }};Folder={{cyberark['ontap']['query']['folder']}};Object={{cyberark['ontap']['query']['object']}}"
+ontap_command: "{{cyberark['ontap']['sdklocation']}} GetPassword -p AppDescs.AppID={{cyberark['ontap']['appid']}} -p Query='{{ontap_query}}' -o Password"
+ad_query: "Safe={{ cyberark['sim_ad_group']['query']['safe'] }};Folder={{cyberark['sim_ad_group']['query']['folder']}};Object={{cyberark['sim_ad_group']['query']['object']}}"
+ad_command: "{{cyberark['sim_ad_group']['sdklocation']}} GetPassword -p AppDescs.AppID={{cyberark['sim_ad_group']['appid']}} -p Query='{{ad_query}}' -o Password"
+windows_query: "Safe={{ cyberark['windows']['query']['safe'] }};Folder={{cyberark['windows']['query']['folder']}};Object={{cyberark['windows']['query']['object']}}"
+windows_command: "{{cyberark['windows']['sdklocation']}} GetPassword -p AppDescs.AppID={{cyberark['windows']['appid']}} -p Query='{{windows_query}}' -o Password"
+resources: []
+cred_temp: "{{vault['clusters']}}"
+ 

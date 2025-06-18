@@ -1,0 +1,50 @@
+# /roles/core/set_standards/tasks/execute.yml
+ 
+##############################################################################################################
+#  This Role function is to add NetApp object "standardized" values to the passed extra_vars payload
+#  If key/value is defined in extra_vars, set_standards role WILL override values
+##############################################################################################################
+ 
+ 
+---
+ 
+-  set_fact:
+      service_start_time: "{{ lookup('pipe', 'date +%Y%m%d%H%M%S') }}"
+ 
+-  name: "BLOCKnRESCUE: Provision aggrs"
+   block:
+      - name: 'Initialize temporary list for building combined standards payload'
+        set_fact:
+          temp: []
+ 
+      - name:  'Combine Standards to extra_vars payload'
+        set_fact:
+          temp:   "{{ temp + [ resources[idx] | combine( standards[std_name][res_type][operation] ) ]  }}"
+        loop:    "{{ resources }}"
+        loop_control:
+          index_var: idx
+        register:      role_result
+        when: standards[std_name][res_type][operation].keys is defined
+   
+      - name: 'Merge combined standards to global_completed_request'
+        set_fact:
+          global_completed_request:  "{{ global_completed_request | combine( { res_type: temp } ) }}"
+        when: standards[std_name][res_type][operation].keys is defined
+ 
+   rescue:
+      -  name: Set Play Status
+         set_fact:
+            playbook_status:   "failed"
+ 
+   always:
+      -  name: add log msg
+         vars:
+            role_log:
+               role: "SET_STANDARDS"
+               timestamp:
+                  start_time: "{{service_start_time}}"
+                  end_time: "{{ lookup('pipe', 'date +%Y-%m-%d@%H:%M:%S') }}"
+               service_status: "{{ playbook_status }}"
+               result: "{{role_result}}"  
+         set_fact:
+            global_log_msgs:   "{{ global_log_msgs + [ role_log ] }}"

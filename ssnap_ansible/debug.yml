@@ -1,0 +1,34 @@
+
+---
+ 
+- hosts: na
+  gather_facts: false
+  vars:
+    ansible_user: bryce
+    test : "dbg\\jai"
+    seperator: "\\"
+    nfs_var: |
+      this is 1
+      this is 2
+    username: test
+    password: test123
+   
+  tasks:
+    - name: debug
+      debug:
+        msg: "{{ test.split(seperator) }}"
+       
+    -  set_fact:
+           name: "jai"
+   
+    - debug:
+        msg: "{{name}}"
+   
+    - debug:
+        msg: "{{username}}"
+   
+    - debug:
+        msg: "{{password}}"
+   
+    - debug: msg="{{ test + nfs_var }}"
+       

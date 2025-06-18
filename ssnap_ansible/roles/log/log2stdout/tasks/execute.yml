@@ -1,0 +1,68 @@
+
+EXTERNAL EMAIL - USE CAUTION when clicking links or attachments
+
+
+
+# /roles/log/log2stdout/task/execute.yml
+ 
+---
+ 
+#####
+# Global Logger Role
+#####
+- name: Logging playbook Block
+  set_fact:
+    log_string: "
+                {{log_string }}
+                {% if log_level == '1' and global_log[idx].service_status == 'success' %}
+                {{global_log[idx].role}} :  {{global_log[idx].service_status}} ,
+                {% elif log_level == '2' or global_log[idx].service_status == 'failed' %}
+                {% if global_log[idx].result.results is defined %}{% for loop_result in global_log[idx].result.results %}
+                {% if loop_result.failed is defined and loop_result.failed == true and loop_result.msg is defined %}
+                {{global_log[idx].role}} : {{global_log[idx].service_status}} , Error Message :  {{loop_result.msg}}
+                {% endif %}
+                {% endfor %}{% endif%}
+                {% endif %}
+                "         
+  loop: "{{ global_log }}"
+  loop_control:
+    index_var: idx
+ 
+- name: Logging playbook Block to Std2out
+  debug:
+    msg: "{{ log_string }}"
+ 
+ 
+# tasks/main.yaml
+ 
+---
+ 
+- name: 'show args'
+  include_tasks: test.yml
+  when: mode == 'test'
+ 
+- name: 'execute the request'
+  include_tasks: execute.yml
+  when: mode != 'test'
+ 
+ 
+#/vars/main.yaml
+ 
+---
+# Vars file for Global_Logr
+final_status: "completed"
+global_log:  "{{ global_log_msgs }}"
+log_level: "{{logging['logger_details']['log_level']}}"
+output_file: "{{logging['logger_details']['output_file']}}"
+log_string: ""
+ 
+ 
+
+
+---
+This email may contain confidential and/or privileged information. If you are not the intended recipient (or have received this email in error) please notify the sender immediately and destroy this email. Any unauthorized copying, disclosure or distribution of the material in this email is strictly forbidden.
+
+Privacy of communications
+In order to monitor compliance with legal and regulatory obligations and our policies, procedures and compliance programs, we may review emails and instant messages passing through our IT systems (including any personal data and customer information they contain), and record telephone calls routed via our telephone systems. We will only do so in accordance with local laws and regulations. In some countries please refer to your local DB website for a copy of our Privacy Policy.
+
+Please refer to https://www.db.com/disclosures for additional EU corporate and regulatory disclosures.

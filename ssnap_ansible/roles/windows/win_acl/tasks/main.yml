@@ -1,0 +1,11 @@
+# roles/tasks/main.yml
+ 
+---
+ 
+- name: 'show args'
+  include_tasks: test.yml
+  when: mode == 'test' and status == "success"
+ 
+- name: 'execute the request'
+  include_tasks: execute.yml
+  when: mode != 'test' and status == "success"

@@ -1,0 +1,440 @@
+
+
+---
+#--------------------------------------------------------------------
+# Each cluster provisioned must have an entry in the 'clusters'
+# dictionary.  The cluster name is the key under 'clusters'
+# and will be used to determine the name of various resources to
+# be provisioned (e.g. aggrs).  Therefore the name used for the
+# cluster MUST be a legal name for all resources types (e.g.
+# no hyphens in the name because hyphens are illegal characters for
+# aggr names).  The cluster name does not need to be DNS
+# resolvable because the 'mgmt_ip' is always used to communicate with
+# the cluster.
+#--------------------------------------------------------------------
+ 
+# On-Prem Clusters
+# NAS Premium
+ 
+clusters:
+  loncdcnasmcp01.uk.db.com:
+    mgmt_ip:          'loncdcnasmcp01.uk.db.com'
+    username:         "{{ vault['clusters']['loncdcnasmcp01.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['loncdcnasmcp01.uk.db.com']['password'] | default(omit) }}"
+  lonwdcnasmcp01.uk.db.com:
+    mgmt_ip:          'lonwdcnasmcp01.uk.db.com'
+    username:         "{{ vault['clusters']['lonwdcnasmcp01.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonwdcnasmcp01.uk.db.com']['password'] | default(omit) }}"
+  loncdcnasmcu01.uk.db.com:
+    mgmt_ip:          'loncdcnasmcu01.uk.db.com'
+    username:         "{{ vault['clusters']['loncdcnasmcu01.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['loncdcnasmcu01.uk.db.com']['password'] | default(omit) }}"
+  loncdcnasmcu02.uk.db.com:
+    mgmt_ip:          'loncdcnasmcu02.uk.db.com'
+    username:         "{{ vault['clusters']['loncdcnasmcu02.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['loncdcnasmcu02.uk.db.com']['password'] | default(omit) }}"
+  fradcbnasmcp01.de.db.com:
+    mgmt_ip:          'fradcbnasmcp01.de.db.com'
+    username:         "{{ vault['clusters']['fradcbnasmcp01.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fradcbnasmcp01.de.db.com']['password'] | default(omit) }}"
+  fradcnnasmcp01.de.db.com:
+    mgmt_ip:          'fradcnnasmcp01.de.db.com'
+    username:         "{{ vault['clusters']['fradcnnasmcp01.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fradcnnasmcp01.de.db.com']['password'] | default(omit) }}"
+  sinkdcnasmcp01.sg.db.com:
+    mgmt_ip:          'sinkdcnasmcp01.sg.db.com'
+    username:         "{{ vault['clusters']['sinkdcnasmcp01.sg.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sinkdcnasmcp01.sg.db.com']['password'] | default(omit) }}"
+  sindsjnasmcp01.sg.db.com:
+    mgmt_ip:          'sindsjnasmcp01.sg.db.com'
+    username:         "{{ vault['clusters']['sindsjnasmcp01.sg.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sindsjnasmcp01.sg.db.com']['password'] | default(omit) }}"
+  nycgdcnasmcp01.us.db.com:
+    mgmt_ip:          'nycgdcnasmcp01.us.db.com'
+    username:         "{{ vault['clusters']['nycgdcnasmcp01.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycgdcnasmcp01.us.db.com']['password'] | default(omit) }}"
+  nycnjmnasmcp01.us.db.com:
+    mgmt_ip:          'nycnjmnasmcp01.us.db.com'
+    username:         "{{ vault['clusters']['nycnjmnasmcp01.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycnjmnasmcp01.us.db.com']['password'] | default(omit) }}"
+  nycgdcnasmcu01.us.db.com:
+    mgmt_ip:          'nycgdcnasmcu01.us.db.com'
+    username:         "{{ vault['clusters']['nycgdcnasmcu01.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycgdcnasmcu01.us.db.com']['password'] | default(omit) }}"
+  nycgdcnasmcu02.us.db.com:
+    mgmt_ip:          'nycgdcnasmcu02.us.db.com'
+    username:         "{{ vault['clusters']['nycgdcnasmcu02.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycgdcnasmcu02.us.db.com']['password'] | default(omit) }}"
+  nycnjmmcp2.us.db.com:
+    mgmt_ip:          'nycnjmmcp2.us.db.com'
+    username:         "{{ vault['clusters']['nycnjmmcp2.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycnjmmcp2.us.db.com']['password'] | default(omit) }}"
+  nyc2pkmcp1.us.db.com:
+    mgmt_ip:          'nyc2pkmcp1.us.db.com'
+    username:         "{{ vault['clusters']['nyc2pkmcp1.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nyc2pkmcp1.us.db.com']['password'] | default(omit) }}"
+  fradcbmcp01.de.db.com:
+    mgmt_ip:          'fradcbmcp01.de.db.com'
+    username:         "{{ vault['clusters']['fradcbmcp01.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fradcbmcp01.de.db.com']['password'] | default(omit) }}"
+  fradcnmcp01.de.db.com:
+    mgmt_ip:          'fradcnmcp01.de.db.com'
+    username:         "{{ vault['clusters']['fradcnmcp01.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fradcnmcp01.de.db.com']['password'] | default(omit) }}"
+  mumbkcmcp1.in.db.com:
+    mgmt_ip:          'mumbkcmcp1.in.db.com'
+    username:         "{{ vault['clusters']['mumbkcmcp1.in.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['mumbkcmcp1.in.db.com']['password'] | default(omit) }}"
+  pnqtclmcp1.in.db.com:
+    mgmt_ip:          'pnqtclmcp1.in.db.com'
+    username:         "{{ vault['clusters']['pnqtclmcp1.in.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['pnqtclmcp1.in.db.com']['password'] | default(omit) }}"
+  sinkdcmcp01.sg.db.com:
+    mgmt_ip:          'sinkdcmcp01.sg.db.com'
+    username:         "{{ vault['clusters']['sinkdcmcp01.sg.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sinkdcmcp01.sg.db.com']['password'] | default(omit) }}"
+  sindsjmcp01.sg.db.com:
+    mgmt_ip:          'sindsjmcp01.sg.db.com'
+    username:         "{{ vault['clusters']['sindsjmcp01.sg.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sindsjmcp01.sg.db.com']['password'] | default(omit) }}"   
+  loncdcmcp01.uk.db.com:
+    mgmt_ip:          'loncdcmcp01.uk.db.com'
+    username:         "{{ vault['clusters']['loncdcmcp01.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['loncdcmcp01.uk.db.com']['password'] | default(omit) }}"
+  lonwdcmcp01.uk.db.com:
+    mgmt_ip:          'lonwdcmcp01.uk.db.com'
+    username:         "{{ vault['clusters']['lonwdcmcp01.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonwdcmcp01.uk.db.com']['password'] | default(omit) }}"   
+ 
+# NAS Shared
+ 
+  fradcnclp1.de.db.com:
+    mgmt_ip:          'fradcnclp1.de.db.com'
+    username:         "{{ vault['clusters']['fradcnclp1.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fradcnclp1.de.db.com']['password'] | default(omit) }}"
+  fradcbclp1.de.db.com:
+    mgmt_ip:          'fradcbclp1.de.db.com'
+    username:         "{{ vault['clusters']['fradcbclp1.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fradcbclp1.de.db.com']['password'] | default(omit) }}"
+  lonwdcclp1.uk.db.com:
+    mgmt_ip:          'lonwdcclp1.uk.db.com'
+    username:         "{{ vault['clusters']['lonwdcclp1.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonwdcclp1.uk.db.com']['password'] | default(omit) }}"
+  loncdcclp1.uk.db.com:
+    mgmt_ip:          'loncdcclp1.uk.db.com'
+    username:         "{{ vault['clusters']['loncdcclp1.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['loncdcclp1.uk.db.com']['password'] | default(omit) }}"
+  mumbkcclp1.in.db.com:
+    mgmt_ip:          'mumbkcclp1.in.db.com'
+    username:         "{{ vault['clusters']['mumbkcclp1.in.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['mumbkcclp1.in.db.com']['password'] | default(omit) }}"
+  pnqtclclp1.in.db.com:
+    mgmt_ip:          'pnqtclclp1.in.db.com'
+    username:         "{{ vault['clusters']['pnqtclclp1.in.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['pnqtclclp1.in.db.com']['password'] | default(omit) }}"
+  nycnjmclp1.us.db.com:
+    mgmt_ip:          'nycnjmclp1.us.db.com'
+    username:         "{{ vault['clusters']['nycnjmclp1.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycnjmclp1.us.db.com']['password'] | default(omit) }}"
+  nyc2pkclp1.us.db.com:
+    mgmt_ip:          'nyc2pkclp1.us.db.com'
+    username:         "{{ vault['clusters']['nyc2pkclp1.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nyc2pkclp1.us.db.com']['password'] | default(omit) }}"
+  sindsjclp1.sg.db.com:
+    mgmt_ip:          'sindsjclp1.sg.db.com'
+    username:         "{{ vault['clusters']['sindsjclp1.sg.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sindsjclp1.sg.db.com']['password'] | default(omit) }}"
+  sinkimclp1.sg.db.com:
+    mgmt_ip:          'sinkimclp1.sg.db.com'
+    username:         "{{ vault['clusters']['sinkimclp1.sg.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sinkimclp1.sg.db.com']['password'] | default(omit) }}"
+  toktncclp1.jp.db.com:
+    mgmt_ip:          'toktncclp1.jp.db.com'
+    username:         "{{ vault['clusters']['toktncclp1.jp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['toktncclp1.jp.db.com']['password'] | default(omit) }}"
+  tokcgsclp1.jp.db.com:
+    mgmt_ip:          'tokcgsclp1.jp.db.com'
+    username:         "{{ vault['clusters']['tokcgsclp1.jp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['tokcgsclp1.jp.db.com']['password'] | default(omit) }}"
+  shaeqxclp2.cn.db.com:
+    mgmt_ip:          'shaeqxclp2.cn.db.com'
+    username:         "{{ vault['clusters']['shaeqxclp2.cn.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['shaeqxclp2.cn.db.com']['password'] | default(omit) }}"
+  shagdsclp2.cn.db.com:
+    mgmt_ip:          'shagdsclp2.cn.db.com'
+    username:         "{{ vault['clusters']['shagdsclp2.cn.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['shagdsclp2.cn.db.com']['password'] | default(omit) }}"
+  nyc2pkclsp1.us.db.com:
+    mgmt_ip:          'nyc2pkclsp1.us.db.com'
+    username:         "{{ vault['clusters']['nyc2pkclsp1.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nyc2pkclsp1.us.db.com']['password'] | default(omit) }}"
+  nycny4clsp1.us.db.com:
+    mgmt_ip:          'nycny4clsp1.us.db.com'
+    username:         "{{ vault['clusters']['nycny4clsp1.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycny4clsp1.us.db.com']['password'] | default(omit) }}"
+  hkgnttclp1.hk.db.com:
+    mgmt_ip:          'hkgnttclp1.hk.db.com'
+    username:         "{{ vault['clusters']['hkgnttclp1.hk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['hkgnttclp1.hk.db.com']['password'] | default(omit) }}"
+  hkgeqxclp1.hk.db.com:
+    mgmt_ip:          'hkgeqxclp1.hk.db.com'
+    username:         "{{ vault['clusters']['hkgeqxclp1.hk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['hkgeqxclp1.hk.db.com']['password'] | default(omit) }}"
+  sydrydclp1.au.db.com:
+    mgmt_ip:          'sydrydclp1.au.db.com'
+    username:         "{{ vault['clusters']['sydrydclp1.au.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sydrydclp1.au.db.com']['password'] | default(omit) }}"
+  sydultclp1.au.db.com:
+    mgmt_ip:          'sydultclp1.au.db.com'
+    username:         "{{ vault['clusters']['sydultclp1.au.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sydultclp1.au.db.com']['password'] | default(omit) }}"
+ 
+# Branch
+ 
+  kbpinnasclp1.ua.db.com:
+    mgmt_ip:          'kbpinnasclp1.ua.db.com'
+    username:         "{{ vault['clusters']['kbpinnasclp1.ua.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['kbpinnasclp1.ua.db.com']['password'] | default(omit) }}"
+  dxbgavclp01.ae.db.com:
+    mgmt_ip:          'dxbgavclp01.ae.db.com'
+    username:         "{{ vault['clusters']['dxbgavclp01.ae.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['dxbgavclp01.ae.db.com']['password'] | default(omit) }}"
+  isttfnclp01.tr.db.com:
+    mgmt_ip:          'isttfnclp01.tr.db.com'
+    username:         "{{ vault['clusters']['isttfnclp01.tr.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['isttfnclp01.tr.db.com']['password'] | default(omit) }}"
+  jnbsanclp01.za.db.com:
+    mgmt_ip:          'jnbsanclp01.za.db.com'
+    username:         "{{ vault['clusters']['jnbsanclp01.za.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['jnbsanclp01.za.db.com']['password'] | default(omit) }}"
+  ruhaflclp1.sa.db.com:
+    mgmt_ip:          'ruhaflclp1.sa.db.com'
+    username:         "{{ vault['clusters']['ruhaflclp1.sa.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['ruhaflclp1.sa.db.com']['password'] | default(omit) }}"
+  selcnsclp01.kr.db.com:
+    mgmt_ip:          'selcnsclp01.kr.db.com'
+    username:         "{{ vault['clusters']['selcnsclp01.kr.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['selcnsclp01.kr.db.com']['password'] | default(omit) }}"
+  shaeqxclp2.cn.db.com:
+    mgmt_ip:          'shaeqxclp2.cn.db.com'
+    username:         "{{ vault['clusters']['shaeqxclp2.cn.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['shaeqxclp2.cn.db.com']['password'] | default(omit) }}"
+  jktinclsp01.id.db.com:
+    mgmt_ip:          'jktinclsp01.id.db.com'
+    username:         "{{ vault['clusters']['jktinclsp01.id.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['jktinclsp01.id.db.com']['password'] | default(omit) }}"
+  tpecliclp01.tw.db.com:
+    mgmt_ip:          'tpecliclp01.tw.db.com'
+    username:         "{{ vault['clusters']['tpecliclp01.tw.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['tpecliclp01.tw.db.com']['password'] | default(omit) }}"
+  tpefeaclp2.tw.db.com:
+    mgmt_ip:          'tpefeaclp2.tw.db.com'
+    username:         "{{ vault['clusters']['tpefeaclp2.tw.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['tpefeaclp2.tw.db.com']['password'] | default(omit) }}"
+  saoinclsp01.br.db.com:
+    mgmt_ip:          'saoinclsp01.br.db.com'
+    username:         "{{ vault['clusters']['saoinclsp01.br.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['saoinclsp01.br.db.com']['password'] | default(omit) }}"
+  shagdsclp2.cn.db.com:
+    mgmt_ip:          'shagdsclp2.cn.db.com'
+    username:         "{{ vault['clusters']['shagdsclp2.cn.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['shagdsclp2.cn.db.com']['password'] | default(omit) }}"
+  saoinclsp02.br.db.com:
+    mgmt_ip:          'saoinclsp02.br.db.com'
+    username:         "{{ vault['clusters']['saoinclsp02.br.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['saoinclsp02.br.db.com']['password'] | default(omit) }}"
+  shagdsclp4.cn.db.com:
+    mgmt_ip:          'shagdsclp4.cn.db.com'
+    username:         "{{ vault['clusters']['shagdsclp4.cn.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['shagdsclp4.cn.db.com']['password'] | default(omit) }}"
+  shasdsclp4.cn.db.com:
+    mgmt_ip:          'shasdsclp4.cn.db.com'
+    username:         "{{ vault['clusters']['shasdsclp4.cn.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['shasdsclp4.cn.db.com']['password'] | default(omit) }}"
+   
+    
+    
+    
+    
+# SnapVault Clusters
+  nyc2pksvp1.us.db.com:
+    mgmt_ip:          'nyc2pksvp1.us.db.com'
+    username:         "{{ vault['clusters']['nyc2pksvp1.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nyc2pksvp1.us.db.com']['password'] | default(omit) }}"
+  nycnjmsvp1.us.db.com:
+    mgmt_ip:          'nycnjmsvp1.us.db.com'
+    username:         "{{ vault['clusters']['nycnjmsvp1.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycnjmsvp1.us.db.com']['password'] | default(omit) }}"
+  fradcbsvp1.de.db.com:
+    mgmt_ip:          'fradcbsvp1.de.db.com'
+    username:         "{{ vault['clusters']['fradcbsvp1.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fradcbsvp1.de.db.com']['password'] | default(omit) }}"
+  fradcnsvp1.de.db.com:
+    mgmt_ip:          'fradcnsvp1.de.db.com'
+    username:         "{{ vault['clusters']['fradcnsvp1.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fradcnsvp1.de.db.com']['password'] | default(omit) }}"
+  sinkdcsvp1.sg.db.com:
+    mgmt_ip:          'sinkdcsvp1.sg.db.com'
+    username:         "{{ vault['clusters']['sinkdcsvp1.sg.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sinkdcsvp1.sg.db.com']['password'] | default(omit) }}"
+  sindsjsvp1.sg.db.com:
+    mgmt_ip:          'sindsjsvp1.sg.db.com'
+    username:         "{{ vault['clusters']['sindsjsvp1.sg.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['sindsjsvp1.sg.db.com']['password'] | default(omit) }}"   
+  loncdcsvp1.uk.db.com:
+    mgmt_ip:          'loncdcsvp1.uk.db.com'
+    username:         "{{ vault['clusters']['loncdcsvp1.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['loncdcsvp1.uk.db.com']['password'] | default(omit) }}"
+  lonwdcsvp1.uk.db.com:
+    mgmt_ip:          'lonwdcsvp1.uk.db.com'
+    username:         "{{ vault['clusters']['lonwdcsvp1.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonwdcsvp1.uk.db.com']['password'] | default(omit) }}"   
+  
+ 
+# CVO Rehost Clusters
+# DEV
+ 
+  frastrhcvod001.de.db.com:
+    mgmt_ip:          'frastrhcvod001.de.db.com'
+    username:         "{{ vault['clusters']['frastrhcvod001.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['frastrhcvod001.de.db.com']['password'] | default(omit) }}"
+  fraprrhsapd001.de.db.com:
+    mgmt_ip:          'fraprrhsapd001.de.db.com'
+    username:         "{{ vault['clusters']['fraprrhsapd001.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fraprrhsapd001.de.db.com']['password'] | default(omit) }}"
+  lonstrhfabd001.uk.db.com:
+    mgmt_ip:          'lonstrhfabd001.uk.db.com'
+    username:         "{{ vault['clusters']['lonstrhfabd001.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonstrhfabd001.uk.db.com']['password'] | default(omit) }}"
+  lonbsrhcvod001.uk.db.com:
+    mgmt_ip:          'lonbsrhcvod001.uk.db.com'
+    username:         "{{ vault['clusters']['lonbsrhcvod001.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonbsrhcvod001.uk.db.com']['password'] | default(omit) }}"
+  frastrhfabd002.de.db.com:
+    mgmt_ip:          'frastrhfabd002.de.db.com'
+    username:         "{{ vault['clusters']['frastrhfabd002.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['frastrhfabd002.de.db.com']['password'] | default(omit) }}"
+  frabsrhcvod002.de.db.com:
+    mgmt_ip:          'frabsrhcvod002.de.db.com'
+    username:         "{{ vault['clusters']['frabsrhcvod002.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['frabsrhcvod002.de.db.com']['password'] | default(omit) }}"
+  nycbsrhcvod001.us.db.com:
+    mgmt_ip:          'nycbsrhcvod001.us.db.com'
+    username:         "{{ vault['clusters']['nycbsrhcvod001.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycbsrhcvod001.us.db.com']['password'] | default(omit) }}"   
+    
+# UAT
+ 
+  fraprrhsapu001.de.db.com:
+    mgmt_ip:          'fraprrhsapu001.de.db.com'
+    username:         "{{ vault['clusters']['fraprrhsapu001.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fraprrhsapu001.de.db.com']['password'] | default(omit) }}"
+  lonstrhfabu001.uk.db.com:
+    mgmt_ip:          'lonstrhfabu001.uk.db.com'
+    username:         "{{ vault['clusters']['lonstrhfabu001.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonstrhfabu001.uk.db.com']['password'] | default(omit) }}"
+  lonstrhcvou002.uk.db.com:
+    mgmt_ip:          'lonstrhcvou002.uk.db.com'
+    username:         "{{ vault['clusters']['lonstrhcvou002.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonstrhcvou002.uk.db.com']['password'] | default(omit) }}"
+  frastrhfabu002.de.db.com:
+    mgmt_ip:          'frastrhfabu002.de.db.com'
+    username:         "{{ vault['clusters']['frastrhfabu002.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['frastrhfabu002.de.db.com']['password'] | default(omit) }}"
+  frastrhcvou003.de.db.com:
+    mgmt_ip:          'frastrhcvou003.de.db.com'
+    username:         "{{ vault['clusters']['frastrhcvou003.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['frastrhcvou003.de.db.com']['password'] | default(omit) }}"
+  nycstrhcvou001.us.db.com:
+    mgmt_ip:          'nycstrhcvou001.us.db.com'
+    username:         "{{ vault['clusters']['nycstrhcvou001.us.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycstrhcvou001.us.db.com']['password'] | default(omit) }}"   
+ 
+# PRD
+ 
+  fraprrhsapp001.de.db.com:
+    mgmt_ip:          'fraprrhsapp001.de.db.com'
+    username:         "{{ vault['clusters']['fraprrhsapp001.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fraprrhsapp001.de.db.com']['password'] | default(omit) }}"
+  lonprrhfabp001.uk.db.com:
+    mgmt_ip:          'lonprrhfabp001.uk.db.com'
+    username:         "{{ vault['clusters']['lonprrhfabp001.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonprrhfabp001.uk.db.com']['password'] | default(omit) }}"
+  lonprrhcvop002.uk.db.com:
+    mgmt_ip:          'lonprrhcvop002.uk.db.com'
+    username:         "{{ vault['clusters']['lonprrhcvop002.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonprrhcvop002.uk.db.com']['password'] | default(omit) }}"
+  fraprrhfabp002.de.db.com:
+    mgmt_ip:          'fraprrhfabp002.de.db.com'
+    username:         "{{ vault['clusters']['fraprrhfabp002.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fraprrhfabp002.de.db.com']['password'] | default(omit) }}"
+  fraprrhcvop003.de.db.com:
+    mgmt_ip:          'fraprrhcvop003.de.db.com'
+    username:         "{{ vault['clusters']['fraprrhcvop003.de.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fraprrhcvop003.de.db.com']['password'] | default(omit) }}"
+ 
+# CVO Native Clusters
+# DEV
+ 
+  lonbsntcvod001.uk.cvo.dev.gcp.db.com:
+    mgmt_ip:          'lonbsntcvod001.uk.cvo.dev.gcp.db.com'
+    username:         "{{ vault['clusters']['lonbsntcvod001.uk.cvo.dev.gcp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonbsntcvod001.uk.cvo.dev.gcp.db.com']['password'] | default(omit) }}"
+  frabsntcvod001.de.cvo.dev.gcp.db.com:
+    mgmt_ip:          'frabsntcvod001.de.cvo.dev.gcp.db.com'
+    username:         "{{ vault['clusters']['frabsntcvod001.de.cvo.dev.gcp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['frabsntcvod001.de.cvo.dev.gcp.db.com']['password'] | default(omit) }}"
+  nycbsntcvod001.us.cvo.dev.gcp.db.com:
+    mgmt_ip:          'nycbsntcvod001.us.cvo.dev.gcp.db.com'
+    username:         "{{ vault['clusters']['nycbsntcvod001.us.cvo.dev.gcp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycbsntcvod001.us.cvo.dev.gcp.db.com']['password'] | default(omit) }}"
+   
+# UAT
+ 
+  lonstntcvou001.uk.cvo.uat.gcp.db.com:
+    mgmt_ip:          'lonstntcvou001.uk.cvo.uat.gcp.db.com'
+    username:         "{{ vault['clusters']['lonstntcvou001.uk.cvo.uat.gcp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonstntcvou001.uk.cvo.uat.gcp.db.com']['password'] | default(omit) }}"
+  frastntcvou001.de.cvo.uat.gcp.db.com:
+    mgmt_ip:          'frastntcvou001.de.cvo.uat.gcp.db.com'
+    username:         "{{ vault['clusters']['frastntcvou001.de.cvo.uat.gcp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['frastntcvou001.de.cvo.uat.gcp.db.com']['password'] | default(omit) }}"
+  nycstntcvou001.us.cvo.uat.gcp.db.com:
+    mgmt_ip:          'nycstntcvou001.us.cvo.uat.gcp.db.com'
+    username:         "{{ vault['clusters']['nycstntcvou001.us.cvo.uat.gcp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycstntcvou001.us.cvo.uat.gcp.db.com']['password'] | default(omit) }}"
+   
+# PRD
+ 
+  lonprntcvop001.uk.cvo.prd.gcp.db.com:
+    mgmt_ip:          'lonprntcvop001.uk.cvo.prd.gcp.db.com'
+    username:         "{{ vault['clusters']['lonprntcvop001.uk.cvo.prd.gcp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['lonprntcvop001.uk.cvo.prd.gcp.db.com']['password'] | default(omit) }}"
+  fraprntcvop001.de.cvo.prd.gcp.db.com:
+    mgmt_ip:          'fraprntcvop001.de.cvo.prd.gcp.db.com'
+    username:         "{{ vault['clusters']['fraprntcvop001.de.cvo.prd.gcp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['fraprntcvop001.de.cvo.prd.gcp.db.com']['password'] | default(omit) }}"
+  nycprntcvop001.us.cvo.prd.gcp.db.com:
+    mgmt_ip:          'nycprntcvop001.us.cvo.prd.gcp.db.com'
+    username:         "{{ vault['clusters']['nycprntcvop001.us.cvo.prd.gcp.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['nycprntcvop001.us.cvo.prd.gcp.db.com']['password'] | default(omit) }}"
+   
+    
+# DEV eng cluster
+ 
+  loninengclsp01.uk.db.com:
+    mgmt_ip:          'loninengclsp01.uk.db.com'
+    username:         "{{ vault['clusters']['loninengclsp01.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['loninengclsp01.uk.db.com']['password'] | default(omit) }}"
+  loncdclabcl1.uk.db.com:
+    mgmt_ip:          'loncdclabcl1.uk.db.com'
+    username:         "{{ vault['clusters']['loncdclabcl1.uk.db.com']['username'] | default(omit) }}"
+    password:         "{{ vault['clusters']['loncdclabcl1.uk.db.com']['password'] | default(omit) }}"   
+    
+delegate_to:
+  windows:
+    mgmt_ip:          "nycinnwfab1.us.db.com"
+    username:         "{{ vault['delegate_to']['windows']['username'] }}"
+    password:         "{{ vault['delegate_to']['windows']['password'] }}"
+   
+    

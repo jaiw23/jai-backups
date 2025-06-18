@@ -1,0 +1,306 @@
+
+---
+ 
+#-------------------------------------------------------------------------------
+# This yaml file defines the environmental defaults for any requested provision.
+# It is grouped by service definition. Each service definition has defined its own
+# microservice and contained within is the operation with default keys and values.
+# Template:
+# defaults:   <-- name of standard dictionary
+#   service_standard:
+#     microservice:
+#       CRUD_value:
+#         Key:  "value"
+#-------------------------------------------------------------------------------
+defaults:
+  nas_shared:
+    ontap_volume:
+      create:
+        snapshot_policy:        'default'
+        percent_snapshot_space: 10
+        volume_security_style:  'unix'
+        efficiency_policy:      'default'
+        qos_adaptive_policy_group:  'value'
+        space_guarantee:        'none'
+        snapshot_auto_delete:
+           state: 'on'
+           trigger: 'snap_reserve'
+           commitment: 'destroy'
+           defer_delete: 'scheduled'
+           delete_order: 'oldest_first'
+           target_free_space: 20
+    ontap_volume_efficiency:
+      create:
+        enable_compression:        'yes'
+        enable_data_compaction:    'yes'
+    ontap_volume_autosize:
+      create:
+        mode:        'grow'
+           
+      read:
+      update:
+      delete:
+    ontap_cifs:
+      create:
+        share_properties:       'browsable,oplocks,showsnapshot,show-previous-versions'
+      read:
+      update:
+      delete:
+    ontap_cifs_acl:
+      create:
+        #state:                  'present'
+      read:
+      update:
+      delete:
+    ontap_qos_policy_group:
+      create:
+        max_throughput:   '100iops'
+        #state:            'present'
+    ontap_quota:
+      create:
+        type:                   'tree'
+        #set_quota_status:        True
+      update:
+        type:                   'tree'
+      offline:
+        type:                   'tree'
+    sims_ad_group:
+      create:
+        uri_url:                            https://sims.ies.gto.intranet.db.com/axis2-basic/services/SIMS
+        xml_url:                            http://idadmin.db.com
+        ou:                                 [FSU, Infrastructure Services]
+        type:                               "2147483656"
+        description:                        'NAS Premium Permission Group'
+        dbagRecertType:                     "Data"
+        dbagRecertSubtype:                  "Share"
+        dbagDataPrivClass:                  "FALSE"
+        dbagIMSRecertPeriod:                "12"
+        dbagIMSDataSecCLass:                "C"
+        info:                               "NAS_Automation_Group"
+        dbagEntitlement:                    "Create_NAS_groups"
+        https_proxy:                        ""
+    win_acl:
+      create:
+        type:            allow
+        inherit:         ContainerInherit, ObjectInherit
+        propagation:     'None'
+      update:
+      offline:
+ 
+       
+  nas_premium:
+    ontap_volume:
+      create:
+        snapshot_policy:        'default'
+        percent_snapshot_space: 10
+        volume_security_style:  'unix'
+        efficiency_policy:      'default'
+        qos_adaptive_policy_group:  'performance'
+        space_guarantee:        'none'
+        snapshot_auto_delete:
+            state: 'on'
+            trigger: 'snap_reserve'
+            commitment: 'destroy'
+            defer_delete: 'scheduled'
+            delete_order: 'oldest_first'
+            target_free_space: 20
+    snapvault_ontap_volume:
+      create:
+        snapshot_policy:        'none'
+        volume_security_style:  'unix'
+        efficiency_policy:      'default'
+        space_guarantee:        'none'
+        type:                   'DP'
+        snapshot_auto_delete:
+            state: 'off'
+    ontap_volume_efficiency:
+      create:
+        enable_compression:        'yes'
+        enable_data_compaction:    'yes'   
+    ontap_volume_autosize:
+      create:
+        mode:        'grow'
+      read:
+      update:
+      delete:
+    ontap_cifs:
+      create:
+        share_properties:       'browsable,oplocks,showsnapshot,show-previous-versions'
+      read:
+      update:
+      delete:
+    ontap_cifs_acl:
+      create:
+        #state:                  'present'
+      read:
+      update:
+      delete:
+    ontap_qos_policy_group:
+      create:
+        max_throughput:   '100iops'
+        #state:            'present'
+    ontap_quota:
+      create:
+        type:                   'tree'
+        #set_quota_status:       True
+      update:
+        type:                   'tree'
+      offline:
+        type:                   'tree'
+    sims_ad_group:
+      create:
+        uri_url:                            https://sims.ies.gto.intranet.db.com/axis2-basic/services/SIMS
+        xml_url:                            http://idadmin.db.com
+        ou:                                 [FSU, Infrastructure Services]
+        type:                               "2147483656"
+        description:                        'NAS Premium Permission Group'
+        dbagRecertType:                     "Data"
+        dbagRecertSubtype:                  "Share"
+        dbagDataPrivClass:                  "FALSE"
+        dbagIMSRecertPeriod:                "12"
+        dbagIMSDataSecCLass:                "C"
+        info:                               "NAS_Automation_Group"
+        dbagEntitlement:                    "Create_NAS_groups"
+        https_proxy:                        ""
+    win_acl:
+      create:
+        type:            allow
+        inherit:         ContainerInherit, ObjectInherit
+        propagation:     'None'
+      update:
+      offline:
+ 
+ 
+  cvo:
+    cvo_ontap_volume:
+      create:
+        snapshot_policy:        'default'
+        percent_snapshot_space: 10
+        volume_security_style:  'unix'
+        efficiency_policy:      'default'
+        qos_adaptive_policy_group:  'performance'
+        space_guarantee:        'none'
+        snapshot_auto_delete:
+            state: 'on'
+            trigger: 'snap_reserve'
+            commitment: 'destroy'
+            defer_delete: 'scheduled'
+            delete_order: 'oldest_first'
+            target_free_space: 20
+    ontap_volume_efficiency:
+      create:
+        enable_compression:        'yes'
+        enable_data_compaction:    'yes'   
+    ontap_cifs:
+      create:
+        share_properties:       'browsable,oplocks,showsnapshot,show-previous-versions'
+      read:
+      update:
+      delete:
+    ontap_cifs_acl:
+      create:
+        #state:                  'present'
+      read:
+      update:
+      delete:
+    ontap_qos_policy_group:
+      create:
+        max_throughput:   '100iops'
+        #state:            'present'
+    sims_ad_group:
+      create:
+        uri_url:                            https://sims.ies.gto.intranet.db.com/axis2-basic/services/SIMS
+        xml_url:                            http://idadmin.db.com
+        ou:                                 [FSU, Infrastructure Services]
+        type:                               "2147483656"
+        description:                        'CVO Permission Group'
+        dbagRecertType:                     "Data"
+        dbagRecertSubtype:                  "Share"
+        dbagDataPrivClass:                  "FALSE"
+        dbagIMSRecertPeriod:                "12"
+        dbagIMSDataSecCLass:                "C"
+        info:                               "NAS_Automation_Group"
+        dbagEntitlement:                    "Create_NAS_groups"
+        https_proxy:                        ""
+    win_acl:
+      create:
+        type:            allow
+        inherit:         ContainerInherit, ObjectInherit
+        propagation:     'None'
+      update:
+      offline:
+ 
+ 
+  nas_shared_branch:
+    ontap_cifs:
+      create:
+        share_properties:       'browsable,oplocks,showsnapshot,show-previous-versions'
+      read:
+      update:
+      delete:
+    ontap_cifs_acl:
+      create:
+        #state:                  'present'
+      read:
+      update:
+      delete:
+    ontap_qos_policy_group:
+      create:
+        max_throughput:   '100iops'
+        #state:            'present'
+    ontap_quota:
+      create:
+        type:                   'tree'
+        #set_quota_status:        True
+      update:
+        type:                   'tree'
+      offline:
+        type:                   'tree'
+    sims_ad_group:
+      create:
+        uri_url:                            https://sims.ies.gto.intranet.db.com/axis2-basic/services/SIMS
+        xml_url:                            http://idadmin.db.com
+        ou:                                 [FSU, Infrastructure Services]
+        type:                               "2147483656"
+        description:                        'NAS Shared Branch Permission Group'
+        dbagRecertType:                     "Data"
+        dbagRecertSubtype:                  "Share"
+        dbagDataPrivClass:                  "FALSE"
+        dbagIMSRecertPeriod:                "12"
+        dbagIMSDataSecCLass:                "C"
+        info:                               "NAS_Automation_Group"
+        dbagEntitlement:                    "Create_NAS_groups"
+        https_proxy:                        ""
+    win_acl:
+      create:
+        type:            allow
+        inherit:         ContainerInherit, ObjectInherit
+        propagation:     'None'
+      update:
+      offline:
+     
+  svm_build:
+    ontap_cifs_server:
+      create:
+        domain:       'dbg.ads.db.com'
+      read:
+      update:
+      delete:
+    ontap_kerberos_realm:
+      create:
+        state:              'present'
+        realm:              'DBG.ADS.DB.COM'
+        clock_skew:          5
+        ad_server_name:     'WIN2K8-DC'
+        admin_server_port:   749
+        kdc_port:            88
+        kdc_vendor:         'Microsoft'
+        pw_server_port:      464
+      read:
+      update:
+      delete:
+    ontap_kerberos_interface:
+      create:
+        enabled:          'true'
+        state:            'present'
+     

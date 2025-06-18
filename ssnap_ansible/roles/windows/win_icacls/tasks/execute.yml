@@ -1,0 +1,46 @@
+
+# /roles/windows/windows/win_icacls/tasks/execute.uml
+ 
+---
+ 
+-  name: "BLOCKnRESCUE: icacls"
+   block:
+      -  set_fact:
+            service_start_time: "{{ lookup('pipe', 'date +%Y-%m-%d@%H:%M:%S') }}"
+     
+      -  name: "Execute Win_icacls"
+         ansible.windows.win_shell: |
+           icacls '{{loop_arg['path']}}' /t /c /Remove '{{loop_arg['user']}}'
+         delegate_to: "{{ delegate_to['windows']['mgmt_ip'] }}"
+         become:       yes
+         vars:
+            ansible_user:                   "{{ delegate_to['windows']['username'] }}"
+            ansible_password:               "{{ delegate_to['windows']['password'] }}"
+            ansible_winrm_server_cert_validation:  ignore
+            ansible_connection:                    winrm
+            ansible_winrm_transport:               ntlm
+            ansible_become_method:                 runas
+            ansible_become_user:                   "{{ delegate_to['windows']['username'] }}"
+            ansible_become_password:               "{{ delegate_to['windows']['password'] }}"
+         loop:    "{{ args }}"
+         loop_control:
+            loop_var:   loop_arg
+         register:      role_result
+ 
+   rescue:
+      -  name: Set Play Status
+         set_fact:
+            playbook_status:   "failed"
+ 
+   always:
+      -  name: add log msg
+         vars:
+            role_log:
+               role: "ICACLS"
+               timestamp:
+                  start_time: "{{service_start_time}}"
+                  end_time: "{{ lookup('pipe', 'date +%Y-%m-%d@%H:%M:%S') }}"
+               service_status: "{{ playbook_status }}"
+               result: "{{role_result}}"  
+         set_fact:
+            global_log_msgs:   "{{ global_log_msgs + [ role_log ] }}"

@@ -1,0 +1,72 @@
+
+
+# /roles/windows/win_acl/tasks/execute
+ 
+---
+ 
+-  name: "BLOCKnRESCUE: Windows Acl"
+   block:
+      -  set_fact:
+            service_start_time: "{{ lookup('pipe', 'date +%Y-%m-%d@%H:%M:%S') }}"
+           
+      -  name: "Adding delay for sims ACL to be discovered in domain"
+         wait_for:
+            sleep: 0
+     
+      -  name: "Execute Windows Acl"
+         vars:
+            ansible_user:                          "{{delegate_to['windows']['username']}}"
+            ansible_password:                      "{{delegate_to['windows']['password']}}"
+            ansible_winrm_server_cert_validation:  ignore
+            ansible_connection:                    winrm
+            ansible_winrm_transport:               kerberos
+            ansible_become_method:                 runas
+            ansible_become_user:                   "{{delegate_to['windows']['username']}}"
+            ansible_become_password:               "{{delegate_to['windows']['password']}}"
+            ansible_port: 5986
+         ansible.windows.win_acl:
+            path:          "{{loop_arg['path']}}"
+            user:          "{{loop_arg['user']}}"
+            rights:        "{{loop_arg['rights']}}"
+            type:          "{{loop_arg['type']}}"
+            state:         "{{loop_arg['state']                                   | default(omit) }}"
+            inherit:       "{{loop_arg['inherit']                                 | default(omit) }}"
+            propagation:   "{{loop_arg['propagation']                             | default(omit) }}"
+         delegate_to: "{{ delegate_to['windows']['mgmt_ip'] }}"
+         become:       yes
+         loop:    "{{ args }}"
+         loop_control:
+            loop_var:   loop_arg
+         register:      role_result
+ 
+   rescue:
+      -  name: Set Play Status
+         set_fact:
+            playbook_status:   "failed"
+ 
+   always:
+      -  name: add log msg
+         vars:
+            role_log:
+               role: "WIN ACL"
+               timestamp:
+                  start_time: "{{service_start_time}}"
+                  end_time: "{{ lookup('pipe', 'date +%Y-%m-%d@%H:%M:%S') }}"
+               service_status: "{{ playbook_status }}"
+               result: "{{role_result}}"  
+         set_fact:
+            global_log_msgs:   "{{ global_log_msgs + [ role_log ] }}"
+ 
+ 
+# roles/tasks/main.yml
+ 
+---
+ 
+- name: 'show args'
+  include_tasks: test.yml
+  when: mode == 'test' and status == "success"
+ 
+- name: 'execute the request'
+  include_tasks: execute.yml
+  when: mode != 'test' and status == "success"
+

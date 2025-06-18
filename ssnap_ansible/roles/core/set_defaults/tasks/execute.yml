@@ -1,0 +1,74 @@
+# /roles/core/set_defaults/tasks/execute.yml
+ 
+---
+ 
+##############################################################################################################
+#  This Role function is to add NetApp object default values if not specified from passed extra_vars
+#  If key/value is defined in extra_vars, set_defaults role will NOT override values
+##############################################################################################################
+-  set_fact:
+      service_start_time: "{{ lookup('pipe', 'date +%Y-%m-%d@%H:%M:%S') }}"
+ 
+ 
+- name: 'Initialize temporary list for building combined default payload'
+  set_fact:
+    temp: []
+ 
+-  name: "BLOCKnRESCUE : SET_DEFAULTS STEP 1"
+   block:
+     
+      - name: "execute Set Default Step 1"
+        set_fact:
+          temp:   "{{ temp + [ defaults[std_name][res_type][operation] | combine( resources[idx] ) ]  }}"
+        loop:    "{{ resources }}"
+        loop_control:
+          index_var: idx
+        when: defaults[std_name][res_type][operation].keys is defined
+        register: role_result
+ 
+   rescue:
+      -  name: Set Play Status
+         set_fact:
+            playbook_status:   "failed"
+ 
+   always:
+      -  name: add log msg
+         vars:
+            role_log:
+               role: "SET_DEFAULT_STEP_1"
+               timestamp:
+                  start_time: "{{service_start_time}}"
+                  end_time: "{{ lookup('pipe', 'date +%Y-%m-%d@%H:%M:%S') }}"
+               service_status: "{{ playbook_status }}"
+               result: "{{role_result}}"  
+         set_fact:
+            global_log_msgs:   "{{ global_log_msgs + [ role_log ] }}"
+         
+  
+ 
+-  name: "BLOCKnRESCUE : SET_DEFAULTS STEP 2"
+   block:   
+      - name: "execute Set Default Step 2"
+        set_fact:
+          global_completed_request:  "{{ global_completed_request | combine( { res_type: temp } ) }}"
+        when: defaults[std_name][res_type][operation].keys is defined
+        register: role_result
+ 
+     
+   rescue:
+      -  name: Set Play Status
+         set_fact:
+            playbook_status:   "failed"
+          
+   always:
+      -  name: add log msg
+         vars:
+            role_log:
+               role: "SET_DEFAULT_STEP_2"
+               timestamp:
+                  start_time: "{{service_start_time}}"
+                  end_time: "{{ lookup('pipe', 'date +%Y-%m-%d@%H:%M:%S') }}"
+               service_status: "{{ playbook_status }}"
+               result: "{{role_result}}"  
+         set_fact:
+            global_log_msgs:   "{{ global_log_msgs + [ role_log ] }}"

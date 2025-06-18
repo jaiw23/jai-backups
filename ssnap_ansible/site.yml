@@ -1,0 +1,98 @@
+---
+ 
+- name:          'Entry point for Cluster Provisioning'
+  hosts:         localhost
+  gather_facts:  no
+  pre_tasks:
+ 
+    - name: 'Save initial request details'
+      set_fact:
+        global_completed_request:  "{{ raw_service_request['req_details'] }}"
+        global_log_msgs:     []
+        playbook_status: "success"
+        global_request: "{{ raw_service_request }}"
+ 
+    - name: 'Add Default values to provisioning request payload'
+      include_role:
+        name:     "core/set_defaults"
+      vars:
+        mode: 'notest'
+        res_type:   "{{ loop_res_type.args }}"
+        operation:  "{{ raw_service_request['operation'] }}"
+        std_name:   "{{ raw_service_request['std_name'] }}"
+        status:     "{{ playbook_status }}"
+        resources:  "{{ raw_service_request['req_details'][loop_res_type.args] }}" 
+      loop:         "{{ services[raw_service_request.service][raw_service_request.operation]['microservices'] }}"
+      loop_control:
+        loop_var:     loop_res_type
+      when:
+        - global_completed_request[loop_res_type.args] is defined
+        - defaults[std_name][loop_res_type.args] is defined
+        - defaults[std_name][loop_res_type.args][operation] is defined
+ 
+    - name: 'Enforce provisioning standards on request payload'
+      include_role:
+        name:     "core/set_standards"
+      vars:
+        mode: 'notest'
+        res_type:   "{{ loop_res_type.args }}"
+        operation:  "{{ raw_service_request['operation'] }}"
+        std_name:   "{{ raw_service_request['std_name'] }}"
+        status:     "{{ playbook_status }}"
+        resources:  "{{ global_completed_request[loop_res_type.args] }}"
+      loop:     "{{ services[raw_service_request.service][raw_service_request.operation]['microservices'] }}"   
+      loop_control:
+        loop_var:     loop_res_type
+      when:
+        - global_completed_request[loop_res_type.args] is defined
+        - standards[std_name][loop_res_type.args] is defined
+        - standards[std_name][loop_res_type.args][operation] is defined
+ 
+    - name:    'Pre Task Execution'
+      include_role:
+        name:       "{{ loop_resource.role }}"
+        public:     no
+      vars:
+        request:    "{{ global_completed_request }}"
+        args:       "{{ global_completed_request[loop_resource.args] }}"
+        mode:          "notest"
+        status:     "{{ playbook_status }}"
+      loop:         "{{ pre_task['microservices'] }}" 
+      loop_control:
+        loop_var:   loop_resource
+      when:
+        - pre_task['microservices'] is defined
+ 
+  tasks:
+ 
+    - name:    'execute each of the provisioning roles'
+      include_role:
+        name:       "{{ loop_resource.role }}"
+        public:     no
+      vars:
+        args:       "{{ global_completed_request[loop_resource.args] }}"
+        mode:       "notest"
+        status:     "{{ global_log_msgs[-1]['service_status'] | default(playbook_status) }}"
+      loop:          "{{ services[raw_service_request.service][raw_service_request.operation]['microservices'] }}" 
+      loop_control:
+        loop_var:   loop_resource
+      register:      role_result
+      when:  
+        - global_completed_request[loop_resource.args] is defined
+ 
+   
+  post_tasks:
+    - name:    'Post Task Execution'
+      include_role:
+        name:       "{{ loop_resource.role }}"
+        public:     no
+      vars:
+        request:    "{{ global_completed_request }}"
+        args:       "{{ global_completed_request[loop_resource.args] }}"
+        mode:          "notest"
+        status:     "{{ playbook_status }}"
+      loop:         "{{ post_task['microservices'] }}" 
+      loop_control:
+        loop_var:   loop_resource
+      when:
+        - post_task['microservices'] is defined

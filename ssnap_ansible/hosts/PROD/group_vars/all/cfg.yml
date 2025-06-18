@@ -1,0 +1,832 @@
+
+---
+ 
+#--------------------------------------------------------------------
+# Each service provisioned must have an entry in the 'services'
+# dictionary.  The service name is the key under 'services'
+# and will be used to determine the name of various roles to
+# be provisioned (e.g. aggrs). The service name must be provided in every
+# request sent to Tower
+#--------------------------------------------------------------------
+ 
+serviceNow:
+  correlation_id:          ""
+  sys_id:                  ""
+  url:                     https://dbunity.service-now.com/api/global/v1/srm_task_api/task/update_actions
+  content_type:            "application/json"
+  accept:                  "application/json"
+  access_token:            ""
+  cancellation_reason:     "DBRun Failed. Please see this execution results"
+  use_proxy:               "yes"
+  https_proxy:             https://serverproxy.intranet.db.com:8080
+ 
+ 
+cyberark:
+  ontap:
+    delegate_to: 'nycinnasap1.us.db.com'
+    remote_user: 'snowop2'
+    sdklocation: '/opt/CARKaim/sdk/clipasswordsdk'
+    appid: AM_APP_133275-1-PRD_ABPN
+    username: svcnasauto
+    query:
+      safe: "AM_APP_133275-1-PRD_ABPN"
+      folder: "Root"
+      object: "dbg.ads.db.com-Application-svcnasauto"
+  sim_ad_group:
+    delegate_to: 'nycinnasap1.us.db.com'
+    remote_user: 'snowop2'
+    sdklocation: '/opt/CARKaim/sdk/clipasswordsdk'
+    appid: AM_APP_133275-1-PRD_ABPN
+    username: NASAUTO
+    query:
+      safe: "AM_APP_133275-1-PRD_ABPN"
+      folder: "Root"
+      object: "dbg.ads.db.com-Application-nasauto"
+  windows:
+    delegate_to: 'nycinnasap1.us.db.com'
+    remote_user: 'snowop2'
+    sdklocation: '/opt/CARKaim/sdk/clipasswordsdk'
+    appid: AM_APP_133275-1-PRD_ABPN
+    username: dbg\svc_nasauto
+    query:
+      safe: "AM_APP_133275-1-PRD_ABPN"
+      folder: "Root"
+      object: "svc_nasauto"
+  linux:
+    delegate_to: 'nycinnycinp5.us.db.com'
+    remote_user: '3mtt'
+  bluexp:
+    delegate_to: 'nycinnasap1.us.db.com'
+    remote_user: 'snowop2'
+   
+ 
+   
+logging:
+  logger_name: log2stdout
+  logger_details:
+    log_level: 1
+    output_file:  "/tmp/123ABC.out"
+ 
+update_system:
+  updateto: servicenow
+ 
+ 
+pre_task:
+  microservices:
+    - name: cyberark
+      args: cyberark
+      role: cyberark/cyberark_auth
+ 
+post_task:
+  microservices:
+    - name: logging
+      args: logging
+      role: log/{{logging['logger_name']}}
+    - name: update_system
+      args: "{{update_system['updateto']}}"
+      role: update_system/{{update_system['updateto']}}
+    - name: update_system
+      args: email
+      role: update_system/email
+ 
+services:
+  nas_premium_gfs:
+    create:
+      microservices:
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: ontap_export_policy_cmd/ontap_export_policy
+        - name: ontap_volume
+          args: ontap_volume
+          role: na/ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: snapvault_ontap_volume
+          args: snapvault_ontap_volume
+          role: na/snapvault_ontap_volume
+        - name: ontap_snapmirror
+          args: ontap_snapmirror
+          role: na/ontap_snapmirror
+        - name: ontap_volume_efficiency
+          args: ontap_volume_efficiency
+          role: na/ontap_volume_efficiency
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: ontap_export_policy_rule
+          args: ontap_export_policy_rule
+          role: na/ontap_export_policy_rule
+        - name: qtree_export_policy
+          args: qtree_export_policy
+          role: na/ontap_qtree
+        - name: ontap_cifs
+          args: ontap_cifs
+          role: na/ontap_cifs
+        - name: sims_ad_group
+          args: sims_ad_group
+          role: sims_ad_group/sims_ad_group
+        - name: ontap_cifs_acl
+          args: ontap_cifs_acl
+          role: na/ontap_cifs_acl
+        - name: win_acl
+          args: win_acl
+          role: windows/win_acl
+        - name: win_icacls
+          args: win_icacls
+          role: windows/win_icacls
+        - name: snapdiff_ritm
+          args: snow_ritm
+          role: update_system/snow_ritm
+ 
+    update:
+      microservices:
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+         
+    offline:
+      microservices:
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+       
+    
+    
+    delete:
+      microservices:
+        - name: ontap_cifs_share
+          args: ontap_cifs_share
+          role: na/ontap_cifs
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+         
+          
+  nas_premium_fabric:
+    create:
+      microservices:
+        - name: ontap_volume
+          args: ontap_volume
+          role: na/ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: snapvault_ontap_volume
+          args: snapvault_ontap_volume
+          role: na/snapvault_ontap_volume
+        - name: ontap_snapmirror
+          args: ontap_snapmirror
+          role: na/ontap_snapmirror
+        - name: ontap_volume_efficiency
+          args: ontap_volume_efficiency
+          role: na/ontap_volume_efficiency
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: qtree_export_policy
+          args: qtree_export_policy
+          role: na/ontap_qtree
+ 
+    update:
+      microservices:
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+         
+    offline:
+      microservices:
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+       
+    delete:
+      microservices:
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+         
+ 
+  nas_shared_fsu:
+    create:
+      microservices:
+        - name: ontap_volume
+          args: ontap_volume
+          role: na/ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: ontap_volume_efficiency
+          args: ontap_volume_efficiency
+          role: na/ontap_volume_efficiency
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: ontap_cifs
+          args: ontap_cifs
+          role: na/ontap_cifs
+        - name: sims_ad_group
+          args: sims_ad_group
+          role: sims_ad_group/sims_ad_group
+        - name: ontap_cifs_acl
+          args: ontap_cifs_acl
+          role: na/ontap_cifs_acl
+        - name: win_acl
+          args: win_acl
+          role: windows/win_acl
+        - name: win_icacls
+          args: win_icacls
+          role: windows/win_icacls
+        - name: dfs
+          args: dfs
+          role: dfs
+        - name: snapdiff_ritm
+          args: snow_ritm
+          role: update_system/snow_ritm
+ 
+    update:
+      microservices:
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+         
+    offline:
+      microservices:
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+         
+    delete:
+      microservices:
+        - name: ontap_cifs_share
+          args: ontap_cifs_share
+          role: na/ontap_cifs
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+         
+          
+  nas_shared_vfs:
+    create:
+      microservices:
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+        - name: ontap_volume
+          args: ontap_volume
+          role: na/ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: ontap_volume_efficiency
+          args: ontap_volume_efficiency
+          role: na/ontap_volume_efficiency
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: ontap_export_policy_rule
+          args: ontap_export_policy_rule
+          role: na/ontap_export_policy_rule
+        - name: qtree_export_policy
+          args: qtree_export_policy
+          role: na/ontap_qtree
+        - name: ontap_cifs
+          args: ontap_cifs
+          role: na/ontap_cifs
+        - name: sims_ad_group
+          args: sims_ad_group
+          role: sims_ad_group/sims_ad_group
+        - name: ontap_cifs_acl
+          args: ontap_cifs_acl
+          role: na/ontap_cifs_acl
+        - name: win_acl
+          args: win_acl
+          role: windows/win_acl
+        - name: win_icacls
+          args: win_icacls
+          role: windows/win_icacls
+        - name: dfs
+          args: dfs
+          role: dfs
+        - name: snapdiff_ritm
+          args: snow_ritm
+          role: update_system/snow_ritm
+ 
+    update:
+      microservices:
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+         
+    offline:
+      microservices:
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+       
+    delete:
+      microservices:
+        - name: ontap_cifs_share
+          args: ontap_cifs_share
+          role: na/ontap_cifs
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy         
+        
+        
+  nas_shared_ediscovery:
+    create:
+      microservices:
+        - name: ontap_volume
+          args: ontap_volume
+          role: na/ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: ontap_volume_efficiency
+          args: ontap_volume_efficiency
+          role: na/ontap_volume_efficiency
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: ontap_cifs
+          args: ontap_cifs
+          role: na/ontap_cifs
+        - name: sims_ad_group
+          args: sims_ad_group
+          role: sims_ad_group/sims_ad_group
+        - name: ontap_cifs_acl
+          args: ontap_cifs_acl
+          role: na/ontap_cifs_acl
+        - name: win_acl
+          args: win_acl
+          role: windows/win_acl
+        - name: win_icacls
+          args: win_icacls
+          role: windows/win_icacls
+ 
+    update:
+      microservices:
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+         
+    offline:
+      microservices:
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+         
+    delete:
+      microservices:
+        - name: ontap_cifs_share
+          args: ontap_cifs_share
+          role: na/ontap_cifs
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+ 
+  cluster_build:
+    create:
+      microservices:
+        - name: ontap_licenses
+          args: ontap_licenses
+          role: na/ontap_license
+        - name: ontap_net_port
+          args: ontap_net_port
+          role: na/ontap_net_port
+        - name: ontap_ipspace
+          args: ontap_ipspace
+          role: na/ontap_ipspace 
+        - name: ontap_broadcast_domain_ports
+          args: ontap_broadcast_domain_ports
+          role: na/ontap_broadcast_domain_ports
+        - name: ontap_net_ifgrp
+          args: ontap_net_ifgrp
+          role: na/ontap_net_ifgrp
+        - name: ontap_net_vlan
+          args: ontap_net_vlan
+          role: na/ontap_net_vlan
+        - name: ontap_broadcast_domain
+          args: ontap_broadcast_domain
+          role: na/ontap_broadcast_domain       
+        - name: ontap_net_interface
+          args: ontap_net_interface
+          role: na/ontap_interface
+        - name: ontap_net_route
+          args: ontap_net_route
+          role: na/ontap_net_route
+        - name: ontap_job_schedule
+          args: ontap_job_schedule
+          role: na/ontap_job_schedule
+        - name: ontap_snapshot_policy
+          args: ontap_snapshot_policy
+          role: na/ontap_snapshot_policy
+        - name: ontap_dns_domain
+          args: ontap_dns_domain
+          role: na/ontap_dns
+        - name: ontap_ntp
+          args: ontap_ntp
+          role: na/ontap_ntp
+        - name: ontap_autosupport
+          args: ontap_autosupport
+          role: na/ontap_autosupport
+        - name: ontap_snmp
+          args: ontap_snmp
+          role: na/ontap_snmp
+        - name: ontap_snmp_traphosts
+          args: ontap_snmp_traphosts
+          role: na/ontap_snmp_traphosts
+ 
+ 
+  svm_build:
+    create:
+      microservices:
+        - name: ontap_vserver
+          args: ontap_vserver
+          role: na/ontap_vserver     
+        - name: ontap_net_interface
+          args: ontap_net_interface
+          role: na/ontap_interface
+        - name: ontap_nfs
+          args: ontap_nfs
+          role: na/ontap_nfs
+        - name: ontap_nis_domain
+          args: ontap_nis_domain
+          role: na/ontap_nis_domain
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+        - name: ontap_export_policy_rule
+          args: ontap_export_policy_rule
+          role: na/ontap_export_policy_rule
+        - name: ontap_net_route
+          args: ontap_net_route
+          role: na/ontap_net_route
+        - name: ontap_dns_domain
+          args: ontap_dns_domain
+          role: na/ontap_dns
+        - name: ontap_cifs_server
+          args: ontap_cifs_server
+          role: na/ontap_cifs_server
+        - name: ontap_kerberos_realm
+          args: ontap_kerberos_realm
+          role: na/ontap_kerberos_realm
+        - name: ontap_kerberos_interface
+          args: ontap_kerberos_interface
+          role: na/ontap_kerberos_interface
+         
+          
+  nas_premium_secops:
+    create:
+      microservices:
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+        - name: ontap_volume
+          args: ontap_volume
+          role: na/ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: ontap_export_policy_rule
+          args: ontap_export_policy_rule
+          role: na/ontap_export_policy_rule
+        - name: qtree_export_policy
+          args: qtree_export_policy
+          role: na/ontap_qtree
+        - name: dbrun_wfa_resume
+          args: dbrun_wfa_resume
+          role: update_system/wfa-resume
+ 
+    update:
+      microservices:
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: dbrun_wfa_resume
+          args: dbrun_wfa_resume
+          role: update_system/wfa-resume
+         
+    offline:
+      microservices:
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: dbrun_wfa_resume
+          args: dbrun_wfa_resume
+          role: update_system/wfa-resume
+       
+    
+    
+    delete:
+      microservices:
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+        - name: dbrun_wfa_resume
+          args: dbrun_wfa_resume
+          role: update_system/wfa-resume
+         
+  cvo_premium:
+    create:
+      microservices:
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: ontap_export_policy_rule
+          args: ontap_export_policy_rule
+          role: na/ontap_export_policy_rule
+        - name: volume_export_policy
+          args: volume_export_policy
+          role: na/ontap_volume
+        - name: ontap_cifs
+          args: ontap_cifs
+          role: na/ontap_cifs
+        - name: sims_ad_group
+          args: sims_ad_group
+          role: sims_ad_group/sims_ad_group
+        - name: ontap_cifs_acl
+          args: ontap_cifs_acl
+          role: na/ontap_cifs_acl
+        - name: win_acl
+          args: win_acl
+          role: windows/win_acl
+        - name: win_icacls
+          args: win_icacls
+          role: windows/win_icacls
+        - name: cvo_ontap_backup
+          args: cvo_ontap_backup
+          role: na/cvo_ontap_backup
+         
+ 
+    update:
+      microservices:
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+         
+    offline:
+      microservices:
+        - name: ontap_volume
+          args: ontap_volume
+          role: na/ontap_volume
+       
+    delete:
+      microservices:
+        - name: ontap_cifs_share
+          args: ontap_cifs_share
+          role: na/ontap_cifs
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+ 
+  cvo_standard:
+    create:
+      microservices:
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: ontap_export_policy_rule
+          args: ontap_export_policy_rule
+          role: na/ontap_export_policy_rule
+        - name: volume_export_policy
+          args: volume_export_policy
+          role: na/ontap_volume
+        - name: ontap_cifs
+          args: ontap_cifs
+          role: na/ontap_cifs
+        - name: sims_ad_group
+          args: sims_ad_group
+          role: sims_ad_group/sims_ad_group
+        - name: ontap_cifs_acl
+          args: ontap_cifs_acl
+          role: na/ontap_cifs_acl
+        - name: win_acl
+          args: win_acl
+          role: windows/win_acl
+        - name: win_icacls
+          args: win_icacls
+          role: windows/win_icacls
+        - name: cvo_ontap_backup
+          args: cvo_ontap_backup
+          role: na/cvo_ontap_backup
+         
+ 
+    update:
+      microservices:
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+         
+    offline:
+      microservices:
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+       
+    delete:
+      microservices:
+        - name: ontap_cifs_share
+          args: ontap_cifs_share
+          role: na/ontap_cifs
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+ 
+  cvo_basic:
+    create:
+      microservices:
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: ontap_export_policy_rule
+          args: ontap_export_policy_rule
+          role: na/ontap_export_policy_rule
+        - name: volume_export_policy
+          args: volume_export_policy
+          role: na/ontap_volume
+        - name: ontap_cifs
+          args: ontap_cifs
+          role: na/ontap_cifs
+        - name: sims_ad_group
+          args: sims_ad_group
+          role: sims_ad_group/sims_ad_group
+        - name: ontap_cifs_acl
+          args: ontap_cifs_acl
+          role: na/ontap_cifs_acl
+        - name: win_acl
+          args: win_acl
+          role: windows/win_acl
+        - name: win_icacls
+          args: win_icacls
+          role: windows/win_icacls
+        - name: cvo_ontap_backup
+          args: cvo_ontap_backup
+          role: na/cvo_ontap_backup
+ 
+    update:
+      microservices:
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+         
+    offline:
+      microservices:
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+       
+    delete:
+      microservices:
+        - name: ontap_cifs_share
+          args: ontap_cifs_share
+          role: na/ontap_cifs
+        - name: cvo_ontap_volume
+          args: cvo_ontap_volume
+          role: na/cvo_ontap_volume
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy   
+ 
+  nas_shared_branch:
+    create:
+      microservices:
+        - name: ontap_export_policy
+          args: ontap_export_policy
+          role: na/ontap_export_policy
+        - name: ontap_volume
+          args: ontap_volume
+          role: na/ontap_volume
+        - name: ontap_volume_autosize
+          args: ontap_volume_autosize
+          role: na/ontap_volume_autosize
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: ontap_export_policy_rule
+          args: ontap_export_policy_rule
+          role: na/ontap_export_policy_rule
+        - name: qtree_export_policy
+          args: qtree_export_policy
+          role: na/ontap_qtree
+        - name: dbrun_wfa_resume
+          args: dbrun_wfa_resume
+          role: update_system/wfa-resume
+        - name: ontap_cifs
+          args: ontap_cifs
+          role: na/ontap_cifs
+        - name: sims_ad_group
+          args: sims_ad_group
+          role: sims_ad_group/sims_ad_group
+        - name: ontap_cifs_acl
+          args: ontap_cifs_acl
+          role: na/ontap_cifs_acl
+        - name: win_acl
+          args: win_acl
+          role: windows/win_acl
+        - name: win_icacls
+          args: win_icacls
+          role: windows/win_icacls
+        - name: dfs
+          args: dfs
+          role: dfs
+ 
+ 
+    update:
+      microservices:
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: dbrun_wfa_resume
+          args: dbrun_wfa_resume
+          role: update_system/wfa-resume
+         
+    offline:
+      microservices:
+        - name: ontap_qtree
+          args: ontap_qtree
+          role: na/ontap_qtree
+        - name: ontap_quota
+          args: ontap_quota
+          role: na/ontap_quotas
+        - name: dbrun_wfa_resume
+          args: dbrun_wfa_resume
+          role: update_system/wfa-resume
+         
+ 

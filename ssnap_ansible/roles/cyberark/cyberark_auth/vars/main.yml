@@ -1,0 +1,14 @@
+# vars/main.yml
+ 
+ 
+---
+# vars file for cybrark
+ 
+ontap_query: "Safe={{ cyberark['ontap']['query']['safe'] }};Folder={{cyberark['ontap']['query']['folder']}};Object={{cyberark['ontap']['query']['object']}}"
+ontap_command: "{{cyberark['ontap']['sdklocation']}} GetPassword -p AppDescs.AppID={{cyberark['ontap']['appid']}} -p Query='{{ontap_query}}' -o Password"
+ad_query: "Safe={{ cyberark['sim_ad_group']['query']['safe'] }};Folder={{cyberark['sim_ad_group']['query']['folder']}};Object={{cyberark['sim_ad_group']['query']['object']}}"
+ad_command: "{{cyberark['sim_ad_group']['sdklocation']}} GetPassword -p AppDescs.AppID={{cyberark['sim_ad_group']['appid']}} -p Query='{{ad_query}}' -o Password"
+windows_query: "Safe={{ cyberark['windows']['query']['safe'] }};Folder={{cyberark['windows']['query']['folder']}};Object={{cyberark['windows']['query']['object']}}"
+windows_command: "{{cyberark['windows']['sdklocation']}} GetPassword -p AppDescs.AppID={{cyberark['windows']['appid']}} -p Query='{{windows_query}}' -o Password"
+resources: []
+cred_temp: "{{vault['clusters']}}"

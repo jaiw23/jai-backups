@@ -1,0 +1,9 @@
+#/vars/main.yaml
+ 
+---
+# Vars file for Global_Logr
+final_status: "completed"
+global_log:  "{{ global_log_msgs }}"
+log_level: "{{logging['logger_details']['log_level']}}"
+output_file: "{{logging['logger_details']['output_file']}}"
+log_string: ""

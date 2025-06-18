@@ -1,0 +1,70 @@
+
+
+---
+raw_service_request:
+  req_details:
+    sims_ad_group:
+    - owner: bryce-a.martin@db.com
+      region: lon
+      requestId: test
+      dbagIMSAuthContact: bryce-a.martin@db.com
+      dbagIMSAuthContactDelegate: peter.kolodney@db.com
+      dbagCostcenter: 0840344718
+      dbagApplicationId: 133275-1
+      dbagInfrastructureID: 133275-1
+      dbagModifiedBy: 133275-1
+      sAMAccountName: Test-Sims
+      dbagIMSApprovers1: bryce-a.martin@db.com
+      dbagIMSApprovers2: peter.kolodney@db.com
+      dbagIMSApprovers3: jai.waghela@db.com
+    ontap_volume:
+    - hostname: loninengclsp01.uk.db.com
+      vserver: lonengmcd1svm1
+      name: lonengmcd1svm1_fabric_001_nfs
+      junction_path: "/lonengmcd1svm1_fabric_001_nfs"
+      security_style: unix
+      snapshot_policy: fab_prd_default
+      aggregate_name: aggr1_loninengclsp01n2
+    ontap_volume_autosize:
+    - hostname: loninengclsp01.uk.db.com
+      vserver: lonengmcd1svm1
+      volume: lonengmcd1svm1_fabric_001_nfs
+      maximum_size: 4096g
+    ontap_qtree:
+    - hostname: loninengclsp01.uk.db.com
+      vserver: lonengmcd1svm1
+      flexvol_name: lonengmcd1svm1_fabric_001_nfs
+      name: fab_prd_00001
+    ontap_quota:
+    - hostname: loninengclsp01.uk.db.com
+      vserver: lonengmcd1svm1
+      volume: lonengmcd1svm1_fabric_001_nfs
+      quota_target: "/vol/lonengmcd1svm1_fabric_001_nfs/fab_prd_00001"
+      disk_limit: 50g
+    qtree_export_policy:
+    - hostname: loninengclsp01.uk.db.com
+      vserver: lonengmcd1svm1
+      flexvol_name: lonengmcd1svm1_fabric_001_nfs
+      name: fab_prd_00001
+      export_policy: ose_platform_prd
+    servicenow:
+    - work_notes: 'BACKUP REQUIRED: Please Create a backup for Following Storage -
+        volume: lonengmcd1svm1_fabric_001_nfs and vserver: lonengmcd1svm1'
+      correlation_id: TASK0007271460
+      action: comment
+      sys_id: 808f822d1b4bec90092d319b9b4bcb43
+      access_token: Bearer VxhdvCPOuc8J4NoyaAZqSuFZQd1A5cjovfWeq58bTNAh_gFecwbpRTeXiZTkjoQ8mXRLVx8Kmi8iu4SB9tWlNA
+    - comment: Your Fabric has been allocated. Your mount details are - lonengmcd1svm1:/lonengmcd1svm1_fabric_001_nfs/fab_prd_00001
+        - lonengmcd1svm1:/lonengmcd1svm1_fabric_001_nfs/fab_prd_00001
+      correlation_id: TASK0007271460
+      action: completed
+      sys_id: 808f822d1b4bec90092d319b9b4bcb43
+      access_token: Bearer VxhdvCPOuc8J4NoyaAZqSuFZQd1A5cjovfWeq58bTNAh_gFecwbpRTeXiZTkjoQ8mXRLVx8Kmi8iu4SB9tWlNA
+    - correlation_id: TASK0007271460
+      action: logging
+      sys_id: 808f822d1b4bec90092d319b9b4bcb43
+      access_token: Bearer VxhdvCPOuc8J4NoyaAZqSuFZQd1A5cjovfWeq58bTNAh_gFecwbpRTeXiZTkjoQ8mXRLVx8Kmi8iu4SB9tWlNA
+  std_name: nas_premium
+  service: nas_premium_fabric
+  operation: create
+

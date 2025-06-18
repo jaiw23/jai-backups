@@ -1,0 +1,7 @@
+vault:
+  clusters: {}
+  active_directory: {}
+  delegate_to:
+    windows:
+      username: svc_nasauto@DBG.ADS.DB.COM
+      password: "rXEQHZrN9"

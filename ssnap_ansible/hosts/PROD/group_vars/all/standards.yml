@@ -1,0 +1,158 @@
+
+
+---
+ 
+#-------------------------------------------------------------------------------
+# This yaml file defines the environmental standards for any requested provision.
+# It is grouped by service definition. Each service definition has defined its own
+# microservice and contained within is the operation with standard keys and values.
+# Template:
+# standards:   <-- name of standard dictionary
+#   service_standard:
+#     microservice:
+#       CRUD_value:
+#         Key:  "value"
+#-------------------------------------------------------------------------------
+ 
+standards:
+  nas_shared:
+    ontap_volume:
+      create:
+        size_unit:            'gb'
+        size:                  1000
+        #qos_adaptive_policy_group: 'performance'
+      read:
+      update:
+      delete:
+    ontap_cifs:
+      create:
+        use_rest:             'Auto'
+      read:
+      update:
+      delete:
+    ontap_cifs_acl:
+      create:
+        use_rest:             'Auto'
+      read:
+      update:
+      delete:
+    ontap_qtree:
+      create:
+        use_rest:             'Auto'
+      read:
+      delete:
+        state:                'absent'
+    ontap_vserver:
+      create:
+       root_volume_security_style:           'mixed'
+      read:
+      delete:
+    ontap_interface:
+      create:
+        state:      'present'
+      read:
+      delete:
+    ontap_export_policy:
+      create:
+        state:      'present'
+      read:
+      offline:
+      delete:
+        state:      'absent'
+    ontap_cifs_share:
+      create:
+        state:      'present'
+      read:
+      offline:
+      delete:
+        state:      'absent'
+ 
+  nas_premium:
+    ontap_volume:
+      create:
+        size_unit:            'gb'
+        size:                  1000
+        #qos_adaptive_policy_group: 'performance'
+      read:
+      update:
+      delete:
+    ontap_cifs:
+      create:
+        use_rest:             'Auto'
+      read:
+      update:
+      delete:
+    ontap_cifs_acl:
+      create:
+        use_rest:             'Auto'
+      read:
+      update:
+      delete:
+    ontap_qtree:
+      create:
+        use_rest:             'Auto'
+      read:
+      delete:
+        state:                'absent'
+    ontap_vserver:
+      create:
+       root_volume_security_style:           'mixed'
+      read:
+      delete:
+    ontap_interface:
+      create:
+        state:      'present'
+      read:
+      delete:
+    ontap_export_policy:
+      create:
+        state:      'present'
+      read:
+      offline:
+      delete:
+        state:      'absent'
+    ontap_cifs_share:
+      create:
+        state:      'present'
+      read:
+      offline:
+      delete:
+        state:      'absent'
+ 
+  cvo:
+    cvo_ontap_volume:
+      create:
+        size_unit:            'gb'
+        #size:                  1000
+        #qos_adaptive_policy_group: 'performance'
+      read:
+      update:
+      delete:
+        state:                'absent'
+    ontap_cifs:
+      create:
+        use_rest:             'Auto'
+      read:
+      update:
+      delete:
+    ontap_cifs_acl:
+      create:
+        use_rest:             'Auto'
+      read:
+      update:
+      delete:
+    ontap_export_policy:
+      create:
+        state:      'present'
+      read:
+      offline:
+      delete:
+        state:      'absent'
+    ontap_cifs_share:
+      create:
+        state:      'present'
+      read:
+      offline:
+      delete:
+        state:      'absent'
+ 
