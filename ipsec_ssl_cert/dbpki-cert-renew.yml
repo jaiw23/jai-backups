@@ -1,0 +1,281 @@
+
+
+---
+- name: Generate CSR, request certificate, and install it on NetApp ONTAP
+  hosts: localhost
+  gather_facts: no
+ 
+  vars:
+    svm: "{{ common_name.split('.')[0] }}"
+    task_status: []
+ 
+  tasks:
+    - name: Set Time Stamp
+      set_fact:
+        time_string: "{{ lookup('pipe', 'date +%Y-%m-%d-%H-%M-%S') }}"
+      register: result_set_time_stamp
+      notify: Log task status
+ 
+    - name: Set client_ref
+      set_fact:
+        client_ref: "jai-dbrun-test-{{ time_string }}"
+      register: result_set_client_ref
+      notify: Log task status
+ 
+    - block:
+        - name: Fetch credentials from CyberArk - Ontap
+          shell: "{{ dbpki_cyberark['ontap'].ontap_command }}"
+          delegate_to: "{{ dbpki_cyberark['ontap'].delegate_to }}"
+          remote_user: "{{ dbpki_cyberark['ontap'].remote_user }}"
+          register: ontap_cred
+          no_log: True
+          notify: Log task status
+ 
+        - name: Fetch credentials from CyberArk - AIQ
+          shell: "{{ dbpki_cyberark['aiq'].aiq_command }}"
+          delegate_to: "{{ dbpki_cyberark['ontap'].delegate_to }}"
+          remote_user: "{{ dbpki_cyberark['ontap'].remote_user }}"
+          register: aiq_cred
+          no_log: True
+          notify: Log task status
+ 
+        - name: Fetch SVM details from AIQUM
+          uri:
+            url: https://{{ dbpki_cyberark['aiq'].delegate_to }}/api/datacenter/svm/svms?name={{svm}}
+            method: GET
+            use_proxy: "{{ dbpki_cyberark['aiq'].use_proxy }}"
+            user: "{{ dbpki_cyberark['aiq'].remote_user }}"
+            password: "{{ aiq_cred.stdout }}"
+            force_basic_auth: yes
+            validate_certs: no
+          environment:
+            https_proxy: "{{ dbpki_cyberark['aiq'].https_proxy }}"
+          register: svm_details
+          notify: Log task status
+ 
+        - name: Find cluster details for the given SVM name
+          uri:
+            url: https://{{ dbpki_cyberark['aiq'].delegate_to }}/api/datacenter/cluster/clusters?name={{svm_details.json.records[0].cluster.name}}
+            method: GET
+            use_proxy: "{{ dbpki_cyberark['aiq'].use_proxy }}"
+            user: "{{ dbpki_cyberark['aiq'].remote_user }}"
+            password: "{{ aiq_cred.stdout }}"
+            force_basic_auth: yes
+            validate_certs: no
+          environment:
+            https_proxy: "{{ dbpki_cyberark['aiq'].https_proxy }}"
+          register: cluster_details
+          notify: Log task status
+ 
+        - name: Set cluster mgmt ip
+          set_fact:
+            cluster_management_ip: "{{ cluster_details.json.records[0].management_ip }}"
+          register: result_set_cluster_mgmt_ip
+          notify: Log task status
+ 
+        - name: Generate CSR on NetApp ONTAP
+          uri:
+            url: https://{{ cluster_management_ip }}/api/security/certificate-signing-request?return_records=false
+            method: POST
+            use_proxy: "{{ dbpki_cyberark['aiq'].use_proxy }}"
+            force_basic_auth: yes
+            user: "{{ dbpki_cyberark['ontap'].remote_user }}"
+            password: "{{ ontap_cred.stdout }}"
+            validate_certs: no
+            body_format: json
+            body:
+              subject_name: "C={{ common_name.split('.')[1] }},O=DB,CN={{ common_name }}"
+              subject_alternatives:
+                dns:
+                  - "{{ common_name }}"
+          environment:
+            https_proxy: "{{ dbpki_cyberark['aiq'].https_proxy }}"
+          register: csr_result
+          notify: Log task status
+ 
+        - name: Save CSR to file
+          copy:
+            content: "{{ csr_result.json.csr }}"
+            dest: "/tmp/{{ svm }}_csr.pem"
+          register: result_save_csr
+          notify: Log task status
+ 
+        - name: Save private key to file
+          copy:
+            content: "{{ csr_result.json.generated_private_key }}"
+            dest: "/tmp/{{ svm }}_private_key.pem"
+            mode: '0600'
+          register: result_save_private_key
+          notify: Log task status
+ 
+        - name: Request access token
+          uri:
+            url: https://eidp-uat.de.db.com/auth/realms/glue/protocol/openid-connect/token
+            method: POST
+            headers:
+              Authorization: "Basic SVBTRUNfMTMzMjc1LTJfRVVBVF9QUk9EVUNUSU9OOmE0MzUzNGNlLWM4MDktNDNlYS05NDMzLWM0ODFjN2NhYmYzOQ=="
+              Content-Type: "application/x-www-form-urlencoded"
+            use_proxy: "{{ dbpki_cyberark['aiq'].use_proxy }}"
+            body:
+              grant_type: client_credentials
+            body_format: form-urlencoded
+            return_content: yes
+            validate_certs: no
+          environment:
+            https_proxy: "{{ dbpki_cyberark['aiq'].https_proxy }}"
+          register: token_response
+          notify: Log task status
+ 
+        - name: Set access token fact
+          set_fact:
+            access_token: "{{ token_response.json.access_token }}"
+          register: result_set_access_token
+          notify: Log task status
+ 
+        - name: Request certificate from CertHub
+          uri:
+            url: https://glue-euat-gw.de.db.com:8243/certhub/v1/certhub/api/request/certsign
+            method: POST
+            headers:
+              Content-Type: "application/json"
+              Accept: "application/json"
+              Authorization: "Bearer {{ access_token }}"
+            body_format: json
+            use_proxy: "{{ dbpki_cyberark['aiq'].use_proxy }}"
+            body:
+              clientRef: "{{ client_ref }}"
+              metaData:
+                narId: "133275-2"
+              certType: "digital-signature"
+              csrData: "{{ csr_result.json.csr }}"
+              certFormat: "PEM"
+            validate_certs: no
+          environment:
+            https_proxy: "{{ dbpki_cyberark['aiq'].https_proxy }}"
+          register: ca_response
+          notify: Log task status
+ 
+        - name: Check certificate request status
+          uri:
+            url: https://glue-euat-gw.de.db.com:8243/certhub/v1/certhub/task/resultByClientRef/{{ client_ref }}
+            method: GET
+            headers:
+              Content-Type: "application/json"
+              Accept: "application/json"
+              Authorization: "Bearer {{ access_token }}"
+            validate_certs: no
+          register: cert_status_response
+          until: cert_status_response.json.cmsTasks is defined and cert_status_response.json.cmsTasks | length > 0 and cert_status_response.json.cmsTasks[0].state == "done"
+          retries: 10
+          delay: 10
+          notify: Log task status
+ 
+        - name: Extract certificate from response
+          set_fact:
+            certificate: "{{ cert_status_response.json.cmsTasks[0].cmsActions[3].result | from_json }}"
+          register: result_extract_certificate
+          notify: Log task status
+ 
+        - name: Install certificate on NetApp ONTAP
+          netapp.ontap.na_ontap_security_certificates:
+            state: present
+            name: "{{ svm }}_cert_{{ time_string }}"
+            public_certificate: "{{ certificate.cert }}"
+            private_key: "{{ lookup('file', '/tmp/{{ svm }}_private_key.pem') }}"
+            username: "{{ dbpki_cyberark['ontap'].remote_user }}"
+            password: "{{ ontap_cred.stdout }}"
+            hostname: "{{ cluster_management_ip }}"
+            common_name: "{{ common_name }}"
+            svm: "{{ svm }}"
+            type: "server"
+            validate_certs: no
+          register: result_install_certificate
+          notify: Log task status
+ 
+      rescue:
+        - name: Log failure
+          set_fact:
+            task_status: "{{ task_status + [{'task': 'failed', 'status': 'FAILED', 'result': ansible_failed_result} | default({})] }}"
+ 
+        - name: Send failure email
+          mail:
+            host: "{{ smtp_server }}"
+            to: "{{ to_email }}"
+            from: "{{ from_email }}"
+            subject: "Certificate Workflow Failed"
+            body: |
+              An error occurred during the certificate workflow.
+ 
+              Task Status:
+              {% for task in task_status %}
+              - Task: {{ task.task }}
+                Status: {{ task.status }}
+                {% if task.status == 'FAILED' %}
+                Error: {{ task.result.msg }}
+                {% endif %}
+              {% endfor %}
+          when: task_status | selectattr('status', 'equalto', 'FAILED') | list | length > 0
+ 
+      always:
+        - name: Log task status
+          set_fact:
+            task_status: "{{ task_status + [{'task': item.task, 'status': 'OK' if not item.failed else 'FAILED', 'result': item} | default({})] }}"
+          with_items:
+            - result_set_time_stamp
+            - result_set_client_ref
+            - ontap_cred
+            - aiq_cred
+            - svm_details
+            - cluster_details
+            - result_set_cluster_mgmt_ip
+            - csr_result
+            - result_save_csr
+            - result_save_private_key
+            - token_response
+            - result_set_access_token
+            - ca_response
+            - cert_status_response
+            - result_extract_certificate
+            - result_install_certificate
+ 
+        - name: Send final status email
+          mail:
+            host: "{{ smtp_server }}"
+            to: "{{ to_email }}"
+            from: "{{ from_email }}"
+            subject: "Certificate Workflow Status"
+            body: |
+              Certificate workflow completed.
+ 
+              Task Status:
+              {% for task in task_status %}
+              - Task: {{ task.task }}
+                Status: {{ task.status }}
+                {% if task.status == 'FAILED' %}
+                Error: {{ task.result.msg }}
+                {% endif %}
+              {% endfor %}
+          when: task_status | selectattr('status', 'equalto', 'FAILED') | list | length == 0
+ 
+  handlers:
+    - name: Log task status
+      set_fact:
+        task_status: "{{ task_status + [{'task': item.task, 'status': 'OK' if 'failed' not in item or not item.failed else 'FAILED', 'result': item} | default({})] }}"
+      with_items:
+        - result_set_time_stamp
+        - result_set_client_ref
+        - ontap_cred
+        - aiq_cred
+        - svm_details
+        - cluster_details
+        - result_set_cluster_mgmt_ip
+        - csr_result
+        - result_save_csr
+        - result_save_private_key
+        - token_response
+        - result_set_access_token
+        - ca_response
+        - cert_status_response
+        - result_extract_certificate
+        - result_install_certificate
+

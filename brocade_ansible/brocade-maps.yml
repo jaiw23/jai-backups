@@ -1,0 +1,405 @@
+
+---
+ 
+#Run below tasks to configure MAPS:
+ 
+ 
+  - name: configure MAPS
+    block:
+       - name: Check for MAPS settings
+         raw: fosexec --fid {{FID_item}} -cmd "mapspolicy --show -summary" #| grep -i "DB_conservative_policy"
+         register: showMaps
+        
+       - set_fact:
+           check_DBpolicy: "{{showMaps.stdout_lines | regex_search('DB_conservative_policy')}}"
+ 
+       - debug:
+           msg: "{{showMaps.stdout_lines}}"     
+           
+      #----------------------------------------------------------------------------------------------------------------------------------         
+       - name: Delete existing MAPS policy and rules
+         #raw: fosexec --fid {{FID_item}} -cmd "mapsConfig --purge<<_a\ny\n_a\n"
+         raw: printf "y"\n | fosexec --fid {{FID_item}} -cmd "mapsConfig --purge"
+         register: deleteMaps
+         when: check_DBpolicy != ""
+        
+       - debug:
+           msg: "{{ deleteMaps }}"
+        
+       - debug:
+           msg:
+              - "{{deleteMaps.stdout_lines}}"
+              - "Removed DB_Conservative policy (user defined policy and rules) successfully on FID {{FID_item}}"
+         when: check_DBpolicy != "" and deleteMaps is success        
+           
+     
+      #----------------------------------------------------------------------------------------------------------------------------------         
+       - name: config MAPS for Director class switches
+         raw: fosexec --fid {{FID_item}} -cmd "{{item}}"
+         with_items:
+           - mapspolicy --create DB_conservative_policy
+           - mapsrule --create DB_defAll_F_PORTSDEV_NPIV_LOGINS_PER_90 -group ALL_F_PORTS -monitor DEV_NPIV_LOGINS -timebase None -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_CHASSISCPU_80 -group CHASSIS -monitor CPU -timebase None -op ge -value 80 -qt 3600 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUIT_F_QOS_PKTLOSS_PER_5 -group ALL_CIRCUIT_F_QOS -monitor PKTLOSS -timebase Min -op g -value 0.5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHL2_DEVCNT_PER_90 -group SWITCH -monitor L2_DEVCNT_PER -timebase None -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_100M_16GSWL_QSFPCURRENT_10 -group ALL_100M_16GSWL_QSFP -monitor CURRENT -timebase None -op ge -value 10 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_OTHER_SFPVOLTAGE_3630 -group ALL_OTHER_SFP -monitor VOLTAGE -timebase None -op ge -value 3630 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUIT_LOW_QOS_UTIL_PER_90 -group ALL_CIRCUIT_LOW_QOS -monitor UTIL -timebase Hour -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_OTHER_SFPCURRENT_50 -group ALL_OTHER_SFP -monitor CURRENT -timebase None -op ge -value 50 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_FANFAN_STATE_FAULTY -group ALL_FAN -monitor FAN_STATE -timebase None -op eq -value FAULTY -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHZONE_CFGSZ_PER_90 -group SWITCH -monitor ZONE_CFGSZ_PER -timebase None -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GSWL_SFPSFP_TEMP_90 -group ALL_10GSWL_SFP -monitor SFP_TEMP -timebase None -op ge -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_100M_16GSWL_QSFPVOLTAGE_3630 -group ALL_100M_16GSWL_QSFP -monitor VOLTAGE -timebase None -op ge -value 3630 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GSWL_SFPSFP_TEMP_n5 -group ALL_16GSWL_SFP -monitor SFP_TEMP -timebase None -op le -value -5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISETH_MGMT_PORT_STATE_UP -group CHASSIS -monitor ETH_MGMT_PORT_STATE -timebase None -op eq -value UP -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHFAULTY_PORTS_25 -group SWITCH -monitor FAULTY_PORTS -timebase None -op ge -value 25 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_SWITC_TSG100_D_RxxTExxxxxx -group SWITCH -monitor SEC_TS -timebase Day -op g -value 100 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHFAB_SEG_4 -group SWITCH -monitor FAB_SEG -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_STATE_CHG_11 -group ALL_E_PORTS -monitor STATE_CHG -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_D_PORTSLOSS_SYNC_3 -group ALL_D_PORTS -monitor LOSS_SYNC -timebase Min -op g -value 3 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_LR_2 -group ALL_E_PORTS -monitor LR -timebase Min -op ge -value 2 -qt 7200 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_LR_20 -group ALL_E_PORTS -monitor LR -timebase Hour -op ge -value 20 -qt 7200 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHEPORT_DOWN_4 -group SWITCH -monitor EPORT_DOWN -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_STATE_CHG_11 -group ALL_HOST_PORTS -monitor STATE_CHG -timebase Min -op g -value 11 -qt 259200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GLWL_SFPSFP_TEMP_n5 -group ALL_16GLWL_SFP -monitor SFP_TEMP -timebase None -op le -value -5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_D_PORTSCRC_3 -group ALL_D_PORTS -monitor CRC -timebase Min -op g -value 3 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISWWN_DOWN_1 -group CHASSIS -monitor WWN_DOWN -timebase None -op ge -value 1 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GLWL_SFPVOLTAGE_2970 -group ALL_10GLWL_SFP -monitor VOLTAGE -timebase None -op le -value 2970 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_CRC_11 -group ALL_HOST_PORTS -monitor CRC -timebase Min -op g -value 11 -qt 259200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_CRC_50 -group ALL_HOST_PORTS -monitor CRC -timebase Hour -op g -value 50 -qt 259200 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_EXT_GE_PORTS_CRC_11 -group ALL_EXT_GE_PORTS -monitor GE_CRC -timebase Min -op g -value 11 -qt 259200 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_EXT_GE_PORTS_CRC_50 -group ALL_EXT_GE_PORTS -monitor GE_CRC -timebase Hour -op g -value 50 -qt 259200 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_CRC_11 -group ALL_TARGET_PORTS -monitor CRC -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_CRC_50 -group ALL_TARGET_PORTS -monitor CRC -timebase Hour -op g -value 50 -qt 86400 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHMARG_PORTS_25 -group SWITCH -monitor MARG_PORTS -timebase None -op ge -value 25 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GLWL_SFPVOLTAGE_3600 -group ALL_16GLWL_SFP -monitor VOLTAGE -timebase None -op ge -value 3600 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_ITW_250 -group ALL_E_PORTS -monitor ITW -timebase Min -op g -value 250 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_ITW_3000 -group ALL_E_PORTS -monitor ITW -timebase Hour -op g -value 3000 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_C3TXTO_11 -group ALL_TARGET_PORTS -monitor C3TXTO -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_C3TXTO_50 -group ALL_TARGET_PORTS -monitor C3TXTO -timebase Hour -op g -value 50 -qt 86400 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_OTHER_SFPSFP_TEMP_n13 -group ALL_OTHER_SFP -monitor SFP_TEMP -timebase None -op le -value -13 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHSEC_LV_4 -group SWITCH -monitor SEC_LV -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_PE_10 -group ALL_HOST_PORTS -monitor PE -timebase Min -op g -value 10 -qt 259200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHFAULTY_PORTS_11 -group SWITCH -monitor FAULTY_PORTS -timebase None -op ge -value 11 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISETH_MGMT_PORT_STATE_DOWN -group CHASSIS -monitor ETH_MGMT_PORT_STATE -timebase None -op eq -value DOWN -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_OTHER_SFPSFP_TEMP_85 -group ALL_OTHER_SFP -monitor SFP_TEMP -timebase None -op ge -value 85 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHDID_CHG_1 -group SWITCH -monitor DID_CHG -timebase Min -op g -value 1 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_LF_15 -group ALL_TARGET_PORTS -monitor LF -timebase Min -op g -value 15 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_C3TXTO_11 -group ALL_E_PORTS -monitor C3TXTO -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_C3TXTO_50 -group ALL_E_PORTS -monitor C3TXTO -timebase Hour -op g -value 50 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_PSPS_STATE_ON -group ALL_PS -monitor PS_STATE -timebase None -op eq -value ON -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GLWL_SFPTXP_2230 -group ALL_10GLWL_SFP -monitor TXP -timebase None -op ge -value 2230 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_D_PORTSCRC_D1500 -group ALL_D_PORTS -monitor CRC -timebase Day -op g -value 1500 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_OTHER_SFPVOLTAGE_2960 -group ALL_OTHER_SFP -monitor VOLTAGE -timebase None -op le -value 2960 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_100M_16GSWL_QSFPRXP_2187 -group ALL_100M_16GSWL_QSFP -monitor RXP -timebase None -op ge -value 2187 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GLWL_SFPSFP_TEMP_90 -group ALL_10GLWL_SFP -monitor SFP_TEMP -timebase None -op ge -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_2K_QSFPSFP_TEMP_n15 -group ALL_2K_QSFP -monitor SFP_TEMP -timebase None -op le -value -15 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_WWN_OUT -group ALL_WWN -monitor WWN -timebase None -op eq -value OUT -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_C3TXTO_11 -group ALL_HOST_PORTS -monitor C3TXTO -timebase Min -op g -value 11 -qt 259200 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_C3TXTO_50 -group ALL_HOST_PORTS -monitor C3TXTO -timebase Hour -op g -value 50 -qt 259200 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_ITW_250 -group ALL_HOST_PORTS -monitor ITW -timebase Min -op g -value 250 -qt 259200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_ITW_3000 -group ALL_HOST_PORTS -monitor ITW -timebase Hour -op g -value 3000 -qt 259200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISFLASH_USAGE_90 -group CHASSIS -monitor FLASH_USAGE -timebase None -op ge -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GLWL_SFPSFP_TEMP_90 -group ALL_16GLWL_SFP -monitor SFP_TEMP -timebase None -op ge -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_2K_QSFPRXP_2000 -group ALL_2K_QSFP -monitor RXP -timebase None -op ge -value 2000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GLWL_SFPVOLTAGE_3000 -group ALL_16GLWL_SFP -monitor VOLTAGE -timebase None -op le -value 3000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_LOSS_SIGNAL_50 -group ALL_E_PORTS -monitor LOSS_SIGNAL -timebase Min -op g -value 50 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUITS_JITTER_PER_20 -group ALL_CIRCUITS -monitor JITTER -timebase None -op g -value 20 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_100M_16GSWL_QSFPSFP_TEMP_85 -group ALL_100M_16GSWL_QSFP -monitor SFP_TEMP -timebase None -op ge -value 85 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_SLOTSBLADE_STATE_ON -group ALL_SLOTS -monitor BLADE_STATE -timebase None -op eq -value ON -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_D_PORTSITW_3 -group ALL_D_PORTS -monitor ITW -timebase Min -op g -value 3 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_D_PORTSITW_H90 -group ALL_D_PORTS -monitor ITW -timebase Hour -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUIT_HIGH_QOS_PKTLOSS_PER_5 -group ALL_CIRCUIT_HIGH_QOS -monitor PKTLOSS -timebase Min -op g -value 0.5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_OTHER_SFPTXP_5000 -group ALL_OTHER_SFP -monitor TXP -timebase None -op ge -value 5000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GLWL_SFPVOLTAGE_3600 -group ALL_10GLWL_SFP -monitor VOLTAGE -timebase None -op ge -value 3600 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_LR_2 -group ALL_OTHER_F_PORTS -monitor LR -timebase Min -op ge -value 2 -qt 7200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_LR_20 -group ALL_OTHER_F_PORTS -monitor LR -timebase Hour -op ge -value 20 -qt 7200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GSWL_SFPVOLTAGE_3600 -group ALL_16GSWL_SFP -monitor VOLTAGE -timebase None -op ge -value 3600 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUIT_MED_QOS_UTIL_PER_90 -group ALL_CIRCUIT_MED_QOS -monitor UTIL -timebase Hour -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GSWL_SFPRXP_1999 -group ALL_10GSWL_SFP -monitor RXP -timebase None -op ge -value 1999 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUITSCIR_PKTLOSS_PER_5 -group ALL_CIRCUITS -monitor CIR_PKTLOSS -timebase Min -op g -value 0.5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GSWL_SFPVOLTAGE_3600 -group ALL_10GSWL_SFP -monitor VOLTAGE -timebase None -op ge -value 3600 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_D_PORTSITW_D1500 -group ALL_D_PORTS -monitor ITW -timebase Day -op g -value 1500 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHSEC_CERT_4 -group SWITCH -monitor SEC_CERT -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GSWL_SFPCURRENT_10 -group ALL_10GSWL_SFP -monitor CURRENT -timebase None -op ge -value 10 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_FANFAN_STATE_OUT -group ALL_FAN -monitor FAN_STATE -timebase None -op eq -value OUT -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_WWN_ON -group ALL_WWN -monitor WWN -timebase None -op eq -value ON -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHSEC_FCS_4 -group SWITCH -monitor SEC_FCS -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_PORTS_RX_90 -group ALL_PORTS -monitor RX -timebase Hour -op g -value 90 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GSWL_SFPVOLTAGE_3000 -group ALL_10GSWL_SFP -monitor VOLTAGE -timebase None -op le -value 3000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GSWL_SFPRXP_1259 -group ALL_16GSWL_SFP -monitor RXP -timebase None -op ge -value 1259 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GSWL_SFPSFP_TEMP_n5 -group ALL_10GSWL_SFP -monitor SFP_TEMP -timebase None -op le -value -5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHBB_FCR_CNT_MAX -group SWITCH -monitor BB_FCR_CNT -timebase None -op g -value 16 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_LF_15 -group ALL_HOST_PORTS -monitor LF -timebase Min -op g -value 15 -qt 259200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_SLOTSBLADE_STATE_FAULTY -group ALL_SLOTS -monitor BLADE_STATE -timebase None -op eq -value FAULTY -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUITSCIR_UTIL_90 -group ALL_CIRCUITS -monitor CIR_UTIL -timebase Min -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUIT_LOW_QOS_PKTLOSS_PER_5 -group ALL_CIRCUIT_LOW_QOS -monitor PKTLOSS -timebase Min -op g -value 0.5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHSEC_DCC_4 -group SWITCH -monitor SEC_DCC -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISBAD_FAN_CRIT -group CHASSIS -monitor BAD_FAN -timebase None -op ge -value 2 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_2K_QSFPSFP_TEMP_85 -group ALL_2K_QSFP -monitor SFP_TEMP -timebase None -op ge -value 85 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUIT_HIGH_QOS_UTIL_PER_90 -group ALL_CIRCUIT_HIGH_QOS -monitor UTIL -timebase Hour -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_STATE_CHG_11 -group ALL_OTHER_F_PORTS -monitor STATE_CHG -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_C3TXTO_11 -group ALL_OTHER_F_PORTS -monitor C3TXTO -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_C3TXTO_50 -group ALL_OTHER_F_PORTS -monitor C3TXTO -timebase Hour -op g -value 50 -qt 86400 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_LOSS_SIGNAL_50 -group ALL_OTHER_F_PORTS -monitor LOSS_SIGNAL -timebase Min -op g -value 50 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GLWL_SFPCURRENT_95 -group ALL_10GLWL_SFP -monitor CURRENT -timebase None -op ge -value 95 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_WWN_FAULTY -group ALL_WWN -monitor WWN -timebase None -op eq -value FAULTY -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_STATE_CHG_11 -group ALL_TARGET_PORTS -monitor STATE_CHG -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_LF_15 -group ALL_OTHER_F_PORTS -monitor LF -timebase Min -op g -value 15 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_D_PORTSLOSS_SYNC_H90 -group ALL_D_PORTS -monitor LOSS_SYNC -timebase Hour -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISBAD_TEMP_CRIT -group CHASSIS -monitor BAD_TEMP -timebase None -op ge -value 2 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_LOSS_SIGNAL_50 -group ALL_TARGET_PORTS -monitor LOSS_SIGNAL -timebase Min -op g -value 50 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_PORTS_TX_90 -group ALL_PORTS -monitor TX -timebase Hour -op g -value 90 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISBAD_FAN_MARG -group CHASSIS -monitor BAD_FAN -timebase None -op ge -value 1 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_LF_15 -group ALL_E_PORTS -monitor LF -timebase Min -op g -value 15 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GLWL_SFPTXP_1995 -group ALL_16GLWL_SFP -monitor TXP -timebase None -op ge -value 1995 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_LR_2 -group ALL_TARGET_PORTS -monitor LR -timebase Min -op ge -value 2 -qt 7200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_LR_20 -group ALL_TARGET_PORTS -monitor LR -timebase Hour -op ge -value 20 -qt 7200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_CHASSISMEMORY_USAGE_75 -group CHASSIS -monitor MEMORY_USAGE -timebase None -op ge -value 75 -qt 172800 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_ITW_250 -group ALL_OTHER_F_PORTS -monitor ITW -timebase Min -op g -value 250 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_ITW_3000 -group ALL_OTHER_F_PORTS -monitor ITW -timebase Hour -op g -value 3000 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHSEC_CMD_4 -group SWITCH -monitor SEC_CMD -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_PE_10 -group ALL_TARGET_PORTS -monitor PE -timebase Min -op g -value 10 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_SLOTSBLADE_STATE_OFF -group ALL_SLOTS -monitor BLADE_STATE -timebase None -op eq -value OFF -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUIT_F_QOS_UTIL_PER_90 -group ALL_CIRCUIT_F_QOS -monitor UTIL -timebase Hour -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GSWL_SFPTXP_1259 -group ALL_16GSWL_SFP -monitor TXP -timebase None -op ge -value 1259 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHSEC_IDB_4 -group SWITCH -monitor SEC_IDB -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_def_SWITCHSEC_TELNET_4 -group SWITCH -monitor SEC_TELNET -timebase Min -op g -value 4 -action raslog,SNMP -severity INFO -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_PORTSSFP_STATE_IN -group ALL_PORTS -monitor SFP_STATE -timebase None -op eq -value IN -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_ITW_250 -group ALL_TARGET_PORTS -monitor ITW -timebase Min -op g -value 250 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_TARGET_PORTS_ITW_3000 -group ALL_TARGET_PORTS -monitor ITW -timebase Hour -op g -value 3000 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GLWL_SFPRXP_1995 -group ALL_16GLWL_SFP -monitor RXP -timebase None -op ge -value 1995 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHLSAN_DEVCNT_PER_90 -group SWITCH -monitor LSAN_DEVCNT_PER -timebase None -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_SFP_SFPRXP_220 -group ALL_SFP -monitor RXP -timebase None -op l -value 220 -qt 2592000 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_LOSS_SIGNAL_50 -group ALL_HOST_PORTS -monitor LOSS_SIGNAL -timebase Min -op g -value 50 -qt 259200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GLWL_SFPSFP_TEMP_n5 -group ALL_10GLWL_SFP -monitor SFP_TEMP -timebase None -op le -value -5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHSEC_SCC_4 -group SWITCH -monitor SEC_SCC -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHFAB_CFG_4 -group SWITCH -monitor FAB_CFG -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_PE_10 -group ALL_OTHER_F_PORTS -monitor PE -timebase Min -op g -value 10 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_SFP_SFPTXP_220 -group ALL_SFP -monitor TXP -timebase None -op l -value 220 -qt 2592000 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_PORTSSFP_STATE_FAULTY -group ALL_PORTS -monitor SFP_STATE -timebase None -op eq -value FAULTY -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GLWL_SFPRXP_2230 -group ALL_10GLWL_SFP -monitor RXP -timebase None -op ge -value 2230 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUIT_MED_QOS_PKTLOSS_PER_5 -group ALL_CIRCUIT_MED_QOS -monitor PKTLOSS -timebase Min -op g -value 0.5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISDOWN_CORE_2 -group CHASSIS -monitor DOWN_CORE -timebase None -op ge -value 2 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_2K_QSFPVOLTAGE_2900 -group ALL_2K_QSFP -monitor VOLTAGE -timebase None -op le -value 2900 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GSWL_SFPVOLTAGE_3000 -group ALL_16GSWL_SFP -monitor VOLTAGE -timebase None -op le -value 3000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISBAD_PWR_CRIT -group CHASSIS -monitor BAD_PWR -timebase None -op ge -value 3 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISDOWN_CORE_1 -group CHASSIS -monitor DOWN_CORE -timebase None -op ge -value 1 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUITSCIR_STATE_5 -group ALL_CIRCUITS -monitor CIR_STATE -timebase Min -op g -value 5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_PSPS_STATE_FAULTY -group ALL_PS -monitor PS_STATE -timebase None -op eq -value FAULTY -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHMARG_PORTS_11 -group SWITCH -monitor MARG_PORTS -timebase None -op ge -value 11 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_PSPS_STATE_OUT -group ALL_PS -monitor PS_STATE -timebase None -op eq -value OUT -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_CIRCUITS_RTT_250 -group ALL_CIRCUITS -monitor RTT -timebase None -op g -value 250 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_100M_16GSWL_QSFPSFP_TEMP_n5 -group ALL_100M_16GSWL_QSFP -monitor SFP_TEMP -timebase None -op le -value -5 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_D_PORTSCRC_H90 -group ALL_D_PORTS -monitor CRC -timebase Hour -op g -value 90 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defSWITCHSEC_AUTH_FAIL_4 -group SWITCH -monitor SEC_AUTH_FAIL -timebase Min -op g -value 4 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_SLOTSBLADE_STATE_OUT -group ALL_SLOTS -monitor BLADE_STATE -timebase None -op eq -value OUT -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_PE_10 -group ALL_E_PORTS -monitor PE -timebase Min -op g -value 10 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_FANFAN_STATE_ON -group ALL_FAN -monitor FAN_STATE -timebase None -op eq -value ON -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_TSTEMP_OUT_OF_RANGE -group ALL_TS -monitor TEMP -timebase None -op eq -value OUT_OF_RANGE -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISBAD_TEMP_MARG -group CHASSIS -monitor BAD_TEMP -timebase None -op ge -value 1 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_2K_QSFPCURRENT_39 -group ALL_2K_QSFP -monitor CURRENT -timebase None -op ge -value 39 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_SWITCHZONE_CHG_20 -group SWITCH -monitor ZONE_CHG -timebase Day -op g -value 20 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_SWITCH_TSG100_H_RxxTExxxxxx -group SWITCH -monitor SEC_TS -timebase Hour -op g -value 100 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_CRC_11 -group ALL_OTHER_F_PORTS -monitor CRC -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_OTHER_TARGET_PORTS_CRC_50 -group ALL_OTHER_F_PORTS -monitor CRC -timebase Hour -op g -value 50 -qt 86400 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_OTHER_SFPRXP_5000 -group ALL_OTHER_SFP -monitor RXP -timebase None -op ge -value 5000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GLWL_SFPCURRENT_70 -group ALL_16GLWL_SFP -monitor CURRENT -timebase None -op ge -value 70 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_LR_2 -group ALL_HOST_PORTS -monitor LR -timebase Min -op ge -value 2 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_HOST_PORTS_LR_20 -group ALL_HOST_PORTS -monitor LR -timebase Hour -op ge -value 20 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GSWL_SFPSFP_TEMP_85 -group ALL_16GSWL_SFP -monitor SFP_TEMP -timebase None -op ge -value 85 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_2K_QSFPVOLTAGE_3600 -group ALL_2K_QSFP -monitor VOLTAGE -timebase None -op ge -value 3600 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_PORTSSFP_STATE_OUT -group ALL_PORTS -monitor SFP_STATE -timebase None -op eq -value OUT -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_def_SWITCHSEC_HTTP_4 -group SWITCH -monitor SEC_HTTP -timebase Min -op g -value 4 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISHA_SYNC_0 -group CHASSIS -monitor HA_SYNC -timebase None -op eq -value 0 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_D_PORTSLOSS_SYNC_D1500 -group ALL_D_PORTS -monitor LOSS_SYNC -timebase Day -op g -value 1500 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_CRC_11 -group ALL_E_PORTS -monitor CRC -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_ALL_E_PORTS_CRC_50 -group ALL_E_PORTS -monitor CRC -timebase Hour -op g -value 50 -qt 86400 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_16GSWL_SFPCURRENT_12 -group ALL_16GSWL_SFP -monitor CURRENT -timebase None -op ge -value 12 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_10GSWL_SFPTXP_1999 -group ALL_10GSWL_SFP -monitor TXP -timebase None -op ge -value 1999 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_defAll_100M_16GSWL_QSFPVOLTAGE_2970 -group ALL_100M_16GSWL_QSFP -monitor VOLTAGE -timebase None -op le -value 2970 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --create DB_SWITCHFLOGI_30 -group SWITCH -monitor FLOGI -timebase Min -op g -value 30 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISFAULTY_BLADE_1 -group CHASSIS -monitor FAULTY_BLADE -timebase None -op ge -value 1 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --createRoR DB_SWITCHSEC_HTTP_4_ROR -group SWITCH -monitor DB_def_SWITCHSEC_HTTP_4 -timebase Hour -op g -value 1 -qt 2592000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_SFP_SFPRXP_220_ROR -group ALL_SFP -monitor DB_ALL_SFP_SFPRXP_220 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_E_PORTS_CRC_ROR -group ALL_E_PORTS -monitor DB_ALL_E_PORTS_CRC_11 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_HOST_PORTS_CRC_ROR -group ALL_HOST_PORTS -monitor DB_ALL_HOST_PORTS_CRC_11 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_TARGET_PORTS_CRC_ROR -group ALL_TARGET_PORTS -monitor DB_ALL_TARGET_PORTS_CRC_11 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_OTHER_TARGET_PORTS_CRC_ROR -group ALL_OTHER_F_PORTS -monitor DB_ALL_OTHER_TARGET_PORTS_CRC_11 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_OTHER_TARGET_PORTS_C3TXTO_ROR -group ALL_OTHER_F_PORTS -monitor DB_ALL_OTHER_TARGET_PORTS_C3TXTO_11 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_TARGET_PORTS_C3TXTO_ROR -group ALL_TARGET_PORTS -monitor DB_ALL_TARGET_PORTS_C3TXTO_11 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_E_PORTS_C3TXTO_ROR -group ALL_E_PORTS -monitor DB_ALL_E_PORTS_C3TXTO_11 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_HOST_PORTS_C3TXTO_ROR -group ALL_HOST_PORTS -monitor DB_ALL_HOST_PORTS_C3TXTO_11 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_SFP_SFPTXP_220_ROR -group ALL_SFP -monitor DB_ALL_SFP_SFPTXP_220 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --createRoR DB_defAll_16GSWL_SFPVOLTAGE_3000_ROR -group ALL_16GSWL_SFP -monitor DB_defAll_16GSWL_SFPVOLTAGE_3000 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --createRoR DB_SWITCHSEC_TELNET_4_ROR -group SWITCH -monitor DB_def_SWITCHSEC_TELNET_4 -timebase Hour -op g -value 5 -qt 2592000 -action raslog,SNMP -severity Default -policy DB_conservative_policy
+           - mapsrule --createRoR DB_ALL_EXT_GE_PORTS_CRC_ROR -group ALL_EXT_GE_PORTS -monitor DB_ALL_EXT_GE_PORTS_CRC_11 -timebase Hour -op g -value 4 -qt 259200 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSBAD_OS_5M_10
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSITW_D_100
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSFRM_LONG_5M_10
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSFRM_LONG_D_100
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSCRC_D_100
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSLR_5M_10
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSFRM_TRUNC_5M_10
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSITW_5M_10
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSLR_D_100
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSCRC_5M_10
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTSBAD_OS_D_100
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_F_PORTSDEV_LOGIN_DIST_BALANCE_FAILED
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_F_PORTSDEV_LOGIN_DIST_IMBALANCED
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_F_PORTSDEV_LOGIN_DIST_BALANCED
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTS_LATENCY_CLEAR
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_BE_PORTS_LATENCY_IMPACT
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_PORTS_IO_LATENCY_CLEAR
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_PORTS_IO_FRAME_LOSS_UNQUAR
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_PORTS_IO_PERF_IMPACT_UNQUAR
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_PORTS_IO_FRAME_LOSS
+           - mapspolicy --addrule DB_conservative_policy -rulename defALL_PORTS_IO_PERF_IMPACT
+           - mapsrule --clone defALL_F_PORTSDEV_LOGIN_DIST_BALANCE_FAILED -rulename DB_defALL_F_PORTSDEV_LOGIN_DIST_BALANCE_FAILED
+           - mapsrule --clone defALL_F_PORTSDEV_LOGIN_DIST_IMBALANCED -rulename DB_defALL_F_PORTSDEV_LOGIN_DIST_IMBALANCED
+           - mapsrule --clone defALL_F_PORTSDEV_LOGIN_DIST_BALANCED -rulename DB_defALL_F_PORTSDEV_LOGIN_DIST_BALANCED
+           - mapsrule --config DB_defALL_F_PORTSDEV_LOGIN_DIST_BALANCE_FAILED -action RASLOG,SNMP,EMAIL -severity INFO
+           - mapsrule --config DB_defALL_F_PORTSDEV_LOGIN_DIST_IMBALANCED -action RASLOG,SNMP,EMAIL,RE_BALANCE -severity INFO
+           - mapsrule --config DB_defALL_F_PORTSDEV_LOGIN_DIST_BALANCED -action raslog,snmp,email -severity INFO
+           - mapspolicy --delrule DB_conservative_policy -rulename defALL_F_PORTSDEV_LOGIN_DIST_BALANCE_FAILED
+           - mapspolicy --delrule DB_conservative_policy -rulename defALL_F_PORTSDEV_LOGIN_DIST_IMBALANCED
+           - mapspolicy --delrule DB_conservative_policy -rulename defALL_F_PORTSDEV_LOGIN_DIST_BALANCED
+           - mapspolicy --addrule DB_conservative_policy -rulename DB_defALL_F_PORTSDEV_LOGIN_DIST_BALANCE_FAILED
+           - mapspolicy --addrule DB_conservative_policy -rulename DB_defALL_F_PORTSDEV_LOGIN_DIST_IMBALANCED
+           - mapspolicy --addrule DB_conservative_policy -rulename DB_defALL_F_PORTSDEV_LOGIN_DIST_BALANCED
+           - mapsrule --config DB_ALL_SFP_SFPRXP_220 -group ALL_SFP -monitor RXP -timebase None -op l -value 220 -qt 2592000 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_SFP_SFPRXP_220_ROR -group ALL_SFP -monitor DB_ALL_SFP_SFPRXP_220 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_SFP_SFPTXP_220 -group ALL_SFP -monitor TXP -timebase None -op l -value 220 -qt 2592000 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_SFP_SFPTXP_220_ROR -group ALL_SFP -monitor DB_ALL_SFP_SFPTXP_220 -timebase Hour -op g -value 4 -qt 864000 -action raslog,SNMP -severity Error -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_OTHER_TARGET_PORTS_C3TXTO_11 -group ALL_OTHER_F_PORTS -monitor C3TXTO -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_OTHER_TARGET_PORTS_C3TXTO_50 -group ALL_OTHER_F_PORTS -monitor C3TXTO -timebase Hour -op g -value 50 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_HOST_PORTS_C3TXTO_11 -group ALL_HOST_PORTS -monitor C3TXTO -timebase Min -op g -value 11 -qt 259200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_HOST_PORTS_C3TXTO_50 -group ALL_HOST_PORTS -monitor C3TXTO -timebase Hour -op g -value 50 -qt 259200 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_E_PORTS_C3TXTO_11 -group ALL_E_PORTS -monitor C3TXTO -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_E_PORTS_C3TXTO_50 -group ALL_E_PORTS -monitor C3TXTO -timebase Hour -op g -value 50 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_TARGET_PORTS_C3TXTO_11 -group ALL_TARGET_PORTS -monitor C3TXTO -timebase Min -op g -value 11 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_ALL_TARGET_PORTS_C3TXTO_50 -group ALL_TARGET_PORTS -monitor C3TXTO -timebase Hour -op g -value 50 -qt 86400 -action raslog,SNMP -severity Warning -policy DB_conservative_policy
+           - mapsrule --config DB_defAll_SLOTSBLADE_STATE_FAULTY -group ALL_SLOTS -monitor BLADE_STATE -timebase None -op eq -value FAULTY -action raslog,SNMP -severity Critical  -policy DB_conservative_policy
+           - mapsrule --config DB_defAll_WWN_FAULTY -group ALL_WWN -monitor WWN -timebase None -op eq -value FAULTY -action raslog,SNMP -severity Critical   -policy DB_conservative_policy
+           - mapsrule --config DB_defCHASSISFAULTY_BLADE_1 -group CHASSIS -monitor FAULTY_BLADE -timebase None -op ge -value 1 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --config DB_defCHASSISDOWN_CORE_2 -group CHASSIS -monitor DOWN_CORE -timebase None -op ge -value 2 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --config DB_defCHASSISDOWN_CORE_1 -group CHASSIS -monitor DOWN_CORE -timebase None -op ge -value 1 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --config DB_defCHASSISHA_SYNC_0 -group CHASSIS -monitor HA_SYNC -timebase None -op eq -value 0 -action raslog,SNMP -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISTRUFOS_CERT_DAYS_TO_EXPIRE_30 -group CHASSIS -monitor TRUFOS_CERT_DAYS_TO_EXPIRE  -timebase None -op le -value 30 -action raslog,SNMP -qt=1296000 -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISTRUFOS_CERT_EXPIRED -group CHASSIS -monitor TRUFOS_CERT_EXPIRED  -timebase None -op eq -value TRUE -action raslog,SNMP -qt=1296000 -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISTRUFOS_CERT_INSTALLED -group CHASSIS -monitor TRUFOS_CERT_INSTALLED  -timebase None -op eq -value FALSE -action raslog,SNMP -qt=1296000 -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISCERT_VALIDITY_30 -group ALL_CERTS -monitor DAYS_TO_EXPIRE  -timebase None -op le -value 30 -action raslog,SNMP -qt=1296000 -severity Critical -policy DB_conservative_policy
+           - mapsrule --create DB_defCHASSISCERTS_EXPIRED -group CHASSIS -monitor EXPIRED_CERTS  -timebase None -op g -value 0 -action raslog,SNMP -qt=1296000 -severity Critical -policy DB_conservative_policy
+           - mapsconfig --raslogmode custom
+           - mapsconfig --actions raslog,sw_marginal,sw_critical,sfp_marginal,snmp,sddq,unquar,re_balance,fpin
+           - mapspolicy --enable DB_conservative_policy          
+         register: ConfigMAPS
+         ignore_errors: true 
+         ignore_unreachable: true
+         when: switchType in Models.ALL
+#         when: switchType in Models.DCX
+ 
+#       - set_fact:
+#            MAPSresult: "{{ (MAPSresult | default([])) + [item] }}"
+#         with_items: "{{ConfigMAPS.results | map(attribute='rc') | list }}"
+           
+#       - set_fact:
+#            MAPSdiff: "{{ MAPSresult | difference(MAPSrc) }} "           
+     
+#       - debug:
+#            msg:
+#              - "{{MAPSresult}}"
+#              - "------"
+#              - "------"
+#              - "{{MAPSdiff}}"
+ 
+#       - debug:
+#            msg:
+#              - "PB_Output-Configured MAPS according to standards successfully on FID {{FID_item}}.."
+#         when: MAPSdiff == []
+ 
+#       - debug:
+#           msg:
+#             - "PB_Output-Failed to configure following MAPS command on FID {{FID_item}}. MAPS_Command: {{item.item}} Error_Msg: {{item.msg}}.."
+#         when: ( item is failed or item is unreachable ) and MAPSdiff != []
+#         with_items: "{{ConfigMAPS.results}}"
+ 
+ 
+      #----------------------------------------------------------------------------------------------------------------------------------     
+       - name: Check for MAPS settings for DB_conservative count
+         raw: fosexec --fid {{FID_item}} -cmd "mapspolicy --show -summary"
+         register: Post_showMaps 
+         
+       - set_fact:
+           DB_policy_Count: "{{Post_showMaps.stdout_lines | regex_findall(\"DB_conservative_policy            :.*?'\") | regex_replace(\"'\", '') | regex_replace('DB_conservative_policy            :               ', '')|regex_replace('\"', '')|regex_replace('\\[', '')|regex_replace('\\]', '')}}"
+ 
+       - set_fact:
+           message: "DB_Conservative Policy has not been created on FID {{FID_item}}. Please Check manually"
+         when: DB_policy_Count == ""
+ 
+       - set_fact:
+           maps_summary: "{{ maps_summary + [ message ] }}"     
+         when: DB_policy_Count == ""
+        
+       - set_fact:
+            Active_check: "{{Post_showMaps.stdout_lines | regex_findall('Active.*') | regex_search('DB_conservative_policy')}}"
+           
+       - set_fact:
+            DB_Policy_Count_128: "{{ item.FID_128 }}"
+            DB_Policy_Count_Rest: "{{ item.FID_Rest }}"
+         when: switchType | int == item.Name | int
+         with_items: "{{ Model_FID }}"
+ 
+       - name: display data
+         debug:
+           msg:
+             - "{{ DB_Policy_Count_128 }}"
+             - "{{ DB_Policy_Count_Rest }}"
+            
+       - set_fact:
+#           maps_summary: []
+            message1: "PB_Output- Successfully configured MAPS policy on FID {{FID_item}}. DB_conservative_Policy is Active now and the policy contains {{DB_policy_Count}} number of rules as expected"
+            message2: "PB_Output- After MAPS configuration on FID {{FID_item}}, DB_conservative_Policy is Active but the policy contains {{DB_policy_Count}} number of rules. Manual intervention required."
+            message3: "PB_Output- After MAPS configuration on FID {{FID_item}}, the policy contains {{DB_policy_Count}} number of rules but DB_conservative_Policy is not Active. Manual intervention required."
+ 
+       - debug:
+           msg:
+             - "{{Post_showMaps.stdout_lines}}"
+             - "Successfully configured MAPS policy on FID {{FID_item}}."
+             - "DB_conservative_Policy is Active now and the policy contains {{DB_policy_Count}} number of rules as expected."
+#         when: (FID_item == "128" and DB_policy_Count == "217" and Active_check == "DB_conservative_policy" and MAPSdiff == []) or (FID_item != "128" and DB_policy_Count == "208" and Active_check == "DB_conservative_policy" and MAPSdiff == [])
+         when: (FID_item == "128" and DB_policy_Count == DB_Policy_Count_128 and Active_check == "DB_conservative_policy") or (FID_item != "128" and DB_policy_Count == DB_Policy_Count_Rest and Active_check == "DB_conservative_policy")
+ 
+       - set_fact:
+           maps_summary: "{{ maps_summary + [ message1 ] }}"     
+         when: (FID_item == "128" and DB_policy_Count == DB_Policy_Count_128 and Active_check == "DB_conservative_policy") or (FID_item != "128" and DB_policy_Count == DB_Policy_Count_Rest and Active_check == "DB_conservative_policy")
+         
+#       - fail:
+       - debug:    
+           msg:
+             - "{{Post_showMaps.stdout_lines}}"
+             - "After MAPS configuration on FID {{FID_item}}, DB_conservative_Policy is Active but the policy contains {{DB_policy_Count}} number of rules. Manual intervention required."
+#         when: (FID_item == "128" and DB_policy_Count != "217" and Active_check == "DB_conservative_policy" and MAPSdiff == []) or (FID_item != "128" and DB_policy_Count != "208" and Active_check == "DB_conservative_policy" and MAPSdiff == [])
+         when: (FID_item == "128" and DB_policy_Count != DB_Policy_Count_128 and Active_check == "DB_conservative_policy") or (FID_item != "128" and DB_policy_Count != DB_Policy_Count_Rest and Active_check == "DB_conservative_policy")        
+ 
+       - set_fact:
+           maps_summary: "{{ maps_summary +  [ message2 ]  }}"     
+         when: (FID_item == "128" and DB_policy_Count != DB_Policy_Count_128 and Active_check == "DB_conservative_policy") or (FID_item != "128" and DB_policy_Count != DB_Policy_Count_Rest and Active_check == "DB_conservative_policy")
+ 
+#       - fail:
+       - debug:
+           msg:
+             - "{{Post_showMaps.stdout_lines}}"
+             - "After MAPS configuration on FID {{FID_item}}, the policy contains {{DB_policy_Count}} number of rules but DB_conservative_Policy is not Active. Manual intervention required."
+#         when: (FID_item == "128" and DB_policy_Count == "217" and Active_check != "DB_conservative_policy" and MAPSdiff == []) or (FID_item != "128" and DB_policy_Count == "208" and Active_check != "DB_conservative_policy" and MAPSdiff == [])
+         when: (FID_item == "128" and DB_policy_Count == DB_Policy_Count_128 and Active_check != "DB_conservative_policy") or (FID_item != "128" and DB_policy_Count == DB_Policy_Count_Rest and Active_check != "DB_conservative_policy")        
+        
+       - set_fact:
+           maps_summary: "{{ maps_summary + [ message3 ] }}"     
+         when: (FID_item == "128" and DB_policy_Count == DB_Policy_Count_128 and Active_check != "DB_conservative_policy") or (FID_item != "128" and DB_policy_Count == DB_Policy_Count_Rest and Active_check != "DB_conservative_policy")
+ 
+#       - name: display summary
+#         debug:
+#           msg:
+#             - "{{ maps_summary }}"
+            

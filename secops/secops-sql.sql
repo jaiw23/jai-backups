@@ -1,0 +1,31 @@
+
+select
+    qtree.name AS Host,
+    vserver.name AS Vserver,
+    volume.name AS Volume,
+    cluster.primary_address AS cluster                                                                                                                                     
+FROM
+    cm_storage.qtree                                                                                                                                                                                   
+JOIN
+    cm_storage.volume                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        on qtree.volume_id = volume.id                                                                                                                                                                                           
+JOIN
+    cm_storage.vserver                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+        on volume.vserver_id = vserver.id                                                                                                                                                                      
+JOIN
+    cm_storage.cluster                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+        on vserver.cluster_id = cluster.id                                                                                                                                      
+JOIN
+    secops.secops_all                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        on qtree.name = SUBSTRING_INDEX(ci_name,
+    '.',
+    1)                                                                                                                                     
+where
+    qtree.name != ''                                                                                                                                                                                                                                                                                                                                                                                                                 
+    AND volume.name like '%secops%'                                                                                                                                                                                                                                                                                                                                                                                   
+    AND vserver.name regexp '^${loc}*'                                                                                                                                                                                                                                                                                                                                                                                   
+    AND (
+        secops_all.lifecycle = 'Removed'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+        or secops_all.lifecycle = 'Retired'                                                                                                                                           
+    )  ; 
+

@@ -1,0 +1,611 @@
+
+
+---
+### ---------------------------------------------------------------------------------
+### Original Author: kalaiaras.balasubramanian@db.com
+### Usage :          Brocade SAN Firmware Upgrade Playbook
+### Input Variables: {hostname and version}
+### ---------------------------------------------------------------------------------
+ 
+- name: Logging into Switch and Upgrading Firmware
+  hosts: "{{ hostname }}"
+  gather_facts: no
+  remote_user: strun
+  connection: paramiko
+ 
+  vars:
+    firmware_165: "firmwaredownload -acceptEULA -p scp 10.244.91.71,strun,/storageauto/brocade/firmware/v9.2.1a_G6G7_DIR<<_a\nY\n_a\n"
+    firmware_166: "firmwaredownload -acceptEULA -p scp 10.244.91.71,strun,/storageauto/brocade/firmware/v9.2.1a_G6G7_DIR<<_a\nY\n_a\n"
+    firmware_162: "firmwaredownload -acceptEULA -p scp 10.244.91.71,strun,/storageauto/brocade/firmware/v9.2.1a_G6_MID<<_a\nY\n_a\n"
+    firmware_183: "firmwaredownload -acceptEULA -p scp 10.244.91.71,strun,/storageauto/brocade/firmware/v9.2.1a_G6_MID<<_a\nY\n_a\n"
+    firmware_173: "firmwaredownload -acceptEULA -p scp 10.244.91.71,strun,/storageauto/brocade/firmware/v9.2.1a_G6_ENTP<<_a\nY\n_a\n"
+    firmware_184: "firmwaredownload -acceptEULA -p scp 10.244.91.71,strun,/storageauto/brocade/firmware/v9.2.1a_G6_ENTP<<_a\nY\n_a\n"
+    firmware: "{{ vars['firmware_'+switchType] }}"
+ 
+  tasks:
+    - name: Checking given firmware version is valid
+      debug:
+        msg: "PB_Output-Given Firmware version {{ version }} is valid. Proceeding.."
+      when: version == "v9.2.1a"
+ 
+    - debug:
+        msg: "PB_Output-Given Firmware version {{ version }} is not valid. Exiting.."
+      when: version != "v9.2.1a"
+    - meta: end_play
+      when: version != "v9.2.1a"
+ 
+#####################################################################################################################################################################################
+ 
+    - name: Including vars files
+      include_vars: "Brocade_Firmware_vars.yml"
+ 
+    - name: Firmware Upgrade Pre checks
+      block:
+       - name: Check switch model type
+         raw: switchshow | grep -i "switchType"
+         register: switchmodel
+ 
+       - debug:
+           msg: "PB_Output-Switch Type is {{ switchType }}.."
+ 
+       - debug:
+            msg: "PB_Output-The switch Type {{ switchType }} is not a supported Model, Exiting, Supported Models are (165.x, 166.x, 162.x, 173.x).."
+         when: switchType not in Models.ALL
+       - meta: end_play
+         when: switchType not in Models.ALL
+ 
+      #----------------------------------------------------------------------------------------------------------------------------------
+       - name: Check connectivity and OS version >= v9.2.0a
+         raw: version | grep -i "Fabric OS"
+         register: firmversion
+         when: switchType in Models.ALL
+ 
+       - debug:
+            msg: "Firmware version {{ firmversion.stdout_lines }} is equal/above v9.2.0a version so proceeding with upgrade."
+         when: FabricOS >= "v9.2.0a" and FabricOS < "v9.2.1a"
+ 
+       - debug:
+            msg: "Firmware version - {{ firmversion.stdout_lines }}.Cannot proceed with upgrade as incompatible firmware version detected -this playbook supports upgrade from v9.2.0a only."
+         when: FabricOS < "v9.2.0a"
+       - meta: end_play
+         when: FabricOS < "v9.2.0a"
+ 
+       - debug:
+            msg: "Switch already in latest firmware version {{ FabricOS }}.."
+         when: FabricOS == version
+       - meta: end_play
+         when: FabricOS == version
+ 
+       - debug:
+           msg: "Switch is at later version - {{ firmversion.stdout_lines }}. This Playbook supports v9.2.1a version upgrade, so the switch is expected to be equal/above v9.2.0a version. "
+         when: FabricOS > version
+       - meta: end_play
+         when: FabricOS > version
+ 
+      #----------------------------------------------------------------------------------------------------------------------------------
+       - name: Checking for G-Ports
+         raw: fosexec --fid all -cmd "switchshow"
+         register: check_no_Gport
+ 
+       - set_fact:
+           GPortCheck: "{{check_no_Gport.stdout_lines | regex_findall('G-Port')}}"
+ 
+       - debug:
+            msg: "No G-Port(s) identified. Proceeding with upgrade."
+         when: GPortCheck == []
+ 
+       - debug:
+            msg:
+              - "G-Port(s) identified in this switch, so not proceeding with upgrade."
+              - "Details - {{GPortCheck}}"
+         when: GPortCheck != []
+       - meta: end_play
+         when: GPortCheck != []
+ 
+###################################################################################################################################################################################
+ 
+    - name: Backup server configuration and Capturing Port, name server and slot info
+      block:
+     
+       - name: Get switch name
+         raw: switchname
+         register: get_switchname
+        
+       - set_fact:
+           switchname: "{{ get_switchname.stdout.lower().strip() }}"
+ 
+       - name: Get switch date
+         raw: date
+         register: get_switch_date
+ 
+       - set_fact:
+          switch_day: "{{ get_switch_date.stdout.split()[2] }}"
+          switch_month: "{{ get_switch_date.stdout.split()[1] }}"
+          switch_year: "{{ get_switch_date.stdout.split()[5] }}"
+ 
+       - set_fact:
+           switch_date: "{{switch_year}}{{switch_month}}{{switch_day}}"
+ 
+       - name: Taking Backup of Switch configuration
+         raw: configupload -all -p scp -P 22 {{backup_server}},{{backup_user}},{{backup_directory}}{{switchname}}.config.{{switch_date}}.pre_upgrade.txt
+         register: backupconfig
+ 
+       - debug:
+           msg: "PB_Output-Backup Successful {{ backupconfig.stdout_lines }}.."
+         when: backupconfig is success and ( backupConfig ) == "complete"
+ 
+       - debug:
+           msg:
+             - "PB_Output-Backup not successful. Not proceeding with upgrade process, Exiting.."
+             - "Backup Details {{backupconfig.stdout_lines }}.."
+         when: backupconfig is success and ( backupConfig ) != "complete"
+       - meta: end_play
+         when: ( backupConfig ) != "complete"
+ 
+       - fail:
+           msg:
+             - "PB_Output-Backup not successful. Not proceeding with upgrade process, Exiting.."
+             - "Backup Details {{backupconfig.stdout_lines }}.."
+         when: backupconfig is not success
+       - meta: end_play
+         when: backupconfig is not success
+ 
+        #-----------------------------------------------------------------------------------------------------
+       - name: Capturing Port status
+         raw: fosexec --fid all -cmd "switchshow" | grep -v "switchState"
+         register: prePortStatus
+ 
+       - set_fact:
+           prePortOnline: "{{prePortStatus.stdout_lines | regex_findall('Online')|length}}"
+ 
+       - debug:
+           msg:
+              - "PB_Output-Captured port status successfully.."
+              - "Number of Online ports = {{ prePortOnline }}"
+         when: prePortStatus is success
+ 
+       - fail:
+           msg:
+             - "PB_Output-Failed to capture port status. Not proceeding with upgrade process. Exiting.."
+             - "Below are the Details: Pre_Port_Status:.."
+             - "{{ prePortStatus.stdout_lines }}"
+         when: prePortStatus is not success
+       - meta: end_play
+         when: prePortStatus is not success
+ 
+        #-----------------------------------------------------------------------------------------------------
+       - name: Capturing name server information
+         raw: fosexec --fid all -cmd "nsshow"
+         register: prensshow
+ 
+       - debug:
+           msg:
+             - "PB_Output-Captured Name server information successfully. Details.."
+             - "Pre_NS_Info:"
+             - "{{ preNsInfo }}"
+         when: prensshow is success
+ 
+       - fail:
+           msg:
+             - "PB_Output-Failed to capture Name server information. Not proceeding with upgrade process. Exiting.."
+             - "Below are the details, Pre_NS_Info:"
+             - "{{ prensshow.stdout_lines }}"
+         when: prensshow is not success
+       - meta: end_play
+         when: prensshow is not success
+ 
+         #-----------------------------------------------------------------------------------------------------
+       - name: Capturing Fabric show
+         raw: fosexec --fid all -cmd "fabricshow" | grep -v '^$' | grep -v '-' | grep -v 'fabricshow'
+         register: prefabricshow
+ 
+       - debug:
+           msg:
+             - "PB_Output-Captured Fabric status successfully. Proceeding with upgrade "
+             - "PreFabricshow:"
+             - "{{prefabricshow.stdout_lines}}"
+         when: prefabricshow is success
+ 
+       - fail:
+           msg:
+             - "PB_Output-Failed to capture Fabric detail. Not proceeding with upgrade process. Exiting.."
+             - "Below are the details, PreFabricshow:"
+             - "{{ prefabricshow.stdout_lines }}"
+         when: prefabricshow is not success
+       - meta: end_play
+         when: prefabricshow is not success
+ 
+         #-----------------------------------------------------------------------------------------------------
+       - name: Capturing slot information (director only)
+         raw: slotshow
+         register: preslotshow
+         when: switchType in Models.DCX
+ 
+       - debug:
+           msg:
+             - "PB_Output-Switch type is DCX model. So captured Slot information.."
+             - "Pre_Slot_Status:"
+             - "{{ preslotshow.stdout_lines }}"
+         when: switchType in Models.DCX
+ 
+       - fail:
+           msg:
+             - "PB_Output-Switch type is DCX model. Capturing Slot information Failed. Not proceeding with upgrade process. Exiting.."
+             - "Below are the details, Pre_Slot_Status:"
+             - "{{ preslotshow.stdout_lines }}"
+         when: preslotshow is not success
+       - meta: end_play
+         when: preslotshow is not success
+ 
+         #----------------------------------------------------------------------------------------------------------
+       - name: Capturing HA Status (director only)
+         raw: hashow
+         register: prehashow
+         when: switchType in Models.DCX
+ 
+       - set_fact:
+           CheckHAState: "{{prehashow.stdout_lines | regex_search('HA enabled, Heartbeat Up, HA State synchronized') }}"
+         when: switchType in Models.DCX
+ 
+       - debug:
+           msg:
+             - "Switch type is DCX model. So captured HA Status and it is in right state. Proceeding with upgrade"
+             - "Pre_HA_Status:"
+             - "{{ prehashow.stdout_lines }}"
+         when: switchType in Models.DCX and CheckHAState == HAshowStatus and prehashow is success
+ 
+       - debug:
+           msg:
+             - "Cannot proceed with firmware upgrade as HA state is incorrect."
+             - "Pre_HA_Status:"
+             - "{{ prehashow.stdout_lines }}"
+         when: switchType in Models.DCX and CheckHAState != HAshowStatus and prehashow is success
+       - meta: end_play
+         when: switchType in Models.DCX and CheckHAState != HAshowStatus and prehashow is success
+ 
+       - fail:
+           msg:
+             - "PB_Output-Switch type is DCX model. Capturing HA Status Failed. Not proceeding with upgrade process. Exiting.."
+             - "Pre_HA_Status:"
+             - "{{ prehashow.stdout_lines }}"
+         when: prehashow is not success
+       - meta: end_play
+         when: prehashow is not success
+ 
+        #---------------------------------------------------------------------------------------------------------
+      when: ( switchType in Models.ALL ) and ( FabricOS != version )
+ 
+####################################################################################################################################################################################
+    - name: Performing HA failover for director class switches
+      block:
+ 
+       - name: Check if existing firmware upgrade is in progress
+         raw: firmwaredownloadstatus
+         register: check_upgrade
+ 
+       - name: Performing HA Failover (director Only)
+         raw: "hafailover<<_a\ny\n_a\n"
+         register: pre_upgrade_failover
+         ignore_errors: true
+         when: ('completed successfully' in check_upgrade.stdout)
+ 
+       - fail:
+           msg: " Existing upgrade appears to be in progress"
+         when: ("completed successfully" not in check_upgrade.stdout)
+ 
+       - meta: end_play
+         when: ("completed successfully" not in check_upgrade.stdout)
+ 
+       - name: pause
+         pause:
+           seconds: 10
+ 
+       - name: Check ha status before commencing with upgrade
+         raw: hashow
+         retries: 10
+         delay: 60
+         register: pre_upgrade_hafailover
+         until: pre_upgrade_hafailover.stdout | regex_search ('HA enabled, Heartbeat Up, HA State synchronized')
+ 
+      when: ( switchType in Models.DCX ) and (CheckHAState == HAshowStatus)
+ 
+#####################################################################################################################################################################################
+    - name: Firmware Upgrade
+      block:
+       - debug:
+           msg: "Taken Backup and captured required Info. Proceeding with Firmware Upgrade process.."
+ 
+       - name: Checking whether another firmware upgrade or downgrade is in progress
+         raw: firmwaredownloadstatus
+         register: prefirmdownstatus
+ 
+       - name: Upgrading Switch Firmware to {{ version }}
+         raw: "{{ firmware }}"
+         register: firmdownload
+         ignore_errors: true
+ 
+       - fail:
+           msg: "{{ firmdownload }}"
+         when: firmdownload.rc == 255
+       - meta: end_play
+         when: firmdownload.rc == 255
+ 
+ 
+      when: switchType in Models.ALL and backupconfig and prePortStatus and prensshow and preslotshow and prehashow is success
+ 
+####################################################################################################################################################################################
+    - pause:
+        seconds: 120 
+        
+    - name: pause for director class switches (due to network issue after failover)
+      pause:
+        seconds: 2300
+      when: switchType in Models.DCX
+ 
+    - name: Firmware Upgrade Post checks
+      block:
+       - name: Checking Firmware download Status
+         raw: firmwaredownloadstatus
+         register: postfirmdownstatus
+         until: postfirmdownstatus.stdout | regex_search ('completed successfully')
+         retries: 10
+         delay: 300
+ 
+       - debug:
+           msg: "PB_Output-Download status is {{ postFirmDownStatus }}.."
+ 
+      #--------------------------------------------------------------------------------------------------------------------------------------------------------
+       - name: Firmware version Post checks
+         raw: version | grep -i "Fabric OS"
+         register: postfirmversion
+ 
+       - debug:
+           msg: "PB_Output-Post Firmware Version is {{ PostFabricOS }}.."
+         when: PostFabricOS == version
+ 
+       - fail:
+            msg:
+              - "PB_Output-Post firmware version is {{ PostFabricOS }}. No Upgrade happened. Exiting.."
+              - "Pre_Port_Status:{{ prePortStatus.stdout_lines }}.."
+              - "Pre_NS_Info:{{ prensshow.stdout_lines }}.."
+              - "Pre_FabricStatus:{{ prefabricshow.stdout_lines }}"
+              - "Pre_HA_Status:{{ prehashow.stdout_lines }}.."
+              - "Pre_Slot_Status:{{ preslotshow.stdout_lines }}.."
+ 
+         when: PostFabricOS != version
+       - meta: end_play
+         when: PostFabricOS != version
+ 
+####################################################################################################################################################################################
+    - name: Performing HA failover for director class switches
+      block:
+       - name: Checking HA Status post Upgrade (director only)
+         raw: hashow
+         register: posthashow
+ 
+       - debug:
+           msg:
+             - "PB_Output-Switch type is DCX model. So checking Pre/Post HA Status... No difference found in Pre and Post HA status. Continuing with HA Failover.."
+         when: ( switchType in Models.DCX ) and ( PostFabricOS == version ) and ( preHAshow == postHAshow )
+ 
+       - fail:
+           msg:
+             - "PB_Output-Switch type is DCX model. So checking Pre/Post HA Status... but there is difference between both checks. Not proceeding with HA Failover process. Exiting.."
+             - "Pre_HA_Status:{{ prehashow.stdout_lines }}.."
+             - "Post_FirmUpg_HA_Status:{{ posthashow.stdout_lines }}.."
+         when: ( switchType in Models.DCX ) and ( PostFabricOS == version ) and ( preHAshow != postHAshow )
+       - meta: end_play
+         when: postHAshow != preHAshow
+ 
+         #---------------------------------------------------------------------------------------------------------------
+       - name: Performing HA Failover (director Only)
+         raw: "hafailover<<_a\ny\n_a\n"
+         ignore_errors: true
+ 
+       - name: pause
+         pause:
+           seconds: 2400
+ 
+       - name: Check HA status following post-upgrade HA Failover
+         raw: hashow
+         retries: 10
+         delay: 60
+         register: post_upgrade_hafailover
+         until: post_upgrade_hafailover.stdout | regex_search ('HA enabled, Heartbeat Up, HA State synchronized')
+ 
+      when: ( switchType in Models.DCX ) and ( PostFabricOS == version )
+ 
+####################################################################################################################################################################################
+    - name: Performing Post checks after firmware upgrade
+      block:
+       - name: Checking pre and Post Upgrade Port status
+         raw: fosexec --fid all -cmd "switchshow" | grep -v "switchState"
+         register: postPortStatus
+#         until: "'Failed' not in postPortStatus.stdout and 'Index Slot' in postPortStatus.stdout"
+         until: "'Failed' not in postPortStatus.stdout and ('Index Slot' in postPortStatus.stdout or 'Index Port' in postPortStatus.stdout)"
+ 
+ 
+       - set_fact:
+           postPortOnline: "{{postPortStatus.stdout_lines | regex_findall('Online')|length}}"
+ 
+       - debug:
+           msg:
+             - "Post firmware upgrade Port status:"
+             - "Number of Online Ports = {{postPortOnline}}"
+             - "PB_Output-Checked pre and post upgrade Port status successfully and the information are same.."
+         when: ( postPortStatus is success ) and ( prePortOnline == postPortOnline )
+ 
+       - debug:
+           msg:
+             - "PB_Output-Pre and Post Port Status are not same.."
+             - "Post firmware upgrade Port status:"
+             - "Number of Online Ports = {{postPortOnline}}"
+         when: ( postPortStatus is success ) and ( prePortOnline != postPortOnline )
+ 
+        #-----------------------------------------------------------------------------------------------------
+       - name: Checking pre and Post Upgrade Name server information
+         raw: fosexec --fid all -cmd "nsshow"
+         register: postnsshow
+         until: "'Failed' not in postnsshow.stdout and 'Local Name Server' in postnsshow.stdout"
+ 
+       - debug:
+           msg:
+             - "Post firmware upgrade Name Server information:"
+             - "{{postNsInfo}}"
+             - "PB_Output-Checked pre and post upgrade Name server information successfully and the information are same.."
+         when: ( postnsshow is success ) and ( preNsInfo == postNsInfo )
+ 
+       - debug:
+           msg:
+             - "PB_Output-Pre and Post Name server information are not same.."
+             - "Post firmware upgrade Name Server information:"
+             - "{{postNsInfo}}"
+         when: ( postnsshow is success ) and ( preNsInfo != postNsInfo )
+ 
+         #-----------------------------------------------------------------------------------------------------
+       - name: Checking pre and Post Upgrade Fabric status
+         raw: fosexec --fid all -cmd "fabricshow" | grep -v '^$' | grep -v '-' | grep -v 'fabricshow'
+         register: postfabricshow
+         until: "'Failed' not in postfabricshow.stdout and 'Switch ID' in postfabricshow.stdout"
+ 
+       - debug:
+           msg:
+             - "Post firmware upgrade Fabric status:"
+             - "{{postfabricshow.stdout_lines}}"
+             - "PB_Output-Checked pre and post upgrade Fabric status successfully and the information are same.."
+         when: ( postfabricshow is success ) and ( prefabricshow.stdout == postfabricshow.stdout )
+ 
+       - debug:
+           msg:
+             - "PB_Output-Pre and Post Fabric status are not same.."
+         when: ( postfabricshow is success ) and ( prefabricshow.stdout != postfabricshow.stdout )
+ 
+      when: ( switchType in Models.ALL ) and ( PostFabricOS == version )
+ 
+####################################################################################################################################################################################
+    - name: Performing Post checks after firmware upgrade and HA failover
+      block:
+       - name: post hashow (director only)
+         raw: hashow
+         register: post2hashow
+         until: "'Non-Redundant' not in post2hashow.stdout"
+ 
+       - debug:
+           msg:
+             - "PB_Output-Firmware upgrade and HA failover completed sucessfully in director class switch. Pre and Post HA Status are same.."
+             - "Post Firmware upgrade and HA failure results:"
+             - "{{ post2hashow.stdout_lines }}"
+         when: ( post2hashow is success ) and ( post2Hashow == preHAshow ) and ( post2Hashow == postHAshow )
+ 
+       - debug:
+           msg:
+             - "PB_Output-Pre and Post HA Status are not same.."
+         when: ( post2Hashow != preHAshow ) and ( post2Hashow != postHAshow )
+ 
+         #----------------------------------------------------------------------------------------------------------------------------------------------------------------
+       - name: Checking Pre and Post Upgrade slot information (director only)
+         raw: slotshow
+         register: postslotshow
+         until: postslotshow is success
+         #retries: 2
+         #delay: 300
+ 
+       - debug:
+           msg:
+             - "Post firmware upgrade Slot Information:"
+             - "{{ postslotshow.stdout_lines }}"
+             - "PB_Output-Switch type is DCX model. So checking post upgrade Slot information. Pre and post information are same.."
+         when: ( postslotshow is success ) and (preslotshow.stdout == postslotshow.stdout)
+ 
+       - debug:
+           msg:
+             - "PB_Output-Pre and Post Slot information are not same."
+         when: ( postslotshow is success ) and (preslotshow.stdout != postslotshow.stdout)
+ 
+      when: ( switchType in Models.DCX ) and ( PostFabricOS == version )
+ 
+####################################################################################################################################################################################
+    - name: Final Success Results
+      block:
+       - debug:
+           msg: "PB_Output-Upgraded Switch {{ hostname }} firmware version successfully and all Pre/Post configurations are same. Current Firmware version is {{ PostFabricOS }}.."
+         when: ( postPortStatus is success ) and ( prePortOnline == postPortOnline ) and ( postnsshow is success ) and ( preNsInfo == postNsInfo ) and ( postfabricshow is success ) and ( prefabricshow.stdout == postfabricshow.stdout )
+ 
+      when: ( switchType not in Models.DCX ) and ( PostFabricOS == version )
+      #-----------------------------------------------------------------------------------------------------------------------------------
+    - name: Final Success Results
+      block:
+       - debug:
+           msg: "PB_Output-Upgraded Switch {{ hostname }} firmware version successfully and all Pre/Post configurations are same. Current Firmware version is {{ PostFabricOS }}.."
+         when: ( post2hashow is success ) and ( post2Hashow == preHAshow ) and ( post2Hashow == postHAshow ) and ( postslotshow is success ) and ( preslotshow.stdout == postslotshow.stdout ) and ( postPortStatus is success ) and ( prePortOnline == postPortOnline ) and ( postnsshow is success ) and ( preNsInfo == postNsInfo ) and ( postfabricshow is success ) and ( prefabricshow.stdout == postfabricshow.stdout )
+ 
+      when: ( switchType in Models.DCX ) and ( PostFabricOS == version )
+########################################################################################################################################################################################################################################################################################################################
+    - name: Final pre/post check unsuccessful Result detail
+      block:
+       - debug:
+           msg:
+             - "Firmware Upgrade is successful but Pre/Post Port Status are not same. Below are the detail.."
+             - "Pre_Port_Status:{{ prePortStatus.stdout_lines }}.."
+             - "Post_Port_Status:{{ postPortStatus.stdout_lines }}.."
+         when: ( postPortStatus is success ) and ( prePortOnline != postPortOnline )
+       #-----------------------------------------------------------------------------------------------------------------
+       - debug:
+           msg:
+             - "Firmware Upgrade is successful but Pre/Post Name server information are not same. Below are the detail.."
+             - "Pre_NS_Info:{{ prensshow.stdout_lines }}.."
+             - "Post_NS_Info:{{ postnsshow.stdout_lines }}.."
+         when: ( postnsshow is success ) and ( preNsInfo != postNsInfo )
+       #-----------------------------------------------------------------------------------------------------------------
+       - debug:
+           msg:
+             - "Firmware Upgrade is successful but Pre/Post Fabric status are not same. Below are the detail.."
+             - "PreFabricshow:{{ prefabricshow.stdout_lines }}.."
+             - "Post_Fabricshow:{{ postfabricshow.stdout_lines }}.."
+         when: ( postfabricshow is success ) and ( prefabricshow.stdout != postfabricshow.stdout )
+ 
+      when: ( switchType in Models.ALL ) and ( PostFabricOS == version )
+ 
+   ############################################################################################################################################################################################################
+    - name: Final pre/post check unsuccessful Results (director class checks)
+      block:
+       - debug:
+           msg:
+             - "Firmware Upgrade is successful but Pre/Post HA Status are not same. Below are the detail.."
+             - "Pre_HA_Status:{{ prehashow.stdout_lines }}.."
+             - "Post_FirmUpg_HA_Status:{{ posthashow.stdout_lines }}.."
+             - "Post_HAfailover_HA_Status:{{ post2hashow.stdout_lines }}.."
+         when: ( post2Hashow != preHAshow ) and ( post2Hashow != postHAshow )
+        #-------------------------------------------------------------------------------------------------------------------------------
+       - debug:
+           msg:
+             - "Firmware Upgrade is successful but Pre/Post Slot information are not same.Below are the detail.."
+             - "Pre_Slot_Status:{{ preslotshow.stdout_lines }}.."
+             - "Post_Slot_Status:{{ postslotshow.stdout_lines }}.."
+         when: ( postslotshow is success ) and (preslotshow.stdout != postslotshow.stdout)
+ 
+      when: ( switchType in Models.DCX ) and ( PostFabricOS == version )
+ 
+####################################################################################################################################################################################
+    - name: Final Failure Results
+      block:
+       - fail:
+           msg:
+             - "PB_Output-Upgraded Switch {{ hostname }} firmware version successfully to {{ PostFabricOS }}.."
+             - "But Pre/Post checks information are not same after upgrade. Please check above log for detail"
+         when: ( prePortOnline != postPortOnline ) or ( preNsInfo != postNsInfo ) or ( prefabricshow.stdout != postfabricshow.stdout )
+ 
+      when: ( switchType not in Models.DCX ) and ( PostFabricOS == version )
+      #-----------------------------------------------------------------------------------------------------------------------------------
+    - name: Final Failure Results
+      block:
+       - fail:
+           msg:
+             - "PB_Output-Upgraded Switch {{ hostname }} firmware version successfully to {{ PostFabricOS }}.."
+             - "But Pre/Post checks information are not same after upgrade. Please check above log for detail"
+         when: ( prePortOnline != postPortOnline ) or ( preNsInfo != postNsInfo ) or ( prefabricshow.stdout != postfabricshow.stdout )  or ( post2Hashow != postHAshow ) or (preslotshow.stdout != postslotshow.stdout)
+ 
+      when: ( switchType in Models.DCX ) and ( PostFabricOS == version )
+ 
+###### End of Playbook #############################################################################################################################################################
+
