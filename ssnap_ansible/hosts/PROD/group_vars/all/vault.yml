@@ -3,5 +3,5 @@ vault:
   active_directory: {}
   delegate_to:
     windows:
-      username: svc_nasauto@DBG.ADS.DB.COM
+      username: svc_nasauto@DBG
       password: "rXEQHZrN9"
