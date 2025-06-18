@@ -1,0 +1,3505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE T_VOLUME [
+<!ELEMENT T_VOLUME (asup:TABLE_INFO,asup:ROW*,asup:ABORT?)>
+<!ATTLIST T_VOLUME xmlns CDATA #FIXED "http://asup_search.netapp.com/ns/T_VOLUME/1.0">
+<!ATTLIST T_VOLUME xmlns:asup CDATA #FIXED "http://asup_search.netapp.com/ns/ASUP/1.1">
+<!ATTLIST T_VOLUME smf_table_name CDATA #REQUIRED>
+<!ATTLIST T_VOLUME smf_table_desc CDATA #REQUIRED>
+<!ATTLIST T_VOLUME col_time_us CDATA #REQUIRED>
+<!ATTLIST T_VOLUME cluster_uuid CDATA "0">
+<!ATTLIST T_VOLUME node_uuid CDATA #REQUIRED>
+<!ATTLIST T_VOLUME node_sn CDATA #REQUIRED>
+<!ATTLIST T_VOLUME node_system_id CDATA #REQUIRED>
+<!ATTLIST T_VOLUME data_scope (cluster|node) #REQUIRED>
+<!ELEMENT asup:TABLE_INFO (asup:field*,asup:ABORT?)>
+<!ELEMENT asup:field (asup:tag,asup:smf_name,asup:ui_name,asup:type,asup:qualification,asup:remap)>
+<!ELEMENT asup:tag (#PCDATA)>
+<!ELEMENT asup:smf_name (#PCDATA)>
+<!ELEMENT asup:ui_name (#PCDATA)>
+<!ELEMENT asup:type (#PCDATA)>
+<!ELEMENT asup:list (asup:li+)>
+<!ELEMENT asup:li (#PCDATA)>
+<!ATTLIST asup:type is_list (true|false) "false">
+<!ELEMENT asup:qualification (#PCDATA)>
+<!ELEMENT asup:remap (#PCDATA)>
+<!ELEMENT asup:ABORT (#PCDATA)>
+<!ELEMENT asup:ROW (vs,vol,dsid,msid,aggr,state,type,style,styleEx,policy,usr,grp,security_style,unix_perm,j_path,j_path_src,j_actv,parent,vsroot,comment,size,avail,total,used,pcnt_used,exp_avail_size,over_provisioned_size,snap_rsrv_avail_size,nearly_full_threshold,full_threshold,autosz,max_autosz,min_autosz,autosz_grow_thresh_pcnt,autosz_shrink_thresh_pcnt,autosz_mode,files,files_used,inofile_version,maxdir_size,space_guarantee,is_space_guarantee_en,min_rdahead,atime_update,snapdir_access,pcnt_snap_space,snap_policy,c_time,lang,oem_char_set,nfs_char_set,max_write_alloc_blks,name_ordinal,is_clust_vol,used_snap_rsrv_pcnt,clone_vol,anti_virus_on_access_policy,vol_uuid,load_share_src,move_target,fs_inconsistency,is_rdonly,i_uuid,p_uuid,nvfail_option,in_nvfailed_state,dr_force_nvfail_option,blk_type,hya_eligibility,hya_wc_ineligibility_reason,caching_policy,cache_retention_priority,autobalance_aggr_enabled,role,fgMsid,fgIndex,fgUuid,maxConstSize,isFg,isQtreeCacheEnabled,isMoveDestInCutover,is_encrypted,encryption_key_id,appName,appUuid,extent_size,tiering_policy,cloud_retrieval_policy,sl_type,tiering_min_cooling_days,logicalUsed,logicalUsedPercent,logicalAvailable,afsLogicalUsed,snapLogicalUsed,logicalSpaceReporting,logicalSpaceEnforcement,perfTierInactiveUserData,QosPolicyGroup,QosAdaptivePolicyGroup,is_analytics_supported,analytics_unsupported_reason,analytics_state,analytics_scan_progress,tiering_object_tags,encryptionType,encryption_state)>
+<!ATTLIST asup:ROW col_time_us CDATA #REQUIRED>
+<!ELEMENT vs (#PCDATA)><!ELEMENT vol (#PCDATA)><!ELEMENT dsid (#PCDATA)><!ELEMENT msid (#PCDATA)><!ELEMENT aggr (#PCDATA)><!ELEMENT state (#PCDATA)><!ELEMENT type (#PCDATA)><!ELEMENT style (#PCDATA)><!ELEMENT styleEx (#PCDATA)><!ELEMENT policy (#PCDATA)><!ELEMENT usr (#PCDATA)><!ELEMENT grp (#PCDATA)><!ELEMENT security_style (#PCDATA)><!ELEMENT unix_perm (#PCDATA)><!ELEMENT j_path (#PCDATA)><!ELEMENT j_path_src (#PCDATA)><!ELEMENT j_actv (#PCDATA)><!ELEMENT parent (#PCDATA)><!ELEMENT vsroot (#PCDATA)><!ELEMENT comment (#PCDATA)><!ELEMENT size (#PCDATA)><!ELEMENT avail (#PCDATA)><!ELEMENT total (#PCDATA)><!ELEMENT used (#PCDATA)><!ELEMENT pcnt_used (#PCDATA)><!ELEMENT exp_avail_size (#PCDATA)><!ELEMENT over_provisioned_size (#PCDATA)><!ELEMENT snap_rsrv_avail_size (#PCDATA)><!ELEMENT nearly_full_threshold (#PCDATA)><!ELEMENT full_threshold (#PCDATA)><!ELEMENT autosz (#PCDATA)><!ELEMENT max_autosz (#PCDATA)><!ELEMENT min_autosz (#PCDATA)><!ELEMENT autosz_grow_thresh_pcnt (#PCDATA)><!ELEMENT autosz_shrink_thresh_pcnt (#PCDATA)><!ELEMENT autosz_mode (#PCDATA)><!ELEMENT files (#PCDATA)><!ELEMENT files_used (#PCDATA)><!ELEMENT inofile_version (#PCDATA)><!ELEMENT maxdir_size (#PCDATA)><!ELEMENT space_guarantee (#PCDATA)><!ELEMENT is_space_guarantee_en (#PCDATA)><!ELEMENT min_rdahead (#PCDATA)><!ELEMENT atime_update (#PCDATA)><!ELEMENT snapdir_access (#PCDATA)><!ELEMENT pcnt_snap_space (#PCDATA)><!ELEMENT snap_policy (#PCDATA)><!ELEMENT c_time (#PCDATA)><!ELEMENT lang (#PCDATA)><!ELEMENT oem_char_set (#PCDATA)><!ELEMENT nfs_char_set (#PCDATA)><!ELEMENT max_write_alloc_blks (#PCDATA)><!ELEMENT name_ordinal (#PCDATA)><!ELEMENT is_clust_vol (#PCDATA)><!ELEMENT used_snap_rsrv_pcnt (#PCDATA)><!ELEMENT clone_vol (#PCDATA)><!ELEMENT anti_virus_on_access_policy (#PCDATA)><!ELEMENT vol_uuid (#PCDATA)><!ELEMENT load_share_src (#PCDATA)><!ELEMENT move_target (#PCDATA)><!ELEMENT fs_inconsistency (#PCDATA)><!ELEMENT is_rdonly (#PCDATA)><!ELEMENT i_uuid (#PCDATA)><!ELEMENT p_uuid (#PCDATA)><!ELEMENT nvfail_option (#PCDATA)><!ELEMENT in_nvfailed_state (#PCDATA)><!ELEMENT dr_force_nvfail_option (#PCDATA)><!ELEMENT blk_type (#PCDATA)><!ELEMENT hya_eligibility (#PCDATA)><!ELEMENT hya_wc_ineligibility_reason (#PCDATA)><!ELEMENT caching_policy (#PCDATA)><!ELEMENT cache_retention_priority (#PCDATA)><!ELEMENT autobalance_aggr_enabled (#PCDATA)><!ELEMENT role (#PCDATA)><!ELEMENT fgMsid (#PCDATA)><!ELEMENT fgIndex (#PCDATA)><!ELEMENT fgUuid (#PCDATA)><!ELEMENT maxConstSize (#PCDATA)><!ELEMENT isFg (#PCDATA)><!ELEMENT isQtreeCacheEnabled (#PCDATA)><!ELEMENT isMoveDestInCutover (#PCDATA)><!ELEMENT is_encrypted (#PCDATA)><!ELEMENT encryption_key_id (#PCDATA)><!ELEMENT appName (#PCDATA)><!ELEMENT appUuid (#PCDATA)><!ELEMENT extent_size (#PCDATA)><!ELEMENT tiering_policy (#PCDATA)><!ELEMENT cloud_retrieval_policy (#PCDATA)><!ELEMENT sl_type (#PCDATA)><!ELEMENT tiering_min_cooling_days (#PCDATA)><!ELEMENT logicalUsed (#PCDATA)><!ELEMENT logicalUsedPercent (#PCDATA)><!ELEMENT logicalAvailable (#PCDATA)><!ELEMENT afsLogicalUsed (#PCDATA)><!ELEMENT snapLogicalUsed (#PCDATA)><!ELEMENT logicalSpaceReporting (#PCDATA)><!ELEMENT logicalSpaceEnforcement (#PCDATA)><!ELEMENT perfTierInactiveUserData (#PCDATA)><!ELEMENT QosPolicyGroup (#PCDATA)><!ELEMENT QosAdaptivePolicyGroup (#PCDATA)><!ELEMENT is_analytics_supported (#PCDATA)><!ELEMENT analytics_unsupported_reason (#PCDATA)><!ELEMENT analytics_state (#PCDATA)><!ELEMENT analytics_scan_progress (#PCDATA)><!ELEMENT tiering_object_tags (asup:list?)><!ELEMENT encryptionType (#PCDATA)><!ELEMENT encryption_state (#PCDATA)>]>
+
+<T_VOLUME xmlns="http://asup_search.netapp.com/ns/T_VOLUME/1.0" xmlns:asup="http://asup_search.netapp.com/ns/ASUP/1.1" cluster_uuid="9a96bf6e-b084-11e9-9960-00a098b37b01" col_time_us="4254477446165" data_scope="node" node_sn="451716000033" node_system_id="0537091045" node_uuid="d8e8e659-b081-11e9-9960-00a098b37b01" smf_table_desc="Volume" smf_table_name="volume">
+<asup:TABLE_INFO>
+<asup:field>
+	<asup:tag>vs</asup:tag>
+	<asup:smf_name>vserver</asup:smf_name>
+	<asup:ui_name>Vserver Name</asup:ui_name>
+	<asup:type is_list="false">vserver_name</asup:type>
+	<asup:qualification>key</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>vol</asup:tag>
+	<asup:smf_name>volume</asup:smf_name>
+	<asup:ui_name>Volume Name</asup:ui_name>
+	<asup:type is_list="false">volume_name</asup:type>
+	<asup:qualification>key</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>dsid</asup:tag>
+	<asup:smf_name>dsid</asup:smf_name>
+	<asup:ui_name>Volume Data Set ID</asup:ui_name>
+	<asup:type is_list="false">unsigned64</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>msid</asup:tag>
+	<asup:smf_name>msid</asup:smf_name>
+	<asup:ui_name>Volume Master Data Set ID</asup:ui_name>
+	<asup:type is_list="false">unsigned64</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>aggr</asup:tag>
+	<asup:smf_name>aggregate</asup:smf_name>
+	<asup:ui_name>Aggregate Name</asup:ui_name>
+	<asup:type is_list="false">aggr_name</asup:type>
+	<asup:qualification>create</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>state</asup:tag>
+	<asup:smf_name>state</asup:smf_name>
+	<asup:ui_name>Volume State</asup:ui_name>
+	<asup:type is_list="false">volState_enum</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>type</asup:tag>
+	<asup:smf_name>type</asup:smf_name>
+	<asup:ui_name>Volume Type</asup:ui_name>
+	<asup:type is_list="false">ui_voltype</asup:type>
+	<asup:qualification>create</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>style</asup:tag>
+	<asup:smf_name>volume-style</asup:smf_name>
+	<asup:ui_name>Volume Style</asup:ui_name>
+	<asup:type is_list="false">volStyle</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>styleEx</asup:tag>
+	<asup:smf_name>volume-style-extended</asup:smf_name>
+	<asup:ui_name>Extended Volume Style</asup:ui_name>
+	<asup:type is_list="false">volume_type</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>policy</asup:tag>
+	<asup:smf_name>policy</asup:smf_name>
+	<asup:ui_name>Export Policy</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>usr</asup:tag>
+	<asup:smf_name>user</asup:smf_name>
+	<asup:ui_name>User ID</asup:ui_name>
+	<asup:type is_list="false">userid</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>grp</asup:tag>
+	<asup:smf_name>group</asup:smf_name>
+	<asup:ui_name>Group ID</asup:ui_name>
+	<asup:type is_list="false">groupid</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>security_style</asup:tag>
+	<asup:smf_name>security-style</asup:smf_name>
+	<asup:ui_name>Security Style</asup:ui_name>
+	<asup:type is_list="false">security_style_enum</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>unix_perm</asup:tag>
+	<asup:smf_name>unix-permissions</asup:smf_name>
+	<asup:ui_name>UNIX Permissions</asup:ui_name>
+	<asup:type is_list="false">unix_perm</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>j_path</asup:tag>
+	<asup:smf_name>junction-path</asup:smf_name>
+	<asup:ui_name>Junction Path</asup:ui_name>
+	<asup:type is_list="false">junction_path</asup:type>
+	<asup:qualification>create</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>j_path_src</asup:tag>
+	<asup:smf_name>junction-path-source</asup:smf_name>
+	<asup:ui_name>Junction Path Source</asup:ui_name>
+	<asup:type is_list="false">juncpath_src_enum</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>j_actv</asup:tag>
+	<asup:smf_name>junction-active</asup:smf_name>
+	<asup:ui_name>Junction Active</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>parent</asup:tag>
+	<asup:smf_name>junction-parent</asup:smf_name>
+	<asup:ui_name>Junction Parent Volume</asup:ui_name>
+	<asup:type is_list="false">volume_name</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>vsroot</asup:tag>
+	<asup:smf_name>vsroot</asup:smf_name>
+	<asup:ui_name>Vserver Root Volume</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>create</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>comment</asup:tag>
+	<asup:smf_name>comment</asup:smf_name>
+	<asup:ui_name>Comment</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>size</asup:tag>
+	<asup:smf_name>size</asup:smf_name>
+	<asup:ui_name>Volume Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>avail</asup:tag>
+	<asup:smf_name>available</asup:smf_name>
+	<asup:ui_name>Available Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>total</asup:tag>
+	<asup:smf_name>total</asup:smf_name>
+	<asup:ui_name>Total User-Visible Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>used</asup:tag>
+	<asup:smf_name>used</asup:smf_name>
+	<asup:ui_name>Used Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>pcnt_used</asup:tag>
+	<asup:smf_name>percent-used</asup:smf_name>
+	<asup:ui_name>Used Percentage</asup:ui_name>
+	<asup:type is_list="false">percent</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>exp_avail_size</asup:tag>
+	<asup:smf_name>expected-available</asup:smf_name>
+	<asup:ui_name>Expected Available Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>over_provisioned_size</asup:tag>
+	<asup:smf_name>over-provisioned</asup:smf_name>
+	<asup:ui_name>Over Provisioned Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>snap_rsrv_avail_size</asup:tag>
+	<asup:smf_name>snapshot-reserve-available</asup:smf_name>
+	<asup:ui_name>Available Snapshot Reserve Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>nearly_full_threshold</asup:tag>
+	<asup:smf_name>space-nearly-full-threshold-percent</asup:smf_name>
+	<asup:ui_name>Volume Nearly Full Threshold Percent</asup:ui_name>
+	<asup:type is_list="false">percent</asup:type>
+	<asup:qualification>modify</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>full_threshold</asup:tag>
+	<asup:smf_name>space-full-threshold-percent</asup:smf_name>
+	<asup:ui_name>Volume Full Threshold Percent</asup:ui_name>
+	<asup:type is_list="false">percent</asup:type>
+	<asup:qualification>modify</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>autosz</asup:tag>
+	<asup:smf_name>autosize</asup:smf_name>
+	<asup:ui_name>Autosize Enabled</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>max_autosz</asup:tag>
+	<asup:smf_name>max-autosize</asup:smf_name>
+	<asup:ui_name>Maximum Autosize</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>min_autosz</asup:tag>
+	<asup:smf_name>min-autosize</asup:smf_name>
+	<asup:ui_name>Minimum Autosize</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>autosz_grow_thresh_pcnt</asup:tag>
+	<asup:smf_name>autosize-grow-threshold-percent</asup:smf_name>
+	<asup:ui_name>Autosize Grow Threshold Percentage</asup:ui_name>
+	<asup:type is_list="false">percent</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>autosz_shrink_thresh_pcnt</asup:tag>
+	<asup:smf_name>autosize-shrink-threshold-percent</asup:smf_name>
+	<asup:ui_name>Autosize Shrink Threshold Percentage</asup:ui_name>
+	<asup:type is_list="false">percent</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>autosz_mode</asup:tag>
+	<asup:smf_name>autosize-mode</asup:smf_name>
+	<asup:ui_name>Autosize Mode</asup:ui_name>
+	<asup:type is_list="false">autosize_mode_enum</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>files</asup:tag>
+	<asup:smf_name>files</asup:smf_name>
+	<asup:ui_name>Total Files (for user-visible data)</asup:ui_name>
+	<asup:type is_list="false">unsigned64</asup:type>
+	<asup:qualification>modify</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>files_used</asup:tag>
+	<asup:smf_name>files-used</asup:smf_name>
+	<asup:ui_name>Files Used (for user-visible data)</asup:ui_name>
+	<asup:type is_list="false">unsigned64_chartable</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>inofile_version</asup:tag>
+	<asup:smf_name>inofile-version</asup:smf_name>
+	<asup:ui_name>Inofile Version</asup:ui_name>
+	<asup:type is_list="false">unsigned</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>maxdir_size</asup:tag>
+	<asup:smf_name>maxdir-size</asup:smf_name>
+	<asup:ui_name>Maximum Directory Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>space_guarantee</asup:tag>
+	<asup:smf_name>space-guarantee</asup:smf_name>
+	<asup:ui_name>Space Guarantee Style</asup:ui_name>
+	<asup:type is_list="false">space_guarantee_enum</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>is_space_guarantee_en</asup:tag>
+	<asup:smf_name>space-guarantee-enabled</asup:smf_name>
+	<asup:ui_name>Space Guarantee in Effect</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>min_rdahead</asup:tag>
+	<asup:smf_name>min-readahead</asup:smf_name>
+	<asup:ui_name>Minimum Read Ahead</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>modify</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>atime_update</asup:tag>
+	<asup:smf_name>atime-update</asup:smf_name>
+	<asup:ui_name>Access Time Update Enabled</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>modify</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>snapdir_access</asup:tag>
+	<asup:smf_name>snapdir-access</asup:smf_name>
+	<asup:ui_name>Snapshot Directory Access Enabled</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>modify</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>pcnt_snap_space</asup:tag>
+	<asup:smf_name>percent-snapshot-space</asup:smf_name>
+	<asup:ui_name>Space Reserved for Snapshot Copies</asup:ui_name>
+	<asup:type is_list="false">percent</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>snap_policy</asup:tag>
+	<asup:smf_name>snapshot-policy</asup:smf_name>
+	<asup:ui_name>Snapshot Policy</asup:ui_name>
+	<asup:type is_list="false">snapshot_policy</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>c_time</asup:tag>
+	<asup:smf_name>create-time</asup:smf_name>
+	<asup:ui_name>Creation Time</asup:ui_name>
+	<asup:type is_list="false">Date</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>lang</asup:tag>
+	<asup:smf_name>language</asup:smf_name>
+	<asup:ui_name>Language</asup:ui_name>
+	<asup:type is_list="false">language_code</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>oem_char_set</asup:tag>
+	<asup:smf_name>oem-character-set</asup:smf_name>
+	<asup:ui_name>OEM Character Set</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>nfs_char_set</asup:tag>
+	<asup:smf_name>nfs-character-set</asup:smf_name>
+	<asup:ui_name>NFS Character Set</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>max_write_alloc_blks</asup:tag>
+	<asup:smf_name>max-write-alloc-blocks</asup:smf_name>
+	<asup:ui_name>Maximum Write Allocation Blocks</asup:ui_name>
+	<asup:type is_list="false">unsigned</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>name_ordinal</asup:tag>
+	<asup:smf_name>name-ordinal</asup:smf_name>
+	<asup:ui_name>Name Ordinal</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>is_clust_vol</asup:tag>
+	<asup:smf_name>is-cluster-volume</asup:smf_name>
+	<asup:ui_name>Is Cluster-Mode Volume</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>used_snap_rsrv_pcnt</asup:tag>
+	<asup:smf_name>snapshot-space-used</asup:smf_name>
+	<asup:ui_name>Snapshot Reserve Used</asup:ui_name>
+	<asup:type is_list="false">percent_no_limit</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>clone_vol</asup:tag>
+	<asup:smf_name>clone-volume</asup:smf_name>
+	<asup:ui_name>Clone Volume</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>anti_virus_on_access_policy</asup:tag>
+	<asup:smf_name>antivirus-on-access-policy</asup:smf_name>
+	<asup:ui_name>Antivirus On-Access Policy</asup:ui_name>
+	<asup:type is_list="false">antivirus_policy</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>vol_uuid</asup:tag>
+	<asup:smf_name>uuid</asup:smf_name>
+	<asup:ui_name>UUID of the Volume</asup:ui_name>
+	<asup:type is_list="false">Uuid</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>load_share_src</asup:tag>
+	<asup:smf_name>load-sharing-source</asup:smf_name>
+	<asup:ui_name>Load Sharing Source Volume</asup:ui_name>
+	<asup:type is_list="false">volume_name</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>move_target</asup:tag>
+	<asup:smf_name>move-target</asup:smf_name>
+	<asup:ui_name>Move Target Volume</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>fs_inconsistency</asup:tag>
+	<asup:smf_name>is-inconsistent</asup:smf_name>
+	<asup:ui_name>Inconsistency in the File System</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>is_rdonly</asup:tag>
+	<asup:smf_name>is-readonly</asup:smf_name>
+	<asup:ui_name>Is Read-Only Volume</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>i_uuid</asup:tag>
+	<asup:smf_name>instance-uuid</asup:smf_name>
+	<asup:ui_name>Instance UUID of the Volume</asup:ui_name>
+	<asup:type is_list="false">Uuid</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>p_uuid</asup:tag>
+	<asup:smf_name>provenance-uuid</asup:smf_name>
+	<asup:ui_name>Provenance UUID of the Volume</asup:ui_name>
+	<asup:type is_list="false">Uuid</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>nvfail_option</asup:tag>
+	<asup:smf_name>nvfail</asup:smf_name>
+	<asup:ui_name>NVFAIL Option</asup:ui_name>
+	<asup:type is_list="false">OnOff</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>in_nvfailed_state</asup:tag>
+	<asup:smf_name>in-nvfailed-state</asup:smf_name>
+	<asup:ui_name>Volume's NVFAIL State</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>modify</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>dr_force_nvfail_option</asup:tag>
+	<asup:smf_name>dr-force-nvfail</asup:smf_name>
+	<asup:ui_name>Force NVFAIL on MetroCluster Switchover</asup:ui_name>
+	<asup:type is_list="false">OnOff</asup:type>
+	<asup:qualification>modify</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>blk_type</asup:tag>
+	<asup:smf_name>block-type</asup:smf_name>
+	<asup:ui_name>Block Type</asup:ui_name>
+	<asup:type is_list="false">blockType</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>hya_eligibility</asup:tag>
+	<asup:smf_name>hybrid-cache-eligibility</asup:smf_name>
+	<asup:ui_name>Flash Pool Caching Eligibility</asup:ui_name>
+	<asup:type is_list="false">volHyaEligibility_enum</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>hya_wc_ineligibility_reason</asup:tag>
+	<asup:smf_name>hybrid-cache-write-caching-ineligibility-reason</asup:smf_name>
+	<asup:ui_name>Flash Pool Write Caching Ineligibility Reason</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>caching_policy</asup:tag>
+	<asup:smf_name>caching-policy</asup:smf_name>
+	<asup:ui_name>Caching Policy Name</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>cache_retention_priority</asup:tag>
+	<asup:smf_name>cache-retention-priority</asup:smf_name>
+	<asup:ui_name>Cache Retention Priority</asup:ui_name>
+	<asup:type is_list="false">cacheRetPri_enum</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>autobalance_aggr_enabled</asup:tag>
+	<asup:smf_name>is-autobalance-eligible</asup:smf_name>
+	<asup:ui_name>Is Eligible for Auto Balance Aggregate</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>role</asup:tag>
+	<asup:smf_name>constituent-role</asup:smf_name>
+	<asup:ui_name>Constituent Volume Role</asup:ui_name>
+	<asup:type is_list="false">repos_constituent_role</asup:type>
+	<asup:qualification>create</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>fgMsid</asup:tag>
+	<asup:smf_name>flexgroup-msid</asup:smf_name>
+	<asup:ui_name>FlexGroup Master Data Set ID</asup:ui_name>
+	<asup:type is_list="false">unsigned64</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>fgIndex</asup:tag>
+	<asup:smf_name>flexgroup-index</asup:smf_name>
+	<asup:ui_name>FlexGroup Index</asup:ui_name>
+	<asup:type is_list="false">unsigned</asup:type>
+	<asup:qualification>modify</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>fgUuid</asup:tag>
+	<asup:smf_name>flexgroup-uuid</asup:smf_name>
+	<asup:ui_name>UUID of the FlexGroup</asup:ui_name>
+	<asup:type is_list="false">Uuid</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>maxConstSize</asup:tag>
+	<asup:smf_name>max-constituent-size</asup:smf_name>
+	<asup:ui_name>Maximum size of a FlexGroup Constituent</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>isFg</asup:tag>
+	<asup:smf_name>is-flexgroup</asup:smf_name>
+	<asup:ui_name>Is Volume a FlexGroup</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>isQtreeCacheEnabled</asup:tag>
+	<asup:smf_name>is-qtree-caching-enabled</asup:smf_name>
+	<asup:ui_name>Is Qtree Caching Support Enabled</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>isMoveDestInCutover</asup:tag>
+	<asup:smf_name>is-move-destination-in-cutover</asup:smf_name>
+	<asup:ui_name>Is the Volume a Target of a Move Which Is Currently in Cutover</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>is_encrypted</asup:tag>
+	<asup:smf_name>encrypt</asup:smf_name>
+	<asup:ui_name>Enable or Disable Encryption</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>create</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>encryption_key_id</asup:tag>
+	<asup:smf_name>key-id</asup:smf_name>
+	<asup:ui_name>Encryption Key ID</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>appName</asup:tag>
+	<asup:smf_name>application</asup:smf_name>
+	<asup:ui_name>Application</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>appUuid</asup:tag>
+	<asup:smf_name>application-uuid</asup:smf_name>
+	<asup:ui_name>Application UUID</asup:ui_name>
+	<asup:type is_list="false">Uuid</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>extent_size</asup:tag>
+	<asup:smf_name>default-extent-size</asup:smf_name>
+	<asup:ui_name>Default Extent Size</asup:ui_name>
+	<asup:type is_list="false">extentSize</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>tiering_policy</asup:tag>
+	<asup:smf_name>tiering-policy</asup:smf_name>
+	<asup:ui_name>Volume Tiering Policy</asup:ui_name>
+	<asup:type is_list="false">tieringPolicy_enum</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>cloud_retrieval_policy</asup:tag>
+	<asup:smf_name>cloud-retrieval-policy</asup:smf_name>
+	<asup:ui_name>Volume Cloud Retrieval Policy</asup:ui_name>
+	<asup:type is_list="false">cloudRetrievePolicy_enum</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>sl_type</asup:tag>
+	<asup:smf_name>snaplock-type</asup:smf_name>
+	<asup:ui_name>SnapLock Type</asup:ui_name>
+	<asup:type is_list="false">snaplockType</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>tiering_min_cooling_days</asup:tag>
+	<asup:smf_name>tiering-minimum-cooling-days</asup:smf_name>
+	<asup:ui_name>Volume Tiering Minimum Cooling Days</asup:ui_name>
+	<asup:type is_list="false">unsigned</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>logicalUsed</asup:tag>
+	<asup:smf_name>logical-used</asup:smf_name>
+	<asup:ui_name>Logical Used Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>logicalUsedPercent</asup:tag>
+	<asup:smf_name>logical-used-percent</asup:smf_name>
+	<asup:ui_name>Logical Used Percentage</asup:ui_name>
+	<asup:type is_list="false">percent_no_limit</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>logicalAvailable</asup:tag>
+	<asup:smf_name>logical-available</asup:smf_name>
+	<asup:ui_name>Logical Available Size</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>afsLogicalUsed</asup:tag>
+	<asup:smf_name>logical-used-by-afs</asup:smf_name>
+	<asup:ui_name>Logical Size Used by Active Filesystem</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>snapLogicalUsed</asup:tag>
+	<asup:smf_name>logical-used-by-snapshots</asup:smf_name>
+	<asup:ui_name>Logical Size Used by All Snapshots</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>logicalSpaceReporting</asup:tag>
+	<asup:smf_name>is-space-reporting-logical</asup:smf_name>
+	<asup:ui_name>Logical Space Reporting</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>logicalSpaceEnforcement</asup:tag>
+	<asup:smf_name>is-space-enforcement-logical</asup:smf_name>
+	<asup:ui_name>Logical Space Enforcement</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>perfTierInactiveUserData</asup:tag>
+	<asup:smf_name>performance-tier-inactive-user-data</asup:smf_name>
+	<asup:ui_name>Performance Tier Inactive User Data</asup:ui_name>
+	<asup:type is_list="false">size</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>QosPolicyGroup</asup:tag>
+	<asup:smf_name>qos-policy-group</asup:smf_name>
+	<asup:ui_name>QoS Policy Group Name</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>QosAdaptivePolicyGroup</asup:tag>
+	<asup:smf_name>qos-adaptive-policy-group</asup:smf_name>
+	<asup:ui_name>QoS Adaptive Policy Group Name</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>hash</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>is_analytics_supported</asup:tag>
+	<asup:smf_name>is-analytics-supported</asup:smf_name>
+	<asup:ui_name>Is File System Analytics Supported</asup:ui_name>
+	<asup:type is_list="false">boolean</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>analytics_unsupported_reason</asup:tag>
+	<asup:smf_name>analytics-unsupported-reason</asup:smf_name>
+	<asup:ui_name>Reason File System Analytics is not Supported</asup:ui_name>
+	<asup:type is_list="false">text</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>analytics_state</asup:tag>
+	<asup:smf_name>analytics-state</asup:smf_name>
+	<asup:ui_name>File System Analytics State</asup:ui_name>
+	<asup:type is_list="false">analytics_state</asup:type>
+	<asup:qualification>create</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>analytics_scan_progress</asup:tag>
+	<asup:smf_name>analytics-scan-progress</asup:smf_name>
+	<asup:ui_name>File System Analytics Scan Progress</asup:ui_name>
+	<asup:type is_list="false">percent</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>tiering_object_tags</asup:tag>
+	<asup:smf_name>tiering-object-tags</asup:smf_name>
+	<asup:ui_name>Tags to be Associated with Objects Stored on a FabricPool</asup:ui_name>
+	<asup:type is_list="true">text</asup:type>
+	<asup:qualification>write</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>encryptionType</asup:tag>
+	<asup:smf_name>encryption-type</asup:smf_name>
+	<asup:ui_name>Encryption Type</asup:ui_name>
+	<asup:type is_list="false">encryptionType</asup:type>
+	<asup:qualification>create</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+<asup:field>
+	<asup:tag>encryption_state</asup:tag>
+	<asup:smf_name>encryption-state</asup:smf_name>
+	<asup:ui_name>Encryption State</asup:ui_name>
+	<asup:type is_list="false">encryption_state</asup:type>
+	<asup:qualification>read</asup:qualification>
+	<asup:remap>noop</asup:remap>
+</asup:field>
+</asup:TABLE_INFO>
+<asup:ROW col_time_us="4254477614528">
+	<vs>sindsjmcp1svm1</vs>
+	<vol>export</vol>
+	<dsid>1073742342</dsid>
+	<msid>3221225990</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>default</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>sindsjmcp01svm1_root</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>10737418240</size>
+	<avail>9661399040</avail>
+	<total>9663676416</total>
+	<used>2277376</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>9661399040</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>1073741824</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>10737418240</min_autosz>
+	<autosz_grow_thresh_pcnt>85%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>311287</files>
+	<files_used>102</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>none</snap_policy>
+	<c_time>Thu Aug 08 04:42:44 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>3</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>e854ab68-b953-11e9-bd65-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>e46b85b4-fb3d-4c7c-b4d8-3069916f4a73</i_uuid>
+	<p_uuid>e46b85b4-fb3d-4c7c-b4d8-3069916f4a73</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>2277376</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>2277376</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477631849">
+	<vs>sindsjmcp1svm1</vs>
+	<vol>prod_apps_home</vol>
+	<dsid>1073742377</dsid>
+	<msid>3221226025</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>prod_apps_misc</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/prod_apps_home</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1099511627776</size>
+	<avail>972571488256</avail>
+	<total>989560467456</total>
+	<used>16988979200</used>
+	<pcnt_used>1%</pcnt_used>
+	<exp_avail_size>972571488256</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109867352064</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>1649267441664</max_autosz>
+	<min_autosz>1099511627776</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>171293</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_PRD_Default</snap_policy>
+	<c_time>Fri Jan 24 16:53:38 2020</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>03af120b-3e87-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>ae78a103-0ef8-4aa3-95a3-c7873a5e463f</i_uuid>
+	<p_uuid>ae78a103-0ef8-4aa3-95a3-c7873a5e463f</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>48188248064</logicalUsed>
+	<logicalUsedPercent>5%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>48188248064</afsLogicalUsed>
+	<snapLogicalUsed>405382369280</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477641745">
+	<vs>sindsjmcp1svm1</vs>
+	<vol>sindsjmcp01svm1_root</vol>
+	<dsid>1073742339</dsid>
+	<msid>3221225987</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>default</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/</j_path>
+	<j_path_src />
+	<j_actv>true</j_actv>
+	<parent />
+	<vsroot>true</vsroot>
+	<comment />
+	<size>1073741824</size>
+	<avail>1017995264</avail>
+	<total>1020055552</total>
+	<used>2060288</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>1017995264</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>41443328</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>false</autosz>
+	<max_autosz>1288486912</max_autosz>
+	<min_autosz>1073741824</min_autosz>
+	<autosz_grow_thresh_pcnt>85%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>off</autosz_mode>
+	<files>31122</files>
+	<files_used>103</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>volume</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy>default</snap_policy>
+	<c_time>Tue Aug 06 21:23:18 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>23%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>5a9a4354-b84d-11e9-9259-00a098b3778d</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>699b4575-bccf-480f-9560-b6cbe3684848</i_uuid>
+	<p_uuid>699b4575-bccf-480f-9560-b6cbe3684848</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>2060288</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>2060288</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup />
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477651619">
+	<vs>sindsjmcp1svm1</vs>
+	<vol>sindsjmcp1svm1_restore</vol>
+	<dsid>1073742381</dsid>
+	<msid>3221226029</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>restore</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path />
+	<j_path_src />
+	<j_actv />
+	<parent />
+	<vsroot>false</vsroot>
+	<comment />
+	<size>2199023255552</size>
+	<avail>2089050546176</avail>
+	<total>2089072095232</total>
+	<used>21549056</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>2089050546176</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109943050240</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>false</autosz>
+	<max_autosz>2638827905024</max_autosz>
+	<min_autosz>2199023255552</min_autosz>
+	<autosz_grow_thresh_pcnt>98%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>off</autosz_mode>
+	<files>21251126</files>
+	<files_used>96</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy>default</snap_policy>
+	<c_time>Wed Apr 01 22:36:30 2020</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>2d45f635-7426-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>b338a798-c04e-4f9d-a271-37c6d1754dcc</i_uuid>
+	<p_uuid>b338a798-c04e-4f9d-a271-37c6d1754dcc</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>21549056</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>21549056</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup />
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477666895">
+	<vs>sindsjmcp1svm1</vs>
+	<vol>switchovertest</vol>
+	<dsid>1073742341</dsid>
+	<msid>3221225989</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>default</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/switchovertest</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>10737418240</size>
+	<avail>9653874688</avail>
+	<total>9663676416</total>
+	<used>9801728</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>9653874688</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>1049600000</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>10737418240</min_autosz>
+	<autosz_grow_thresh_pcnt>90%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>3112959</files>
+	<files_used>102</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_PRD_Default</snap_policy>
+	<c_time>Thu Aug 08 03:53:30 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>2%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>0793fce4-b94d-11e9-bd65-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>a518e8f6-16bc-41ab-a620-e52cc924c3b4</i_uuid>
+	<p_uuid>a518e8f6-16bc-41ab-a620-e52cc924c3b4</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>9801728</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>9801728</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477679389">
+	<vs>sindsjmcp1svm2</vs>
+	<vol>sindsjmcp01svm2_root</vol>
+	<dsid>1073742347</dsid>
+	<msid>3221225988</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>default</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/</j_path>
+	<j_path_src />
+	<j_actv>true</j_actv>
+	<parent />
+	<vsroot>true</vsroot>
+	<comment />
+	<size>1073741824</size>
+	<avail>1017958400</avail>
+	<total>1020055552</total>
+	<used>2097152</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>1017958400</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>41103360</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>false</autosz>
+	<max_autosz>1288486912</max_autosz>
+	<min_autosz>1073741824</min_autosz>
+	<autosz_grow_thresh_pcnt>85%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>off</autosz_mode>
+	<files>31122</files>
+	<files_used>103</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>volume</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy>default</snap_policy>
+	<c_time>Tue Aug 06 21:31:11 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>23%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>11868b05-caa0-11e9-893c-00a098b3778d</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>4e57a07e-0fe7-46a4-89b5-751a3041d9a3</i_uuid>
+	<p_uuid>4e57a07e-0fe7-46a4-89b5-751a3041d9a3</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>2097152</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>2097152</afsLogicalUsed>
+	<snapLogicalUsed>4096</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup />
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477690268">
+	<vs>sindsjmcp1svm2</vs>
+	<vol>sindsjmcp1svm2_restore</vol>
+	<dsid>1073742382</dsid>
+	<msid>3221226030</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>restore</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path />
+	<j_path_src />
+	<j_actv />
+	<parent />
+	<vsroot>false</vsroot>
+	<comment />
+	<size>2199023255552</size>
+	<avail>2089050574848</avail>
+	<total>2089072095232</total>
+	<used>21520384</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>2089050574848</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109942923264</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>false</autosz>
+	<max_autosz>2638827905024</max_autosz>
+	<min_autosz>2199023255552</min_autosz>
+	<autosz_grow_thresh_pcnt>98%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>off</autosz_mode>
+	<files>21251126</files>
+	<files_used>96</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy>default</snap_policy>
+	<c_time>Wed Apr 01 22:39:31 2020</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>9974fbc7-7426-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>70fa70dc-1348-443d-a7e5-fd5e5b334e63</i_uuid>
+	<p_uuid>70fa70dc-1348-443d-a7e5-fd5e5b334e63</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>21520384</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>21520384</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup />
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477707187">
+	<vs>sindsjmcp1svm3</vs>
+	<vol>sindsjmcp1svm3_data_01</vol>
+	<dsid>1073742380</dsid>
+	<msid>3221226028</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>IncentiveMgmt-Prod</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/sindsjmcp1svm3_data_01</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>sindsjmcp1svm3_root</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>2748779069440</size>
+	<avail>1151175368704</avail>
+	<total>2473901162496</total>
+	<used>1322725793792</used>
+	<pcnt_used>53%</pcnt_used>
+	<exp_avail_size>1151175368704</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>129329430528</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>false</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>2748779069440</min_autosz>
+	<autosz_grow_thresh_pcnt>90%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>off</autosz_mode>
+	<files>21251126</files>
+	<files_used>9380217</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_PRD_Default</snap_policy>
+	<c_time>Wed Mar 04 04:38:58 2020</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>53%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>020aa219-5d8f-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>fc5d9957-1acb-4a60-9aad-61269d04b8b2</i_uuid>
+	<p_uuid>fc5d9957-1acb-4a60-9aad-61269d04b8b2</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>2358877872128</logicalUsed>
+	<logicalUsedPercent>95%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>2358877872128</afsLogicalUsed>
+	<snapLogicalUsed>2990216302592</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477721027">
+	<vs>sindsjmcp1svm3</vs>
+	<vol>sindsjmcp1svm3_data_02_SMB</vol>
+	<dsid>1073742387</dsid>
+	<msid>3221226035</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>default</policy>
+	<usr />
+	<grp />
+	<security_style>ntfs</security_style>
+	<unix_perm>------------</unix_perm>
+	<j_path>/sindsjmcp1svm3_data_02_SMB</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>sindsjmcp1svm3_root</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1395864371200</size>
+	<avail>1076239028224</avail>
+	<total>1256277934080</total>
+	<used>180038905856</used>
+	<pcnt_used>14%</pcnt_used>
+	<exp_avail_size>1076239028224</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>139567443968</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>1395864371200</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>447309</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_PRD_Default</snap_policy>
+	<c_time>Wed Oct 21 23:40:37 2020</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>c462d5da-13b3-11eb-805c-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>c44dc8dc-13b3-11eb-805c-00a098b37b01</i_uuid>
+	<p_uuid>c44dc8dc-13b3-11eb-805c-00a098b37b01</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>335699177472</logicalUsed>
+	<logicalUsedPercent>27%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>335699177472</afsLogicalUsed>
+	<snapLogicalUsed>2014978338816</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477742119">
+	<vs>sindsjmcu1svm1</vs>
+	<vol>netapp_datadobi</vol>
+	<dsid>1073742367</dsid>
+	<msid>3221226015</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>netapp_datadobi</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/netapp_datadobi</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>536870912000</size>
+	<avail>510017208320</avail>
+	<total>510027366400</total>
+	<used>10158080</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>510017208320</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>26841739264</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>1099511627776</max_autosz>
+	<min_autosz>536870912000</min_autosz>
+	<autosz_grow_thresh_pcnt>92%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>15564791</files>
+	<files_used>96</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy>snapshot_8daily</snap_policy>
+	<c_time>Wed Dec 18 00:54:32 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>e5de9fb2-20ed-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>ae53aa77-3e2a-44a4-91a5-15518f1663b0</i_uuid>
+	<p_uuid>ae53aa77-3e2a-44a4-91a5-15518f1663b0</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>10158080</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>10158080</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477752029">
+	<vs>sindsjmcu1svm1</vs>
+	<vol>sindsjmcu1svm1_root</vol>
+	<dsid>1073742343</dsid>
+	<msid>3221225991</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>default</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/</j_path>
+	<j_path_src />
+	<j_actv>true</j_actv>
+	<parent />
+	<vsroot>true</vsroot>
+	<comment />
+	<size>1073741824</size>
+	<avail>1017987072</avail>
+	<total>1020055552</total>
+	<used>2068480</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>1017987072</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>41627648</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>false</autosz>
+	<max_autosz>1288486912</max_autosz>
+	<min_autosz>1073741824</min_autosz>
+	<autosz_grow_thresh_pcnt>85%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>off</autosz_mode>
+	<files>31122</files>
+	<files_used>103</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>volume</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy>default</snap_policy>
+	<c_time>Thu Aug 29 02:53:41 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>22%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>279438e4-c9c5-11e9-ba58-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>0a152e50-f91c-4b8f-9737-f3f030ebe2c6</i_uuid>
+	<p_uuid>0a152e50-f91c-4b8f-9737-f3f030ebe2c6</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>2068480</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>2068480</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup />
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477767287">
+	<vs>sindsjmcu1svm1</vs>
+	<vol>uat_apps_dbfeeds</vol>
+	<dsid>1073742353</dsid>
+	<msid>3221226001</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>uat_apps_dbfeeds</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/uat_apps_dbfeeds</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1099511627776</size>
+	<avail>848560766976</avail>
+	<total>989560467456</total>
+	<used>140999700480</used>
+	<pcnt_used>14%</pcnt_used>
+	<exp_avail_size>848560766976</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>92535439360</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>1099511627776</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>890069</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Fri Nov 08 18:26:10 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>16%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>2ee73aa0-0212-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>51990076-54c3-48ad-9e90-e90479287672</i_uuid>
+	<p_uuid>51990076-54c3-48ad-9e90-e90479287672</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>270670454784</logicalUsed>
+	<logicalUsedPercent>27%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>270670454784</afsLogicalUsed>
+	<snapLogicalUsed>1077741637632</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477782654">
+	<vs>sindsjmcu1svm1</vs>
+	<vol>uat_apps_depotglobal</vol>
+	<dsid>1073742354</dsid>
+	<msid>3221226002</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>uat_apps_depotglobal</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/uat_apps_depotglobal</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1099511627776</size>
+	<avail>989551063040</avail>
+	<total>989560467456</total>
+	<used>9404416</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>989551063040</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109947908096</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>1099511627776</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>98</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Fri Nov 08 18:26:51 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>4704d3cd-0212-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>7a6583cc-9ee9-4eca-87eb-3975bea8b4b6</i_uuid>
+	<p_uuid>7a6583cc-9ee9-4eca-87eb-3975bea8b4b6</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>9404416</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>9404416</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477797852">
+	<vs>sindsjmcu1svm1</vs>
+	<vol>uat_apps_fssw</vol>
+	<dsid>1073742358</dsid>
+	<msid>3221226006</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>uat_apps_fssw</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/uat_apps_fssw</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>2199023255552</size>
+	<avail>1822759784448</avail>
+	<total>1979120930816</total>
+	<used>156361146368</used>
+	<pcnt_used>7%</pcnt_used>
+	<exp_avail_size>1822759784448</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>219898527744</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>2199023255552</min_autosz>
+	<autosz_grow_thresh_pcnt>98%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>551068</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Fri Nov 08 18:27:51 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>6b033523-0212-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>8974200d-8e8f-4897-b75b-dcac38b58e96</i_uuid>
+	<p_uuid>8974200d-8e8f-4897-b75b-dcac38b58e96</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>319024209920</logicalUsed>
+	<logicalUsedPercent>16%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>319024209920</afsLogicalUsed>
+	<snapLogicalUsed>1301304508416</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477813175">
+	<vs>sindsjmcu1svm1</vs>
+	<vol>uat_apps_iris</vol>
+	<dsid>1073742359</dsid>
+	<msid>3221226007</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>uat_apps_iris</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/uat_apps_iris</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1099511627776</size>
+	<avail>957606789120</avail>
+	<total>989560467456</total>
+	<used>31953678336</used>
+	<pcnt_used>3%</pcnt_used>
+	<exp_avail_size>957606789120</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109948964864</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>1099511627776</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>89584</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Fri Nov 08 18:28:18 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>7b043ea7-0212-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>856981ec-b05b-46da-add3-84d30f167002</i_uuid>
+	<p_uuid>856981ec-b05b-46da-add3-84d30f167002</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>54012301312</logicalUsed>
+	<logicalUsedPercent>5%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>54012301312</afsLogicalUsed>
+	<snapLogicalUsed>176468983808</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477828360">
+	<vs>sindsjmcu1svm1</vs>
+	<vol>uat_apps_tradefnd</vol>
+	<dsid>1073742355</dsid>
+	<msid>3221226003</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>uat_apps_tradefnd</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/uat_apps_tradefnd</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1099511627776</size>
+	<avail>989200760832</avail>
+	<total>989560467456</total>
+	<used>359706624</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>989200760832</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109942448128</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>1099511627776</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>658</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Fri Nov 08 18:26:56 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>4a11a47f-0212-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>6afa1150-0e65-4666-b8b5-88a241d24fc4</i_uuid>
+	<p_uuid>6afa1150-0e65-4666-b8b5-88a241d24fc4</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>463638528</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>463638528</afsLogicalUsed>
+	<snapLogicalUsed>1662910464</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477840669">
+	<vs>sindsjmcu1svm2</vs>
+	<vol>sindsjmcu1svm2_root</vol>
+	<dsid>1073742344</dsid>
+	<msid>3221225992</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>default</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/</j_path>
+	<j_path_src />
+	<j_actv>true</j_actv>
+	<parent />
+	<vsroot>true</vsroot>
+	<comment />
+	<size>1073741824</size>
+	<avail>1017970688</avail>
+	<total>1020055552</total>
+	<used>2084864</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>1017970688</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>41312256</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>false</autosz>
+	<max_autosz>1288486912</max_autosz>
+	<min_autosz>1073741824</min_autosz>
+	<autosz_grow_thresh_pcnt>85%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>off</autosz_mode>
+	<files>31122</files>
+	<files_used>104</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>volume</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy>default</snap_policy>
+	<c_time>Thu Aug 29 02:55:10 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>23%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>5c2c8cfe-c9c5-11e9-ba58-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>37b9d062-2b95-476f-bac5-50928b10fb33</i_uuid>
+	<p_uuid>37b9d062-2b95-476f-bac5-50928b10fb33</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>2084864</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>2084864</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup />
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477856335">
+	<vs>sindsjmcu1svm3</vs>
+	<vol>sindsjmcu1svm3_data_02_SMB</vol>
+	<dsid>1073742386</dsid>
+	<msid>3221226034</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>default</policy>
+	<usr />
+	<grp />
+	<security_style>ntfs</security_style>
+	<unix_perm>------------</unix_perm>
+	<j_path>/sindsjmcu1svm3_data_02_SMB</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>sindsjmcu1svm3_root</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1181116006400</size>
+	<avail>828259377152</avail>
+	<total>1122060206080</total>
+	<used>293800828928</used>
+	<pcnt_used>26%</pcnt_used>
+	<exp_avail_size>828259377152</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>59022942208</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>3298534883328</max_autosz>
+	<min_autosz>1181116006400</min_autosz>
+	<autosz_grow_thresh_pcnt>92%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>367448</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Sat Oct 17 10:39:04 2020</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>ec0aaaee-1021-11eb-805c-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>ebed71c3-1021-11eb-805c-00a098b37b01</i_uuid>
+	<p_uuid>ebed71c3-1021-11eb-805c-00a098b37b01</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>503262531584</logicalUsed>
+	<logicalUsedPercent>45%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>503262531584</afsLogicalUsed>
+	<snapLogicalUsed>1672355618816</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477894651">
+	<vs>sindsjmcu1svm4</vs>
+	<vol>uat_P8data01</vol>
+	<dsid>1073742364</dsid>
+	<msid>3221226012</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>uat_P8data01</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXLLaFaMTzOeCCEKRkTB0ZWc=/pii_encrypt</usr>
+	<grp>p8instal</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/uat_P8data01</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1099511627776</size>
+	<avail>797484589056</avail>
+	<total>989560467456</total>
+	<used>192075878400</used>
+	<pcnt_used>19%</pcnt_used>
+	<exp_avail_size>797484589056</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109747593216</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>10995116277760</max_autosz>
+	<min_autosz>1099511627776</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>960229</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Fri Nov 08 18:32:20 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>0b507451-0213-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>4b37f8c5-a7a1-4818-8a22-a2ef9f0594b1</i_uuid>
+	<p_uuid>4b37f8c5-a7a1-4818-8a22-a2ef9f0594b1</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>526522904576</logicalUsed>
+	<logicalUsedPercent>53%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>526522904576</afsLogicalUsed>
+	<snapLogicalUsed>2675576209408</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477919619">
+	<vs>sindsjmcu1svm4</vs>
+	<vol>uat_P8data02</vol>
+	<dsid>1073742365</dsid>
+	<msid>3221226013</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>uat_P8data02</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXLLaFaMTzOeCCEKRkTB0ZWc=/pii_encrypt</usr>
+	<grp>p8instal</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwxr-xr-x</unix_perm>
+	<j_path>/export/uat_P8data02</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1099511627776</size>
+	<avail>954390794240</avail>
+	<total>989560467456</total>
+	<used>35169673216</used>
+	<pcnt_used>3%</pcnt_used>
+	<exp_avail_size>954390794240</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109932601344</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>10995116277760</max_autosz>
+	<min_autosz>1099511627776</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>104728</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Fri Nov 08 18:32:25 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>0e5e4d70-0213-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>785160dd-49bb-4b30-8e06-04dac4240d62</i_uuid>
+	<p_uuid>785160dd-49bb-4b30-8e06-04dac4240d62</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>50140073984</logicalUsed>
+	<logicalUsedPercent>5%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>50140073984</afsLogicalUsed>
+	<snapLogicalUsed>119763206144</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477944837">
+	<vs>sindsjmcu1svm4</vs>
+	<vol>uat_dbecm_data</vol>
+	<dsid>1073742362</dsid>
+	<msid>3221226010</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>uat_dbecm_data</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXLLaFaMTzOeCCEKRkTB0ZWc=/pii_encrypt</usr>
+	<grp>p8instal</grp>
+	<security_style>unix</security_style>
+	<unix_perm>-s-rwxrwxr-x</unix_perm>
+	<j_path>/export/uat_dbecm_data</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1099511627776</size>
+	<avail>895936393216</avail>
+	<total>989560467456</total>
+	<used>93624074240</used>
+	<pcnt_used>9%</pcnt_used>
+	<exp_avail_size>895936393216</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109790273536</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>10995116277760</max_autosz>
+	<min_autosz>1099511627776</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>1458322</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Fri Nov 08 18:32:10 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>0533e8bd-0213-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>c960a873-dabd-447b-a012-f33ab42d0791</i_uuid>
+	<p_uuid>c960a873-dabd-447b-a012-f33ab42d0791</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>114965553152</logicalUsed>
+	<logicalUsedPercent>12%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>114965553152</afsLogicalUsed>
+	<snapLogicalUsed>170731831296</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477969929">
+	<vs>sindsjmcu1svm4</vs>
+	<vol>uat_ingest01</vol>
+	<dsid>1073742363</dsid>
+	<msid>3221226011</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy>uat_ingest01</policy>
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXLW3lsL1kVbp6zGikWnZ7uo=/pii_encrypt</usr>
+	<grp>transfer</grp>
+	<security_style>unix</security_style>
+	<unix_perm>-s-rwxrwxr-x</unix_perm>
+	<j_path>/export/uat_ingest01</j_path>
+	<j_path_src>RW_volume</j_path_src>
+	<j_actv>true</j_actv>
+	<parent>export</parent>
+	<vsroot>false</vsroot>
+	<comment />
+	<size>1099511627776</size>
+	<avail>983982661632</avail>
+	<total>989560467456</total>
+	<used>5577805824</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>983982661632</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>109831675904</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>true</autosz>
+	<max_autosz>10995116277760</max_autosz>
+	<min_autosz>1099511627776</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>grow</autosz_mode>
+	<files>21251126</files>
+	<files_used>4299</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>none</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>10%</pcnt_snap_space>
+	<snap_policy>GFS_UAT_Default</snap_policy>
+	<c_time>Fri Nov 08 18:32:15 2019</c_time>
+	<lang>C.UTF-8</lang>
+	<oem_char_set>ascii|cp1|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>utf-8|utf-8|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>0841b05e-0213-11ea-b4cf-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>b3fc3f87-b6d0-42d8-b8d2-baa4136a3d9a</i_uuid>
+	<p_uuid>b3fc3f87-b6d0-42d8-b8d2-baa4136a3d9a</p_uuid>
+	<nvfail_option>off</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>9006460928</logicalUsed>
+	<logicalUsedPercent>1%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>9006460928</afsLogicalUsed>
+	<snapLogicalUsed>27343212544</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup>performance</QosAdaptivePolicyGroup>
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254477982633">
+	<vs>sindsjnasmcp01</vs>
+	<vol>MDV_CRS_a18e748cb08411e9996000a098b37b01_A</vol>
+	<dsid>1073742337</dsid>
+	<msid>3221225985</msid>
+	<aggr>sindsjnasmcp01n1_data_aggr01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy />
+	<usr>pii_encrypt/0hB3i3jDzWtGHrEaBpZjXOKKsHF9M5WMRlQJr5iok2Q=/pii_encrypt</usr>
+	<grp>0</grp>
+	<security_style>unix</security_style>
+	<unix_perm>---rwx------</unix_perm>
+	<j_path />
+	<j_path_src />
+	<j_actv />
+	<parent />
+	<vsroot>false</vsroot>
+	<comment>System volume for CPS Configuration Replication Storage Area Group subsystem.</comment>
+	<size>10737418240</size>
+	<avail>10190204928</avail>
+	<total>10200547328</total>
+	<used>10342400</used>
+	<pcnt_used>0%</pcnt_used>
+	<exp_avail_size>10190204928</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>536870912</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>false</autosz>
+	<max_autosz>12884901888</max_autosz>
+	<min_autosz>10737418240</min_autosz>
+	<autosz_grow_thresh_pcnt>85%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>off</autosz_mode>
+	<files>311287</files>
+	<files_used>188</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>4294966272</maxdir_size>
+	<space_guarantee>volume</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy>none</snap_policy>
+	<c_time>Mon Jul 29 20:01:12 2019</c_time>
+	<lang>en_US</lang>
+	<oem_char_set>cp437|cp437|Fri Oct  2 06:00:53 +08 1998</oem_char_set>
+	<nfs_char_set>iso-8859-1|iso-8859-1|Fri Oct  2 06:00:53 +08 1998</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>true</is_clust_vol>
+	<used_snap_rsrv_pcnt>0%</used_snap_rsrv_pcnt>
+	<clone_vol>false</clone_vol>
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>8f167fbb-b1f8-11e9-b2f1-00a098b37b01</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>0f35c356-ee1f-44c5-9ddf-1afec8e7a92a</i_uuid>
+	<p_uuid>0f35c356-ee1f-44c5-9ddf-1afec8e7a92a</p_uuid>
+	<nvfail_option>on</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled>true</autobalance_aggr_enabled>
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type>non-snaplock</sl_type>
+	<tiering_min_cooling_days />
+	<logicalUsed>10342400</logicalUsed>
+	<logicalUsedPercent>0%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>10342400</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup />
+	<is_analytics_supported>true</is_analytics_supported>
+	<analytics_unsupported_reason />
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+<asup:ROW col_time_us="4254478001201">
+	<vs>sindsjnasmcp01n1</vs>
+	<vol>vol0</vol>
+	<dsid />
+	<msid />
+	<aggr>sindsjnasmcp01n1_root_01</aggr>
+	<state>online</state>
+	<type>RW</type>
+	<style>flex</style>
+	<styleEx>flexvol</styleEx>
+	<policy />
+	<usr />
+	<grp />
+	<security_style />
+	<unix_perm>------------</unix_perm>
+	<j_path />
+	<j_path_src />
+	<j_actv />
+	<parent />
+	<vsroot />
+	<comment />
+	<size>647144579072</size>
+	<avail>529280892928</avail>
+	<total>614787350528</total>
+	<used>85506457600</used>
+	<pcnt_used>13%</pcnt_used>
+	<exp_avail_size>529280892928</exp_avail_size>
+	<over_provisioned_size>0</over_provisioned_size>
+	<snap_rsrv_avail_size>24875892736</snap_rsrv_avail_size>
+	<nearly_full_threshold>95%</nearly_full_threshold>
+	<full_threshold>98%</full_threshold>
+	<autosz>false</autosz>
+	<max_autosz>776573493248</max_autosz>
+	<min_autosz>647144579072</min_autosz>
+	<autosz_grow_thresh_pcnt>95%</autosz_grow_thresh_pcnt>
+	<autosz_shrink_thresh_pcnt>50%</autosz_shrink_thresh_pcnt>
+	<autosz_mode>off</autosz_mode>
+	<files>18761818</files>
+	<files_used>236273</files_used>
+	<inofile_version>4</inofile_version>
+	<maxdir_size>335544320</maxdir_size>
+	<space_guarantee>volume</space_guarantee>
+	<is_space_guarantee_en>true</is_space_guarantee_en>
+	<min_rdahead>false</min_rdahead>
+	<atime_update>true</atime_update>
+	<snapdir_access>true</snapdir_access>
+	<pcnt_snap_space>5%</pcnt_snap_space>
+	<snap_policy />
+	<c_time>Thu Jan 01 07:30:00 1970</c_time>
+	<lang />
+	<oem_char_set>undefined 0</oem_char_set>
+	<nfs_char_set>undefined 0</nfs_char_set>
+	<max_write_alloc_blks>0</max_write_alloc_blks>
+	<name_ordinal>base</name_ordinal>
+	<is_clust_vol>false</is_clust_vol>
+	<used_snap_rsrv_pcnt>23%</used_snap_rsrv_pcnt>
+	<clone_vol />
+	<anti_virus_on_access_policy>default</anti_virus_on_access_policy>
+	<vol_uuid>97756da4-145d-48ec-8a5f-fd3f335ab769</vol_uuid>
+	<load_share_src />
+	<move_target>false</move_target>
+	<fs_inconsistency>false</fs_inconsistency>
+	<is_rdonly>false</is_rdonly>
+	<i_uuid>4bb283aa-7c78-4989-b9c1-7f30ca86e5cc</i_uuid>
+	<p_uuid>4bb283aa-7c78-4989-b9c1-7f30ca86e5cc</p_uuid>
+	<nvfail_option>on</nvfail_option>
+	<in_nvfailed_state>false</in_nvfailed_state>
+	<dr_force_nvfail_option>off</dr_force_nvfail_option>
+	<blk_type>64-bit</blk_type>
+	<hya_eligibility>read-write</hya_eligibility>
+	<hya_wc_ineligibility_reason />
+	<caching_policy />
+	<cache_retention_priority />
+	<autobalance_aggr_enabled />
+	<role />
+	<fgMsid />
+	<fgIndex />
+	<fgUuid />
+	<maxConstSize />
+	<isFg>false</isFg>
+	<isQtreeCacheEnabled>false</isQtreeCacheEnabled>
+	<isMoveDestInCutover>false</isMoveDestInCutover>
+	<is_encrypted>false</is_encrypted>
+	<encryption_key_id />
+	<appName />
+	<appUuid />
+	<extent_size>4K</extent_size>
+	<tiering_policy>none</tiering_policy>
+	<cloud_retrieval_policy>default</cloud_retrieval_policy>
+	<sl_type />
+	<tiering_min_cooling_days />
+	<logicalUsed>85506457600</logicalUsed>
+	<logicalUsedPercent>14%</logicalUsedPercent>
+	<logicalAvailable />
+	<afsLogicalUsed>85506457600</afsLogicalUsed>
+	<snapLogicalUsed>0</snapLogicalUsed>
+	<logicalSpaceReporting>false</logicalSpaceReporting>
+	<logicalSpaceEnforcement>false</logicalSpaceEnforcement>
+	<perfTierInactiveUserData />
+	<QosPolicyGroup />
+	<QosAdaptivePolicyGroup />
+	<is_analytics_supported>false</is_analytics_supported>
+	<analytics_unsupported_reason>File system analytics is not supported on 7-mode volumes</analytics_unsupported_reason>
+	<analytics_state>off</analytics_state>
+	<analytics_scan_progress />
+	<tiering_object_tags />
+	<encryptionType>none</encryptionType>
+	<encryption_state>none</encryption_state>
+</asup:ROW>
+</T_VOLUME>

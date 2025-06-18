@@ -1,0 +1,14 @@
+/loncdcmcp1svm3/loncdcmcp1svm3_data_01
+/loncdcmcp1svm4/longmdnfsv11
+/loncdcmcp1svm4/gm_prd_data8p3
+/loncdcmcp1svm4/gm_prd_data7p3
+/loncdcmcp1svm1/longmdnfsv12
+/loncdcmcp1svm1/uk_dr_test1
+/loncdcmcp1svm6/loncdcmcp1svm6_data_02
+/loncdcmcp1svm2/loncdcmcp1svm2_data_01
+/loncdcmcp1svm6/loncdcmcp1svm6_data_01
+/loncdcmcp1svm3/loncdcmcp1svm3_data_02
+/loncdcmcp1svm1/gm_prd_data5p3
+/loncdcmcp1svm2/eqged_prd_data3
+/loncdcmcp1svm2/eqged_prd_home2
+/loncdcmcp1svm2/eqged_prd_data1

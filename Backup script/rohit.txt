@@ -1,0 +1,75 @@
+﻿$serial=@()
+$serial=Get-Content "C:\TakeoverTime\serial.txt"
+$excel= New-Object -com excel.application
+$excel.Visible = $True
+
+
+$path= 'C:\TakeoverTime\takeovertime.xlsx'
+$ExcelWorkbook= $Excel.workbooks.open($path)
+$sheet = $Excelworkbook.sheets.item("Sheet1")
+$row=0
+foreach ($s in $serial){
+#$link= Invoke-RestMethod -uri "http://restprd.corp.netapp.com/asup-rest-interface/ASUP_DATA/client_id/Fujitsu_capacity/sys_serial_no/941933000088/asup_subject/*takeover*,*quorum*/start_date/2020-01-01/end_date/2020-09-03"
+#http://restprd.corp.netapp.com/asup-rest-interface/ASUP_DATA/client_id/Fujitsu_capacity/sys_serial_no/941933000088/asup_subject/quorum*,*takeover*/start_date/2020-01-01/end_date/2020-09-03
+$link= Invoke-RestMethod -uri "http://restprd.corp.netapp.com/asup-rest-interface/ASUP_DATA/client_id/Fujitsu_capacity/sys_serial_no/$s/asup_subject/quorum*,*takeover*/start_date/2020-01-01/end_date/2020-09-03"
+
+$sub=$link.ChildNodes.results.system.asups.asup.asup_subject
+$index=@()
+for($i=0;$i -lt $sub.count ; $i++ )
+{
+if(($sub[$i].Equals("HA Group Notification (NODE(S) OUT OF CLUSTER QUORUM) EMERGENCY") -or $sub[$i].Equals("Group Notification (CONTROLLER TAKEOVER COMPLETE MANUAL) NOTICE")))
+ {
+ $sub[$i]
+    $index+=$i
+}
+}
+foreach ($i in $index)
+{$i
+if ($i -eq 21)
+{sleep 10}
+$url= Invoke-RestMethod -uri $link.ChildNodes.results.system.asups.asup.asup_content_list[$i]
+$uri=$url.ChildNodes.results.system.asups.asup.list.content
+$index=0
+for ($j=0;$j -lt $uri.count;$j++)
+{
+ if($uri.name[$j].Equals("EMS-LOG-FILE.GZ"))
+ {
+
+ $index=$j
+ }
+ 
+ }
+
+
+ if($index -ne 0)
+ {write "write"
+ $dns=$uri[$index].link
+ $data=Invoke-RestMethod -uri $dns
+
+
+ #| out-file "C:\script\rohit.csv" -Append
+ 
+ $a=$data.ChildNodes.results.system.asups.asup.list.content.data.'#cdata-section'
+ $a | Select-String -Pattern 'takeover_duration' > C:\TakeoverTime\bups.txt
+$b=get-content C:\TakeoverTime\bups.txt | Select-String -Pattern 'takeover_du'
+#$data.ChildNodes.results.system |Select-Object -Property @{Label ="data";Expression= {$_.asups.asup.list.content.data}},@{Label ="sys_serial_no";Expression= {$_.sys_serial_no}} | out-file "C:\script\data.xlsx" -Append
+
+$row=$row+1
+
+$sheet.Cells.item($row,1).value2=$data.ChildNodes.results.system.sys_serial_no
+
+
+$sheet.Cells.item($row,2).value2="$b"
+$sheet.Cells.item($row,3).value2=$data.ChildNodes.results.system.ha_group.partner_hostname
+
+$sheet.Cells.item($row,4).value2=$data.ChildNodes.results.system.asups.asup.asup_received_date
+$sheet.Cells.item($row,5).value2=$data.ChildNodes.results.system.asups.asup.sys_version
+$sheet.Cells.item($row,6).value2=$data.ChildNodes.results.system.sys_model
+}
+}
+}
+
+
+
+$Excel.Workbooks.Close()
+$Excel.Quit() 

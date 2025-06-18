@@ -1,0 +1,448 @@
+dmp Tue Jul 21 21:00:47 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Start (Level 1, NDMP:60885)
+dmp Tue Jul 21 21:00:47 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Options (b=256, u, U)
+dmp Tue Jul 21 21:00:47 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Filesystem (/vol/gmgrnfsp1data1(1))
+dmp Tue Jul 21 21:00:47 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Tue Jul 21 21:00:47 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Granularity (volume)
+dmp Tue Jul 21 21:00:47 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Snapshot (snapshot_for_backup.33, Tue Jul 21 21:00:44 EDT 2020)
+dmp Tue Jul 21 21:00:47 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Tape_open (ndmp)
+dmp Tue Jul 21 21:00:47 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Phase_change (I)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Total count of all - reg inodes: 347833 lun inodes: 0 other inodes: 0 dirs: 1555 nt dirs: 0 nt inodes: 0 acls: 1
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Total size of all - reg inodes: 112375777 lun inodes: 0 other inodes: 0 dirs: 384916 nt dirs: 0 nt inodes: 0 acls: 20
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Dir count        696       271       458        77
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Dir count         32        18         3         0
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Total directories 1555
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (File count       7867      1172     85504    197978     30946      9205      5816
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (File count       4361      1415      3543        26         0         0
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Total files 347833
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (To restore this filesystem, a total of 129329881 KB space and 349389 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Tue Jul 21 21:01:04 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Phase_change (II)
+dmp Tue Jul 21 21:01:06 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Start (Level 1, NDMP:60943)
+dmp Tue Jul 21 21:01:06 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Options (b=256, u, U)
+dmp Tue Jul 21 21:01:06 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Filesystem (/vol/innfsp1data1)
+dmp Tue Jul 21 21:01:06 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Tue Jul 21 21:01:06 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Granularity (volume)
+dmp Tue Jul 21 21:01:06 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Snapshot (snapshot_for_backup.34, Tue Jul 21 21:01:04 EDT 2020)
+dmp Tue Jul 21 21:01:06 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Tape_open (ndmp)
+dmp Tue Jul 21 21:01:06 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Phase_change (I)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Total count of all - reg inodes: 114125 lun inodes: 0 other inodes: 0 dirs: 3866 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Total size of all - reg inodes: 320232369 lun inodes: 0 other inodes: 0 dirs: 61644 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Dir count       3664       104        67        16
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Dir count          7         8         0         0
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Total directories 3866
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (File count       4426      8797     43005     20381      4375      6368      7403
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (File count       3148      5887     10279        37        19         0
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Total files 114125
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (To restore this filesystem, a total of 352511758 KB space and 117991 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Phase_change (II)
+dmp Tue Jul 21 21:01:07 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Phase_change (III)
+dmp Tue Jul 21 21:01:11 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Phase_change (III)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Start (Level 1, NDMP:60993)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Options (b=256, u, U)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Filesystem (/vol/pbnfsp1data2)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Granularity (volume)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Snapshot (snapshot_for_backup.35, Tue Jul 21 21:01:25 EDT 2020)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Tape_open (ndmp)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Phase_change (I)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Total directories 0
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Total files 0
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Phase_change (II)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Phase_change (III)
+dmp Tue Jul 21 21:01:28 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Phase_change (IV)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Phase_change (V)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Tape_close (ndmp)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) End (0 MB)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Phase 1 time: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Phase 3: tape directory blocks written: 9
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (# filehistory entries dir: 2 node: 1 
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Dir to FH entry time stats (msec) numEntries: 2 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Tape write times (msec): average: 0 max: 9
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data2(2) Log_msg (Tape changes: 1
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Start (Level 1, NDMP:60969)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Options (b=256, u, U)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Filesystem (/vol/nycnjmmcp1svm3_data_02)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Granularity (volume)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Snapshot (snapshot_for_backup.36, Tue Jul 21 21:01:25 EDT 2020)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Tape_open (ndmp)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Phase_change (I)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Total count of all - reg inodes: 100 lun inodes: 0 other inodes: 0 dirs: 17 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Total size of all - reg inodes: 27581354 lun inodes: 0 other inodes: 0 dirs: 112 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Dir count         16         0         1         0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Dir count          0         0         0         0
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Total directories 17
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (File count          0         0         5        11         6         9        17
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (File count         11        11        28         0         0         2
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Total files 100
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (To restore this filesystem, a total of 30356991 KB space and 117 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Phase_change (II)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Phase_change (III)
+dmp Tue Jul 21 21:01:29 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Phase_change (IV)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Start (Level 1, NDMP:61005)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Options (b=256, u, U)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Filesystem (/vol/pbnfsp1data3)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Granularity (volume)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Snapshot (snapshot_for_backup.37, Tue Jul 21 21:01:45 EDT 2020)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Tape_open (ndmp)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Phase_change (I)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Total directories 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Total files 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Phase_change (II)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Phase_change (III)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Phase_change (IV)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Phase_change (V)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Tape_close (ndmp)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) End (0 MB)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Phase 1 time: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Phase 3: tape directory blocks written: 9
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (# filehistory entries dir: 2 node: 1 
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Dir to FH entry time stats (msec) numEntries: 2 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Tape write times (msec): average: 0 max: 27
+)
+dmp Tue Jul 21 21:01:47 EDT 2020 TSM /nycnjmmcp1svm4/pbnfsp1data3(2) Log_msg (Tape changes: 1
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Phase_change (V)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Tape_close (ndmp)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) End (26988 MB)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 1 time: 79
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 3: directories dumped: 18
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 3: wafl directory blocks read: 29
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 3: tape directory blocks written: 304
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 3 throughput (MB sec): read 3 write 9
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Percent of phase3 time spent for: reading inos 6% dumping ino 45%
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 45% lev0-ra 6%
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 6% 
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 3 average level 0 ra time in usec 111
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 4: inodes dumped: 100
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 4: wafl data blocks read: 6895391
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 4: tape data blocks written: 27635336
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Phase 4 throughput (MB sec): read 168 write 168
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 0%
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Percent of phase4 time spent for: writing file data 97% unlocking bufs 1%
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (# buffers of filehistory sent dir: 6 node: 0 
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (# filehistory entries dir: 700 node: 118 
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Dir to FH entry time stats (msec) numEntries: 700 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Node to FH Entry time stats (msec) numEntries: 118 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Dir FH Choked Stats: numEntries: 6 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Tape write times (msec): average: 0 max: 114
+)
+dmp Tue Jul 21 21:04:13 EDT 2020 TSM /nycnjmmcp1svm3/nycnjmmcp1svm3_data_02(3) Log_msg (Tape changes: 1
+)
+dmp Tue Jul 21 21:13:40 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Phase_change (IV)
+dmp Tue Jul 21 21:20:55 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Tape_close (ndmp)
+dmp Tue Jul 21 21:21:23 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Tape_open (ndmp)
+dmp Tue Jul 21 21:43:47 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Tape_close (ndmp)
+dmp Tue Jul 21 21:44:15 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Tape_open (ndmp)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Phase_change (V)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Tape_close (ndmp)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) End (313605 MB)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 1 time: 761
+)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 3: directories dumped: 3867
+)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 3: wafl directory blocks read: 25969
+)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 3: tape directory blocks written: 212662
+)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 99% lev0-ra 0%
+)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 3 average level 0 ra time in usec 98
+)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 4: inodes dumped: 114125
+)
+dmp Tue Jul 21 21:48:45 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 4: wafl data blocks read: 80128397
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 4: tape data blocks written: 321018948
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Phase 4 throughput (MB sec): read 152 write 152
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 0%
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Percent of phase4 time spent for: writing file data 98% unlocking bufs 0%
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (# buffers of filehistory sent dir: 2223 node: 922 
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (# times filehistory send was blocked dir: 86 node: 0
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (# filehistory flush operations dir: 3 node: 2
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (# filehistory entries dir: 284444 node: 117992 
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Dir to FH entry time stats (msec) numEntries: 284444 min: 0 max: 14857 avg: 2 tot: 742065
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Node to FH Entry time stats (msec) numEntries: 117992 min: 0 max: 6485 avg: <1 tot: 7055
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Dir FH Choked Stats: numEntries: 2223 min: 0 max: 67 avg: 23 tot: 52155
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Node FH Choked Stats: numEntries: 922 min: 0 max: 19 avg: 0 tot: 239
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Warning (Total Node to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Tape write times (msec): average: 0 max: 27857
+)
+dmp Tue Jul 21 21:48:46 EDT 2020 TSM /nycnjmmcp1svm4/innfsp1data1(1) Log_msg (Tape changes: 1
+)
+dmp Tue Jul 21 22:30:30 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Phase_change (IV)
+dmp Tue Jul 21 22:34:39 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Tape_close (ndmp)
+dmp Tue Jul 21 22:35:07 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Tape_open (ndmp)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Phase_change (V)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Tape_close (ndmp)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) End (111105 MB)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 1 time: 16857
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 3: directories dumped: 1556
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 3: wafl directory blocks read: 218072
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 3: tape directory blocks written: 1371080
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 99% lev0-ra 0%
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 3 average level 0 ra time in usec 166
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 4: inodes dumped: 347833
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 4: wafl data blocks read: 28252900
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 4: tape data blocks written: 112954356
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Phase 4 throughput (MB sec): read 152 write 152
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 2%
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Percent of phase4 time spent for: writing file data 96% unlocking bufs 0%
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (# buffers of filehistory sent dir: 13225 node: 2729 
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (# times filehistory send was blocked dir: 656 node: 0
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (# filehistory flush operations dir: 2 node: 1
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (# filehistory entries dir: 1692747 node: 349389 
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 1692747 min: 0 max: 27268 avg: 2 tot: 5331041
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 349389 min: 0 max: 7022 avg: <1 tot: 13574
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Dir FH Choked Stats: numEntries: 13225 min: 0 max: 127 avg: 29 tot: 392408
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Node FH Choked Stats: numEntries: 2729 min: 0 max: 13 avg: 0 tot: 95
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Warning (Total Node to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Tape write times (msec): average: 0 max: 27685
+)
+dmp Tue Jul 21 22:42:52 EDT 2020 TSM /nycnjmmcp1svm4/gmgrnfsp1data1(0) Log_msg (Tape changes: 1
+)

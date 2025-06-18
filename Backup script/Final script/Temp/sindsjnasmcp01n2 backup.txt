@@ -1,0 +1,947 @@
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Phase_change (V)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Tape_close (ndmp)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) End (35803 MB)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 1 time: 864
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3: directories dumped: 815
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3: wafl directory blocks read: 16978
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3: tape directory blocks written: 91209
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3 throughput (MB sec): read 5 write 6
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 98% lev0-ra 0%
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3 average level 0 ra time in usec 88
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 4: inodes dumped: 47958
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 4: wafl data blocks read: 9142779
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 4: tape data blocks written: 36611116
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 4 throughput (MB sec): read 189 write 189
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 1%
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Percent of phase4 time spent for: writing file data 97% unlocking bufs 1%
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (# buffers of filehistory sent dir: 820 node: 381 
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (# times filehistory send was blocked dir: 5 node: 0
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (# filehistory entries dir: 104833 node: 48773 
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 104833 min: 0 max: 809 avg: <1 tot: 12660
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 48773 min: 0 max: 0 avg: 0 tot: 5
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Dir FH Choked Stats: numEntries: 820 min: 0 max: 3 avg: 0 tot: 297
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Node FH Choked Stats: numEntries: 381 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Warning (Total Node to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Tape write times (msec): average: 0 max: 2375
+)
+dmp Wed Jul 22 00:05:27 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Tape changes: 1
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Start (Level 1, NDMP:17556)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Options (b=256, u, U)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Filesystem (/vol/prod_apps_misc)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Granularity (volume)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Snapshot (snapshot_for_backup.176, Wed Jul 22 00:31:00 +08 2020)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Tape_open (ndmp)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Phase_change (I)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Total directories 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Total files 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (To restore this filesystem, a total of 49600 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Phase_change (II)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Phase_change (III)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Phase_change (IV)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Phase_change (V)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Tape_close (ndmp)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) End (1 MB)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Phase 1 time: 193
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Phase 3: tape directory blocks written: 25
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (# filehistory entries dir: 7 node: 1 
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 7 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Tape write times (msec): average: 0 max: 1
+)
+dmp Wed Jul 22 00:31:01 +08 2020 TSM /sindsjmcp1svm1/prod_apps_misc(0) Log_msg (Tape changes: 1
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Start (Level 1, NDMP:28692)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Options (b=256, u, U)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Filesystem (/vol/prod_arscache)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Granularity (volume)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Snapshot (snapshot_for_backup.177, Wed Jul 22 02:01:04 +08 2020)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Tape_open (ndmp)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Phase_change (I)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Total count of all - reg inodes: 5 lun inodes: 0 other inodes: 5 dirs: 20 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Total size of all - reg inodes: 1205 lun inodes: 0 other inodes: 0 dirs: 144 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Dir count         18         0         2         0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Total directories 20
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (File count          0         0         1         0         0         0         2
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (File count          2         0         0         0         0         0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Total files 5
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 30 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Phase_change (II)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Phase_change (III)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Phase_change (IV)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Phase_change (V)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Tape_close (ndmp)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) End (1 MB)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 1 time: 16
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 3: directories dumped: 21
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 3: wafl directory blocks read: 37
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 3: tape directory blocks written: 323
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 3 throughput (MB sec): read 16 write 35
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 22%
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 22% lev0-ra 11%
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 3 average level 0 ra time in usec 47
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 4: inodes dumped: 10
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 4: wafl data blocks read: 308
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 4: tape data blocks written: 1224
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Phase 4 throughput (MB sec): read 25 write 25
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 12%
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Percent of phase4 time spent for: writing file data 85% unlocking bufs 0%
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (# buffers of filehistory sent dir: 8 node: 0 
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (# filehistory entries dir: 932 node: 31 
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 932 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 31 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Dir FH Choked Stats: numEntries: 8 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Tape write times (msec): average: 0 max: 40
+)
+dmp Wed Jul 22 02:01:06 +08 2020 TSM /sindsjmcp1svm4/prod_arscache(0) Log_msg (Tape changes: 1
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Start (Level 1, NDMP:39403)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Options (b=256, u, U)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Filesystem (/vol/prod_ecinvest_home)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Granularity (volume)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Snapshot (snapshot_for_backup.178, Wed Jul 22 03:00:34 +08 2020)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Tape_open (ndmp)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Phase_change (I)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Total directories 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Total files 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Phase_change (II)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Phase_change (III)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Phase_change (IV)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Phase_change (V)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Tape_close (ndmp)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) End (0 MB)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Phase 1 time: 1
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 3
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (# filehistory entries dir: 4 node: 1 
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 4 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Tape write times (msec): average: 0 max: 1
+)
+dmp Wed Jul 22 03:00:36 +08 2020 TSM /sindsjmcp1svm4/prod_ecinvest_home(0) Log_msg (Tape changes: 1
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Start (Level 1, NDMP:46915)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Options (b=256, u, U)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Filesystem (/vol/prod_Bladelogic)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Granularity (volume)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Snapshot (snapshot_for_backup.179, Wed Jul 22 04:00:36 +08 2020)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Tape_open (ndmp)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Phase_change (I)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Total directories 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Total files 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Phase_change (II)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Phase_change (III)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Phase_change (IV)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Phase_change (V)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Tape_close (ndmp)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) End (0 MB)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Phase 1 time: 66
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Phase 3: tape directory blocks written: 12
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 3
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Tape write times (msec): average: 0 max: 0
+)
+dmp Wed Jul 22 04:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_Bladelogic(0) Log_msg (Tape changes: 1
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Start (Level 1, NDMP:54360)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Options (b=256, u, U)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Filesystem (/vol/prod_data)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Granularity (volume)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Snapshot (snapshot_for_backup.180, Wed Jul 22 05:00:36 +08 2020)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Tape_open (ndmp)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Phase_change (I)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Total directories 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Total files 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (To restore this filesystem, a total of 79878 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Phase_change (II)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Phase_change (III)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Phase_change (IV)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Phase_change (V)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Tape_close (ndmp)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) End (1 MB)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Phase 1 time: 270
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Phase 3: tape directory blocks written: 36
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (# filehistory entries dir: 10 node: 1 
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 10 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Tape write times (msec): average: 0 max: 5
+)
+dmp Wed Jul 22 05:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_data(0) Log_msg (Tape changes: 1
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Start (Level 1, NDMP:61873)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Options (b=256, u, U)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Filesystem (/vol/prod_ciso_aegis)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Granularity (volume)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Snapshot (snapshot_for_backup.181, Wed Jul 22 06:00:36 +08 2020)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Tape_open (ndmp)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Phase_change (I)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Total count of all - reg inodes: 64 lun inodes: 0 other inodes: 0 dirs: 4 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Total size of all - reg inodes: 3503 lun inodes: 0 other inodes: 0 dirs: 588 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Dir count          2         0         0         2
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Total directories 4
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (File count          0         0        32         0         0        32         0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Total files 64
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 68 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Phase_change (II)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Phase_change (III)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Phase_change (IV)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Phase_change (V)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Tape_close (ndmp)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) End (5 MB)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 1 time: 11
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 3: directories dumped: 5
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 3: wafl directory blocks read: 148
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 3: tape directory blocks written: 3477
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 3 throughput (MB sec): read 26 write 158
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 77%
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 50% lev0-ra 4%
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 3 average level 0 ra time in usec 200
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 4: inodes dumped: 64
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 4: wafl data blocks read: 924
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 4: tape data blocks written: 3608
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Phase 4 throughput (MB sec): read 264 write 257
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 7%  processing file data 42%
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Percent of phase4 time spent for: writing file data 42% unlocking bufs 0%
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (# buffers of filehistory sent dir: 30 node: 0 
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (# filehistory entries dir: 3776 node: 69 
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 3776 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 69 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Dir FH Choked Stats: numEntries: 27 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Tape write times (msec): average: 0 max: 4
+)
+dmp Wed Jul 22 06:00:38 +08 2020 TSM /sindsjmcp1svm4/prod_ciso_aegis(0) Log_msg (Tape changes: 1
+)
+dmp Wed Jul 22 21:00:52 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Start (Level 1, NDMP:83089)
+dmp Wed Jul 22 21:00:52 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Options (b=256, u, U)
+dmp Wed Jul 22 21:00:52 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Filesystem (/vol/prod_dbarrt_home)
+dmp Wed Jul 22 21:00:52 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Wed Jul 22 21:00:52 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Granularity (volume)
+dmp Wed Jul 22 21:00:52 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Snapshot (snapshot_for_backup.182, Wed Jul 22 21:00:51 +08 2020)
+dmp Wed Jul 22 21:00:52 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Tape_open (ndmp)
+dmp Wed Jul 22 21:00:52 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Phase_change (I)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Total count of all - reg inodes: 18 lun inodes: 0 other inodes: 0 dirs: 25 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Total size of all - reg inodes: 2909531 lun inodes: 0 other inodes: 0 dirs: 25672 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Dir count         20         2         1         0
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Dir count          1         1         0         0
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Total directories 25
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (File count          0         0         0         3         2         1         0
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (File count          0         1         8         3         0         0
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Total files 18
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (To restore this filesystem, a total of 3384378 KB space and 43 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Phase_change (II)
+dmp Wed Jul 22 21:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Phase_change (III)
+dmp Wed Jul 22 21:01:14 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Phase_change (IV)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Phase_change (V)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Tape_close (ndmp)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) End (2814 MB)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 1 time: 593
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 3: directories dumped: 26
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 3: wafl directory blocks read: 18821
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 3: tape directory blocks written: 169586
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 3 throughput (MB sec): read 3 write 7
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 99% lev0-ra 0%
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 3 average level 0 ra time in usec 201
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 4: inodes dumped: 18
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 4: wafl data blocks read: 696817
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 4: tape data blocks written: 2792934
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Phase 4 throughput (MB sec): read 304 write 305
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 9%
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Percent of phase4 time spent for: writing file data 88% unlocking bufs 1%
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (# buffers of filehistory sent dir: 2649 node: 0 
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (# times filehistory send was blocked dir: 172 node: 0
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (# filehistory entries dir: 338996 node: 44 
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 338996 min: 0 max: 817 avg: <1 tot: 20425
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 44 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Dir FH Choked Stats: numEntries: 2649 min: 0 max: 2 avg: 0 tot: 1014
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Tape write times (msec): average: 0 max: 53
+)
+dmp Wed Jul 22 21:01:24 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_home(0) Log_msg (Tape changes: 1
+)
+dmp Wed Jul 22 22:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Start (Level 1, NDMP:90572)
+dmp Wed Jul 22 22:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Options (b=256, u, U)
+dmp Wed Jul 22 22:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Filesystem (/vol/prod_dbarrt_apps)
+dmp Wed Jul 22 22:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Wed Jul 22 22:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Granularity (volume)
+dmp Wed Jul 22 22:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Snapshot (snapshot_for_backup.183, Wed Jul 22 22:00:52 +08 2020)
+dmp Wed Jul 22 22:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Tape_open (ndmp)
+dmp Wed Jul 22 22:00:53 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Phase_change (I)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Total count of all - reg inodes: 138448 lun inodes: 0 other inodes: 0 dirs: 4192 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Total size of all - reg inodes: 125576529 lun inodes: 0 other inodes: 0 dirs: 354552 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Dir count       1630      1021      1077       330
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Dir count        113        21         0         0
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Total directories 4192
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (File count       1416      1351     66962     19641      9317     20273     12572
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (File count       2844      1266      2754        32        20         0
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Total files 138448
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (To restore this filesystem, a total of 139918026 KB space and 142640 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Wed Jul 22 22:01:00 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Phase_change (II)
+dmp Wed Jul 22 22:01:02 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Phase_change (III)
+dmp Wed Jul 22 22:04:55 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Phase_change (IV)
+dmp Wed Jul 22 22:10:56 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Tape_close (ndmp)
+dmp Wed Jul 22 22:11:25 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Tape_open (ndmp)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Phase_change (V)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Tape_close (ndmp)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) End (123947 MB)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 1 time: 6565
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 3: directories dumped: 4193
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 3: wafl directory blocks read: 149082
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 3: tape directory blocks written: 1740023
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 3 throughput (MB sec): read 2 write 7
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 99% lev0-ra 0%
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 3 average level 0 ra time in usec 127
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 4: inodes dumped: 138448
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 4: wafl data blocks read: 31485015
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 4: tape data blocks written: 126015183
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Phase 4 throughput (MB sec): read 255 write 255
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 2%
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Percent of phase4 time spent for: writing file data 95% unlocking bufs 1%
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (# buffers of filehistory sent dir: 14522 node: 1114 
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (# times filehistory send was blocked dir: 705 node: 0
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (# filehistory flush operations dir: 2 node: 1
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (# filehistory entries dir: 1858809 node: 142641 
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 1858809 min: 0 max: 819 avg: <1 tot: 221368
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 142641 min: 0 max: 0 avg: 0 tot: 9
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Dir FH Choked Stats: numEntries: 14522 min: 0 max: 3 avg: 0 tot: 6339
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Node FH Choked Stats: numEntries: 1114 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Warning (Total Node to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Tape write times (msec): average: 0 max: 28506
+)
+dmp Wed Jul 22 22:13:09 +08 2020 TSM /sindsjmcp1svm1/prod_dbarrt_apps(0) Log_msg (Tape changes: 1
+)
+dmp Wed Jul 22 23:00:54 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Start (Level 1, NDMP:98016)
+dmp Wed Jul 22 23:00:54 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Options (b=256, u, U)
+dmp Wed Jul 22 23:00:54 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Filesystem (/vol/prod_apps_dbfeeds)
+dmp Wed Jul 22 23:00:54 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Wed Jul 22 23:00:54 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Granularity (volume)
+dmp Wed Jul 22 23:00:54 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Snapshot (snapshot_for_backup.184, Wed Jul 22 23:00:52 +08 2020)
+dmp Wed Jul 22 23:00:54 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Tape_open (ndmp)
+dmp Wed Jul 22 23:00:54 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Phase_change (I)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Total count of all - reg inodes: 7009 lun inodes: 0 other inodes: 0 dirs: 152 nt dirs: 0 nt inodes: 0 acls: 17
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Total size of all - reg inodes: 264372 lun inodes: 0 other inodes: 0 dirs: 112936 nt dirs: 0 nt inodes: 0 acls: 994
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Dir count        108         9        26         2
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Dir count          1         6         0         0
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Total directories 152
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (File count         55        16       233      6404       142        79        32
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (File count         12         8        28         0         0         0
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Total files 7009
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (To restore this filesystem, a total of 860252 KB space and 7178 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Wed Jul 22 23:00:55 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Phase_change (II)
+dmp Wed Jul 22 23:00:56 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Phase_change (III)
+dmp Wed Jul 22 23:02:32 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Phase_change (IV)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Phase_change (V)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Tape_close (ndmp)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) End (604 MB)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 1 time: 1437
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 3: directories dumped: 153
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 3: wafl directory blocks read: 81758
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 3: tape directory blocks written: 665353
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 3 throughput (MB sec): read 3 write 6
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 99% lev0-ra 0%
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 3 average level 0 ra time in usec 158
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 4: inodes dumped: 7009
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 4: wafl data blocks read: 68078
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 4: tape data blocks written: 275247
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Phase 4 throughput (MB sec): read 243 write 246
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 44%
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Percent of phase4 time spent for: writing file data 52% unlocking bufs 1%
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (# buffers of filehistory sent dir: 5904 node: 55 
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (# times filehistory send was blocked dir: 258 node: 0
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (# filehistory entries dir: 755647 node: 7162 
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 755647 min: 0 max: 1084 avg: <1 tot: 91860
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 7162 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Dir FH Choked Stats: numEntries: 5904 min: 0 max: 3 avg: 0 tot: 3867
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Node FH Choked Stats: numEntries: 55 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Tape write times (msec): average: 0 max: 36
+)
+dmp Wed Jul 22 23:02:34 +08 2020 TSM /sindsjmcp1svm1/prod_apps_dbfeeds(0) Log_msg (Tape changes: 1
+)
+dmp Thu Jul 23 00:01:55 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Start (Level 1, NDMP:8418)
+dmp Thu Jul 23 00:01:55 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Options (b=256, u, U)
+dmp Thu Jul 23 00:01:55 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Filesystem (/vol/prod_apps_misc(1))
+dmp Thu Jul 23 00:01:55 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Jul 23 00:01:55 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Granularity (volume)
+dmp Thu Jul 23 00:01:55 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Snapshot (snapshot_for_backup.185, Thu Jul 23 00:01:53 +08 2020)
+dmp Thu Jul 23 00:01:55 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Tape_open (ndmp)
+dmp Thu Jul 23 00:01:55 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Phase_change (I)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Total count of all - reg inodes: 46498 lun inodes: 0 other inodes: 32 dirs: 880 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Total size of all - reg inodes: 40519183 lun inodes: 0 other inodes: 3 dirs: 50984 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Dir count        613       130        78        33
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Dir count         23         3         0         0
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Total directories 880
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (File count        433       201      1541      8171      2788      2607     17295
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (File count       6207      6055      1195         5         0         0
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Total files 46498
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (To restore this filesystem, a total of 44855086 KB space and 47410 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Phase_change (II)
+dmp Thu Jul 23 00:01:56 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Phase_change (III)
+dmp Thu Jul 23 00:02:09 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Phase_change (IV)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Phase_change (V)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Tape_close (ndmp)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) End (39734 MB)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 1 time: 893
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3: directories dumped: 881
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3: wafl directory blocks read: 16962
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3: tape directory blocks written: 88949
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3 throughput (MB sec): read 5 write 7
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 98% lev0-ra 0%
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 3 average level 0 ra time in usec 84
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 4: inodes dumped: 46530
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 4: wafl data blocks read: 10147649
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 4: tape data blocks written: 40637940
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Phase 4 throughput (MB sec): read 271 write 271
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 2%
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Percent of phase4 time spent for: writing file data 96% unlocking bufs 1%
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (# buffers of filehistory sent dir: 808 node: 370 
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (# times filehistory send was blocked dir: 4 node: 0
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (# filehistory entries dir: 103398 node: 47411 
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 103398 min: 0 max: 548 avg: <1 tot: 11788
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 47411 min: 0 max: 0 avg: 0 tot: 5
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Dir FH Choked Stats: numEntries: 808 min: 0 max: 2 avg: 0 tot: 186
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Node FH Choked Stats: numEntries: 370 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Warning (Total Node to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Tape write times (msec): average: 0 max: 1433
+)
+dmp Thu Jul 23 00:04:39 +08 2020 TSM /sindsjmcp1svm4/prod_apps_misc(0) Log_msg (Tape changes: 1
+)

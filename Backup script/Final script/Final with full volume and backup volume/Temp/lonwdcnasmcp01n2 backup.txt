@@ -1,0 +1,861 @@
+dmp Thu Apr 28 02:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Start (Level 1, NDMP:29168)
+dmp Thu Apr 28 02:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Options (b=256, u, U)
+dmp Thu Apr 28 02:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Filesystem (/vol/gm_prd_data5p6)
+dmp Thu Apr 28 02:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 02:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Granularity (volume)
+dmp Thu Apr 28 02:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Snapshot (snapshot_for_backup.1204, Thu Apr 28 02:00:41 BST 2022)
+dmp Thu Apr 28 02:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Tape_open (ndmp)
+dmp Thu Apr 28 02:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Phase_change (I)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Total files 0
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (To restore this filesystem, a total of 6950966 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 02:01:06 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Phase_change (II)
+dmp Thu Apr 28 02:01:10 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Phase_change (III)
+dmp Thu Apr 28 02:01:13 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Tape_close (ndmp)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Tape_close (ndmp)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Abort (42 MB, 62 secs, 0 MBps)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Error (DUMP IS ABORTED
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 1 time(in secs): 20
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 3: tape directory blocks written: 1969
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 3 time(in secs): 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 0%
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Phase 4 time(in secs): 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (# buffers of filehistory sent dir: 1 node: 1 
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (# filehistory flush operations dir: 2 node: 1
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Node FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Tape write times (sec): average: 0 max: 32
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 02:01:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data5p6(0) Log_msg (Tape stats: wait_time=33s wait_count=2 total_count=170 avail_count=3/2/2/163/)
+dmp Thu Apr 28 03:00:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Start (Level 1, NDMP:43889)
+dmp Thu Apr 28 03:00:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Options (b=256, u, U)
+dmp Thu Apr 28 03:00:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Filesystem (/vol/gm_prd_data2p6)
+dmp Thu Apr 28 03:00:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 03:00:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Granularity (volume)
+dmp Thu Apr 28 03:00:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Snapshot (snapshot_for_backup.1205, Thu Apr 28 03:00:44 BST 2022)
+dmp Thu Apr 28 03:00:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Tape_open (ndmp)
+dmp Thu Apr 28 03:00:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Phase_change (I)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Total count of all - reg inodes: 4790655 lun inodes: 0 other inodes: 16 dirs: 159 nt dirs: 0 nt inodes: 0 acls: 68
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Total size of all - reg inodes: 87692019 lun inodes: 0 other inodes: 0 dirs: 5421212 nt dirs: 0 nt inodes: 0 acls: 39083
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Dir count         52        17        21        11
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Dir count          8        25        12        13
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Total directories 159
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (File count      90888         3   4153990    470932     24563     12077     13221
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (File count      12202      5816      6962         1         0         0
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Total files 4790655
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (To restore this filesystem, a total of 138877906 KB space and 4790898 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 03:04:28 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Phase_change (II)
+dmp Thu Apr 28 03:04:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Phase_change (III)
+dmp Thu Apr 28 03:05:17 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Tape_close (ndmp)
+dmp Thu Apr 28 03:05:48 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Tape_close (ndmp)
+dmp Thu Apr 28 03:05:48 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Abort (42 MB, 295 secs, 0 MBps)
+dmp Thu Apr 28 03:05:48 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Error (DUMP IS ABORTED
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 1 time(in secs): 208
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 3: directories dumped: 8
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 3: wafl directory blocks read: 62371
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 3: tape directory blocks written: 37266
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 1% 
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 3 average level 0 ra time in usec 280
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 3 time(in secs): 0
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 0%
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Phase 4 time(in secs): 0
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (# buffers of filehistory sent dir: 1562 node: 0 
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (# times filehistory send was blocked dir: 48 node: 0
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (# filehistory flush operations dir: 1 node: 1
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (# filehistory entries dir: 199843 node: 0 
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 199843 min: 0 max: 0 avg: <1 tot: 15
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 0 min: 6603260858 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Dir FH Choked Stats: numEntries: 1562 min: 0 max: 3 avg: 0 tot: 656
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 1 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 2
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Tape write times (sec): average: 0 max: 31
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 03:05:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data2p6(0) Log_msg (Tape stats: wait_time=32s wait_count=2 total_count=170 avail_count=11/9/9/141/)
+dmp Thu Apr 28 04:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Start (Level 1, NDMP:58127)
+dmp Thu Apr 28 04:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Options (b=256, u, U)
+dmp Thu Apr 28 04:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Filesystem (/vol/gm_prd_data4p6)
+dmp Thu Apr 28 04:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 04:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Granularity (volume)
+dmp Thu Apr 28 04:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Snapshot (snapshot_for_backup.1206, Thu Apr 28 04:00:42 BST 2022)
+dmp Thu Apr 28 04:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Tape_open (ndmp)
+dmp Thu Apr 28 04:00:44 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Phase_change (I)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Total count of all - reg inodes: 862 lun inodes: 0 other inodes: 87 dirs: 309 nt dirs: 0 nt inodes: 0 acls: 12
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Total size of all - reg inodes: 820736 lun inodes: 0 other inodes: 5 dirs: 3112 nt dirs: 0 nt inodes: 0 acls: 238
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Dir count        289        11         8         0
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Dir count          1         0         0         0
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Total directories 309
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (File count         16        58       286       293        26        37        21
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (File count         18         7       100         0         0         0
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Total files 862
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (To restore this filesystem, a total of 2043037 KB space and 1270 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 04:00:51 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Phase_change (II)
+dmp Thu Apr 28 04:00:52 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Phase_change (III)
+dmp Thu Apr 28 04:00:53 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Phase_change (IV)
+dmp Thu Apr 28 04:00:54 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Tape_close (ndmp)
+dmp Thu Apr 28 04:01:26 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Tape_close (ndmp)
+dmp Thu Apr 28 04:01:26 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Abort (42 MB, 41 secs, 1 MBps)
+dmp Thu Apr 28 04:01:26 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Error (DUMP IS ABORTED
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 1 time(in secs): 6
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 3: directories dumped: 310
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 3: wafl directory blocks read: 779
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 3: tape directory blocks written: 6361
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 3 throughput (MB sec): read 3 write 7
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Percent of phase3 time spent for: reading inos 4% dumping ino 70%
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 65% lev0-ra 2%
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 2% 
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 3 average level 0 ra time in usec 67
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 3 time(in secs): 0
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 4: inodes dumped: 7
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 4: wafl data blocks read: 4796
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 4: tape data blocks written: 19216
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 0%
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Phase 4 time(in secs): 0
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (# buffers of filehistory sent dir: 90 node: 3 
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (# times filehistory send was blocked dir: 1 node: 0
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (# filehistory flush operations dir: 2 node: 1
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (# filehistory entries dir: 11491 node: 318 
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 11491 min: 0 max: 0 avg: <1 tot: 0
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 318 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Dir FH Choked Stats: numEntries: 90 min: 0 max: 1 avg: 0 tot: 8
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Node FH Choked Stats: numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 1 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 1
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Tape write times (sec): average: 0 max: 31
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 04:01:27 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data4p6(0) Log_msg (Tape stats: wait_time=32s wait_count=72 total_count=170 avail_count=73/4/3/90/)
+dmp Thu Apr 28 19:30:58 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Start (Level 1, NDMP:87308)
+dmp Thu Apr 28 19:30:58 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Options (b=256, u, U)
+dmp Thu Apr 28 19:30:58 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Filesystem (/vol/lonwdcmcp1svm5_fabric_003_nfs)
+dmp Thu Apr 28 19:30:58 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 19:30:58 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Granularity (volume)
+dmp Thu Apr 28 19:30:58 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Snapshot (snapshot_for_backup.1207, Thu Apr 28 19:30:55 BST 2022)
+dmp Thu Apr 28 19:30:58 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Tape_open (ndmp)
+dmp Thu Apr 28 19:30:58 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Phase_change (I)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Total count of all - reg inodes: 55723 lun inodes: 0 other inodes: 0 dirs: 455 nt dirs: 3 nt inodes: 3 acls: 0
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Total size of all - reg inodes: 30537031 lun inodes: 0 other inodes: 0 dirs: 24904 nt dirs: 12 nt inodes: 1 acls: 0
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Dir count        296        35        79        41
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Dir count          6         1         0         0
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Total directories 458
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (File count         21        57     26336     10811      3723      4151      3510
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (File count       3689      1907      1520         1         0         0
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Total files 55726
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (To restore this filesystem, a total of 39937201 KB space and 56184 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 19:31:19 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Phase_change (II)
+dmp Thu Apr 28 19:31:23 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Phase_change (III)
+dmp Thu Apr 28 19:31:34 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Tape_close (ndmp)
+dmp Thu Apr 28 19:32:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Tape_close (ndmp)
+dmp Thu Apr 28 19:32:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Abort (42 MB, 67 secs, 0 MBps)
+dmp Thu Apr 28 19:32:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Error (DUMP IS ABORTED
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 1 time(in secs): 19
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 3: directories dumped: 357
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 3: wafl directory blocks read: 6588
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 3: tape directory blocks written: 81323
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 3 average level 0 ra time in usec 87
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 3 time(in secs): 0
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 0%
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Phase 4 time(in secs): 0
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (# buffers of filehistory sent dir: 924 node: 0 
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (# filehistory flush operations dir: 1 node: 1
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (# filehistory entries dir: 118224 node: 0 
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 118224 min: 0 max: 0 avg: <1 tot: 7
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 0 min: 6603260858 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Dir FH Choked Stats: numEntries: 924 min: 0 max: 1 avg: 0 tot: 27
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Tape write times (sec): average: 0 max: 31
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 19:32:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_fabric_003_nfs(0) Log_msg (Tape stats: wait_time=32s wait_count=2 total_count=170 avail_count=12/21/40/97/)
+dmp Thu Apr 28 21:01:07 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Start (Level 1, NDMP:11613)
+dmp Thu Apr 28 21:01:07 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Options (b=256, u, U)
+dmp Thu Apr 28 21:01:07 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Filesystem (/vol/gm_prd_data3p3)
+dmp Thu Apr 28 21:01:07 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 21:01:07 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Granularity (volume)
+dmp Thu Apr 28 21:01:07 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Snapshot (snapshot_for_backup.1208, Thu Apr 28 21:01:05 BST 2022)
+dmp Thu Apr 28 21:01:07 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Tape_open (ndmp)
+dmp Thu Apr 28 21:01:07 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Phase_change (I)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Total count of all - reg inodes: 99326 lun inodes: 0 other inodes: 0 dirs: 154 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Total size of all - reg inodes: 725280032 lun inodes: 0 other inodes: 0 dirs: 23612 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Dir count         80         9        23        27
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Dir count         14         1         0         0
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Total directories 154
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (File count       9143       627     46803     26337      2069      1893      2067
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (File count       1540      2486      6150        64       144         3
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Total files 99326
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (To restore this filesystem, a total of 798867229 KB space and 99480 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 21:01:15 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Phase_change (II)
+dmp Thu Apr 28 21:01:16 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Phase_change (III)
+dmp Thu Apr 28 21:01:29 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Start (Level 1, NDMP:11622)
+dmp Thu Apr 28 21:01:29 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Options (b=256, u, U)
+dmp Thu Apr 28 21:01:29 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Filesystem (/vol/gm_prd_app3p3)
+dmp Thu Apr 28 21:01:29 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 21:01:29 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Granularity (volume)
+dmp Thu Apr 28 21:01:29 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Snapshot (snapshot_for_backup.1209, Thu Apr 28 21:01:25 BST 2022)
+dmp Thu Apr 28 21:01:29 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Tape_open (ndmp)
+dmp Thu Apr 28 21:01:29 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Phase_change (I)
+dmp Thu Apr 28 21:01:30 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Tape_close (ndmp)
+dmp Thu Apr 28 21:02:01 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Tape_close (ndmp)
+dmp Thu Apr 28 21:02:01 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Abort (42 MB, 53 secs, 0 MBps)
+dmp Thu Apr 28 21:02:01 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Error (DUMP IS ABORTED
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 1 time(in secs): 7
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 3: directories dumped: 155
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 3: wafl directory blocks read: 7541
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 3: tape directory blocks written: 75710
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 3 throughput (MB sec): read 2 write 6
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 93%
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 93% lev0-ra 0%
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 3 average level 0 ra time in usec 171
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 3 time(in secs): 12
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 0%
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Phase 4 time(in secs): 0
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (# buffers of filehistory sent dir: 1112 node: 2 
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (# filehistory flush operations dir: 2 node: 1
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (# filehistory entries dir: 142232 node: 155 
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 142232 min: 0 max: 0 avg: <1 tot: 6
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 155 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Dir FH Choked Stats: numEntries: 1112 min: 0 max: 1 avg: 0 tot: 24
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Node FH Choked Stats: numEntries: 2 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 2 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 3
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Tape write times (sec): average: 0 max: 31
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 21:02:04 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_data3p3(0) Log_msg (Tape stats: wait_time=33s wait_count=3 total_count=168 avail_count=18/20/38/92/)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Total count of all - reg inodes: 5604273 lun inodes: 0 other inodes: 11 dirs: 24509 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Total size of all - reg inodes: 770356315 lun inodes: 0 other inodes: 0 dirs: 1382560 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Dir count      20747      1888       889       468
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Dir count        323       194         0         0
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Total directories 24509
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (File count     571373     67981   3337467    823345    365264    235648     56460
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (File count      45642     48596     52441        44        12         0
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Total files 5604273
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (To restore this filesystem, a total of 858584779 KB space and 5628793 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 21:04:14 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Phase_change (II)
+dmp Thu Apr 28 21:04:21 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Phase_change (III)
+dmp Thu Apr 28 21:12:35 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Phase_change (IV)
+dmp Thu Apr 28 21:25:12 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Tape_close (ndmp)
+dmp Thu Apr 28 21:25:46 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Tape_open (ndmp)
+dmp Thu Apr 28 21:25:48 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Tape_close (ndmp)
+dmp Thu Apr 28 21:26:21 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Tape_close (ndmp)
+dmp Thu Apr 28 21:26:21 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Abort (190654 MB, 1491 secs, 127 MBps)
+dmp Thu Apr 28 21:26:21 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Error (DUMP IS ABORTED
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 1 time(in secs): 163
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 3: directories dumped: 24510
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 3: wafl directory blocks read: 568801
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 3: tape directory blocks written: 3954157
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 3 throughput (MB sec): read 4 write 8
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 99% lev0-ra 0%
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 3 average level 0 ra time in usec 98
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 3 time(in secs): 478
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 4: inodes dumped: 1336498
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 4: wafl data blocks read: 48427277
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 4: tape data blocks written: 193060543
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 0%
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Phase 4 time(in secs): 0
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (# buffers of filehistory sent dir: 49811 node: 10633 
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (# times filehistory send was blocked dir: 965 node: 0
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (# filehistory flush operations dir: 3 node: 2
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (# filehistory entries dir: 6375757 node: 1361009 
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Dir to FH entry time stats (sec) numEntries: 6375757 min: 0 max: 1 avg: <1 tot: 450
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Node to FH Entry time stats (sec) numEntries: 1361009 min: 0 max: 0 avg: <1 tot: 0
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Dir FH Choked Stats: numEntries: 49811 min: 0 max: 7 avg: 0 tot: 12090
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Node FH Choked Stats: numEntries: 10633 min: 0 max: 2 avg: 0 tot: 2
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 2 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 2
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Tape write times (sec): average: 0 max: 34
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 21:26:23 BST 2022 TSM /lonwdcmcp1svm4/gm_prd_app3p3(1) Log_msg (Tape stats: wait_time=695s wait_count=714059 total_count=762619 avail_count=727700/11497/9769/13653/)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Start (Level 1, NDMP:27281)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Options (b=256, u, U)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Filesystem (/vol/lonwdcmcp1svm5_data_01)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Granularity (volume)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Snapshot (snapshot_for_backup.1210, Thu Apr 28 22:01:03 BST 2022)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Tape_open (ndmp)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Phase_change (I)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 1
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Total files 0
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 1 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Phase_change (II)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Phase_change (III)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Phase_change (IV)
+dmp Thu Apr 28 22:01:05 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Phase_change (V)
+dmp Thu Apr 28 22:01:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Tape_close (ndmp)
+dmp Thu Apr 28 22:01:06 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) End (0 MB, 0 secs, 0 MBps)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 1 time(in secs): 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 3
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 3 time(in secs): 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Phase 4 time(in secs): 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (# filehistory entries dir: 4 node: 1 
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 4 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Tape write times (sec): average: 0 max: 0
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 22:01:07 BST 2022 TSM /lonwdcmcp1svm5/lonwdcmcp1svm5_data_01(0) Log_msg (Tape stats: wait_time=0s wait_count=0 total_count=2 avail_count=0/0/1/1/)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Start (Level 1, NDMP:34396)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Options (b=256, u, U)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Filesystem (/vol/lonwdcmcp1svm1_root)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Vol-Info (RW, comp=off, dedupe=off, clone=no)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Granularity (volume)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Snapshot (snapshot_for_backup.1211, Thu Apr 28 22:31:01 BST 2022)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Tape_open (ndmp)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Phase_change (I)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Total files 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Phase_change (II)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Phase_change (III)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Phase_change (IV)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Phase_change (V)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Tape_close (ndmp)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) End (0 MB, 0 secs, 0 MBps)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 1 time(in secs): 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 3: tape directory blocks written: 10
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 3
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 3 time(in secs): 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Phase 4 time(in secs): 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (# filehistory entries dir: 5 node: 1 
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 5 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Tape write times (sec): average: 0 max: 0
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 22:31:04 BST 2022 TSM /lonwdcmcp1svm1/lonwdcmcp1svm1_root(0) Log_msg (Tape stats: wait_time=0s wait_count=0 total_count=2 avail_count=0/0/1/1/)
+dmp Thu Apr 28 23:30:55 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Start (Level 1, NDMP:48737)
+dmp Thu Apr 28 23:30:55 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Options (b=256, u, U)
+dmp Thu Apr 28 23:30:55 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Filesystem (/vol/gm_prd_data2p3)
+dmp Thu Apr 28 23:30:55 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 23:30:55 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Granularity (volume)
+dmp Thu Apr 28 23:30:55 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Snapshot (snapshot_for_backup.1212, Thu Apr 28 23:30:52 BST 2022)
+dmp Thu Apr 28 23:30:55 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Tape_open (ndmp)
+dmp Thu Apr 28 23:30:55 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Phase_change (I)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Total count of all - reg inodes: 17193 lun inodes: 0 other inodes: 0 dirs: 28 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Total size of all - reg inodes: 14393285 lun inodes: 0 other inodes: 0 dirs: 39492 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Dir count         12         4         2         5
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Dir count          1         4         0         0
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Total directories 28
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (File count         21         2      1280      4905      1928      1536      1219
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (File count       1240      1423      3639         0         0         0
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Total files 17193
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (To restore this filesystem, a total of 21620655 KB space and 17221 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 23:31:06 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Phase_change (II)
+dmp Thu Apr 28 23:31:11 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Phase_change (III)
+dmp Thu Apr 28 23:31:54 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Phase_change (IV)
+dmp Thu Apr 28 23:32:42 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Phase_change (V)
+dmp Thu Apr 28 23:32:42 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Tape_close (ndmp)
+dmp Thu Apr 28 23:32:42 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) End (14299 MB, 106 secs, 134 MBps)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 1 time(in secs): 10
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 3: directories dumped: 29
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 3: wafl directory blocks read: 27286
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 3: tape directory blocks written: 184311
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 3 throughput (MB sec): read 2 write 4
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 97%
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 97% lev0-ra 0%
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 3 average level 0 ra time in usec 288
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 3 time(in secs): 40
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 4: inodes dumped: 17193
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 4: wafl data blocks read: 3607152
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 4: tape data blocks written: 14442639
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 4 throughput (MB sec): read 319 write 320
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 13%
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Percent of phase4 time spent for: writing file data 84% unlocking bufs 2%
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Phase 4 time(in secs): 45
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (# buffers of filehistory sent dir: 4075 node: 134 
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (# times filehistory send was blocked dir: 119 node: 0
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (# filehistory entries dir: 521508 node: 17222 
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 521508 min: 0 max: 0 avg: <1 tot: 37
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 17222 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Dir FH Choked Stats: numEntries: 4075 min: 0 max: 3 avg: 0 tot: 1890
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Node FH Choked Stats: numEntries: 134 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 1 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 2
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Tape write times (sec): average: 0 max: 0
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 23:32:44 BST 2022 TSM /lonwdcmcp1svm1/gm_prd_data2p3(0) Log_msg (Tape stats: wait_time=36s wait_count=53658 total_count=57200 avail_count=54689/784/673/1054/)

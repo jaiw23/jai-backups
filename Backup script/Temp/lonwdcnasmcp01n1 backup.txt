@@ -1,0 +1,1134 @@
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Start (Level 1, NDMP:7894)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Options (b=256, u, U)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Filesystem (/vol/gm_prd_data2dg)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Granularity (volume)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Snapshot (snapshot_for_backup.771, Thu Apr 16 21:01:06 BST 2020)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Tape_open (ndmp)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Phase_change (I)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Total files 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Phase_change (II)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Phase_change (III)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Phase_change (IV)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Phase_change (V)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Tape_close (ndmp)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) End (0 MB)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Phase 1 time: 18
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 2
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (# filehistory entries dir: 4 node: 1 
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 4 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Tape write times (msec): average: 0 max: 57
+)
+dmp Thu Apr 16 21:01:07 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data2dg(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 21:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Start (Level 1, NDMP:7899)
+dmp Thu Apr 16 21:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Options (b=256, u, U)
+dmp Thu Apr 16 21:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Filesystem (/vol/gm_prd_data1p5)
+dmp Thu Apr 16 21:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 21:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Granularity (volume)
+dmp Thu Apr 16 21:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Snapshot (snapshot_for_backup.772, Thu Apr 16 21:01:26 BST 2020)
+dmp Thu Apr 16 21:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Tape_open (ndmp)
+dmp Thu Apr 16 21:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Phase_change (I)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Total count of all - reg inodes: 1 lun inodes: 0 other inodes: 0 dirs: 4 nt dirs: 0 nt inodes: 0 acls: 3
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Total size of all - reg inodes: 81 lun inodes: 0 other inodes: 0 dirs: 36 nt dirs: 0 nt inodes: 0 acls: 109
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Dir count          3         0         1         0
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Total directories 4
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (File count          0         0         0         0         0         1         0
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Total files 1
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (To restore this filesystem, a total of 7045356 KB space and 8 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 21:01:43 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Phase_change (II)
+dmp Thu Apr 16 21:01:52 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Phase_change (III)
+dmp Thu Apr 16 21:01:59 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Phase_change (IV)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Phase_change (V)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Tape_close (ndmp)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) End (171 MB)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Phase 1 time: 13940
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Phase 3: directories dumped: 5
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Phase 3: wafl directory blocks read: 10
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Phase 3: tape directory blocks written: 2749
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Phase 4: inodes dumped: 1
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Phase 4: wafl data blocks read: 21
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Phase 4: tape data blocks written: 83
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 99%
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (# buffers of filehistory sent dir: 3 node: 0 
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (# filehistory entries dir: 308 node: 6 
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 308 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 6 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Dir FH Choked Stats: numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Tape write times (msec): average: 0 max: 34
+)
+dmp Thu Apr 16 21:02:05 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data1p5(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Start (Level 1, NDMP:11832)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Options (b=256, u, U)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Filesystem (/vol/lonwdcmcp1svm3_data_01)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Granularity (volume)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Snapshot (snapshot_for_backup.773, Thu Apr 16 21:31:24 BST 2020)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Tape_open (ndmp)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Phase_change (I)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Total files 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Phase_change (II)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Phase_change (III)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Phase_change (IV)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Phase_change (V)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Tape_close (ndmp)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) End (0 MB)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Phase 1 time: 1
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 2
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Tape write times (msec): average: 1 max: 89
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_01(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Start (Level 1, NDMP:11844)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Options (b=256, u, U)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Filesystem (/vol/gm_prd_data5p5)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Granularity (volume)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Snapshot (snapshot_for_backup.777, Thu Apr 16 21:31:25 BST 2020)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Tape_open (ndmp)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Phase_change (I)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Start (Level 1, NDMP:11849)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Start (Level 1, NDMP:11839)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Options (b=256, u, U)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Options (b=256, u, U)
+dmp Thu Apr 16 21:31:27 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Filesystem (/vol/gm_prd_data4dg)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Filesystem (/vol/lonwdcmcp1svm3_data_02)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Granularity (volume)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Granularity (volume)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Snapshot (snapshot_for_backup.774, Thu Apr 16 21:31:25 BST 2020)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Snapshot (snapshot_for_backup.775, Thu Apr 16 21:31:25 BST 2020)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Tape_open (ndmp)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Total files 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (To restore this filesystem, a total of 188344 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Tape_open (ndmp)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Phase_change (I)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Phase_change (II)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Phase_change (I)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Total files 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Phase_change (II)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Phase_change (III)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Phase_change (IV)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Phase_change (V)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Tape_close (ndmp)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) End (0 MB)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Phase 1 time: 38
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Phase 3 throughput (MB sec): read 0 write 2
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (# filehistory entries dir: 4 node: 1 
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Dir to FH entry time stats (msec) numEntries: 4 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Tape write times (msec): average: 0 max: 62
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data4dg(1) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Phase_change (III)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Start (Level 1, NDMP:11854)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Options (b=256, u, U)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Filesystem (/vol/gm_prd_data3p5)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Granularity (volume)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Snapshot (snapshot_for_backup.776, Thu Apr 16 21:31:25 BST 2020)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Tape_open (ndmp)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Phase_change (IV)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Phase_change (I)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Phase_change (V)
+dmp Thu Apr 16 21:31:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Tape_close (ndmp)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) End (4 MB)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Phase 1 time: 639
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Phase 3: tape directory blocks written: 76
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Tape write times (msec): average: 0 max: 36
+)
+dmp Thu Apr 16 21:31:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data5p5(4) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Total files 0
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (To restore this filesystem, a total of 2987815 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 21:31:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Phase_change (II)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Total count of all - reg inodes: 78192 lun inodes: 0 other inodes: 0 dirs: 23779 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Total size of all - reg inodes: 58739931 lun inodes: 0 other inodes: 0 dirs: 96288 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Dir count      23656       117         5         1
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Total directories 23779
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (File count         68     26500     31617     10090      2349      1701      1717
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (File count       1415      1028      1692         4        11         0
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Total files 78192
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (To restore this filesystem, a total of 65208373 KB space and 101971 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 21:31:37 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Phase_change (II)
+dmp Thu Apr 16 21:31:38 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Phase_change (III)
+dmp Thu Apr 16 21:31:39 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Phase_change (III)
+dmp Thu Apr 16 21:31:42 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Phase_change (IV)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Phase_change (V)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Tape_close (ndmp)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) End (72 MB)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Phase 1 time: 7120
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Phase 3: tape directory blocks written: 1114
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (# filehistory entries dir: 4 node: 1 
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Dir to FH entry time stats (msec) numEntries: 4 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Tape write times (msec): average: 0 max: 6
+)
+dmp Thu Apr 16 21:31:44 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data3p5(3) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 21:31:49 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Phase_change (IV)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Phase_change (V)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Tape_close (ndmp)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) End (57244 MB)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 1 time: 9333
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 3: directories dumped: 23780
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 3: wafl directory blocks read: 24073
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 3: tape directory blocks written: 132446
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 3 throughput (MB sec): read 12 write 16
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Percent of phase3 time spent for: reading inos 16% dumping ino 81%
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 80% lev0-ra 13%
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 17% 
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 3 average level 0 ra time in usec 45
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 4: inodes dumped: 78192
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 4: wafl data blocks read: 14632156
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 4: tape data blocks written: 58528356
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Phase 4 throughput (MB sec): read 160 write 160
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 1%
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Percent of phase4 time spent for: writing file data 97% unlocking bufs 0%
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (# buffers of filehistory sent dir: 1252 node: 796 
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (# filehistory entries dir: 160234 node: 101972 
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Dir to FH entry time stats (msec) numEntries: 160234 min: 0 max: 539 avg: <1 tot: 1927
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Node to FH Entry time stats (msec) numEntries: 101972 min: 0 max: 276 avg: <1 tot: 1380
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Dir FH Choked Stats: numEntries: 1252 min: 0 max: 1 avg: 0 tot: 7
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Node FH Choked Stats: numEntries: 796 min: 0 max: 1 avg: 0 tot: 5
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Warning (Total Node to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Tape write times (msec): average: 0 max: 2918
+)
+dmp Thu Apr 16 21:37:56 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_02(2) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Start (Level 1, NDMP:15556)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Options (b=256, u, U)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Filesystem (/vol/lonwdcmcp1svm3_data_03)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Granularity (volume)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Snapshot (snapshot_for_backup.778, Thu Apr 16 22:01:06 BST 2020)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Tape_open (ndmp)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Phase_change (I)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Total files 0
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Phase_change (II)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Phase_change (III)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Phase_change (IV)
+dmp Thu Apr 16 22:01:07 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Phase_change (V)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Tape_close (ndmp)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) End (0 MB)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Phase 1 time: 1
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 2
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (# filehistory entries dir: 7 node: 1 
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 7 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Tape write times (msec): average: 0 max: 47
+)
+dmp Thu Apr 16 22:01:08 BST 2020 TSM /lonwdcmcp1svm3/lonwdcmcp1svm3_data_03(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Start (Level 1, NDMP:15558)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Options (b=256, u, U)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Filesystem (/vol/gm_prd_data9p5)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Granularity (volume)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Snapshot (snapshot_for_backup.780, Thu Apr 16 22:01:26 BST 2020)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Tape_open (ndmp)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Phase_change (I)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Total files 0
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 22:01:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Phase_change (II)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Phase_change (III)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Phase_change (IV)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Phase_change (V)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Tape_close (ndmp)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) End (0 MB)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Phase 1 time: 1
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Phase 3 throughput (MB sec): read 1 write 2
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (# filehistory entries dir: 4 node: 1 
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Dir to FH entry time stats (msec) numEntries: 4 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Tape write times (msec): average: 0 max: 1
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data9p5(1) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Start (Level 1, NDMP:15573)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Options (b=256, u, U)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Filesystem (/vol/gm_prd_data6p5)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Granularity (volume)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Snapshot (snapshot_for_backup.779, Thu Apr 16 22:01:26 BST 2020)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Tape_open (ndmp)
+dmp Thu Apr 16 22:01:29 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Phase_change (I)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Total files 0
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (To restore this filesystem, a total of 1151932 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 22:01:31 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Phase_change (II)
+dmp Thu Apr 16 22:01:33 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Phase_change (III)
+dmp Thu Apr 16 22:01:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Phase_change (IV)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Phase_change (V)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Tape_close (ndmp)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) End (28 MB)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Phase 1 time: 2800
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Phase 3: tape directory blocks written: 434
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Tape write times (msec): average: 0 max: 1
+)
+dmp Thu Apr 16 22:01:35 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data6p5(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 22:01:49 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Start (Level 1, NDMP:15563)
+dmp Thu Apr 16 22:01:49 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Options (b=256, u, U)
+dmp Thu Apr 16 22:01:49 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Filesystem (/vol/gm_prd_data8p5)
+dmp Thu Apr 16 22:01:49 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 22:01:49 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Granularity (volume)
+dmp Thu Apr 16 22:01:49 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Snapshot (snapshot_for_backup.781, Thu Apr 16 22:01:46 BST 2020)
+dmp Thu Apr 16 22:01:49 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Tape_open (ndmp)
+dmp Thu Apr 16 22:01:49 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Phase_change (I)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Total files 0
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (To restore this filesystem, a total of 2244792 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 22:01:55 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Phase_change (II)
+dmp Thu Apr 16 22:01:57 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Start (Level 1, NDMP:15568)
+dmp Thu Apr 16 22:01:57 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Options (b=256, u, U)
+dmp Thu Apr 16 22:01:57 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Filesystem (/vol/gm_prd_data7p5)
+dmp Thu Apr 16 22:01:57 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 22:01:57 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Granularity (volume)
+dmp Thu Apr 16 22:01:57 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Snapshot (snapshot_for_backup.782, Thu Apr 16 22:01:46 BST 2020)
+dmp Thu Apr 16 22:01:57 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Tape_open (ndmp)
+dmp Thu Apr 16 22:01:57 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Phase_change (I)
+dmp Thu Apr 16 22:01:58 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Phase_change (III)
+dmp Thu Apr 16 22:02:00 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Phase_change (IV)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Phase_change (V)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Tape_close (ndmp)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) End (54 MB)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Phase 1 time: 5622
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Phase 3: tape directory blocks written: 839
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Tape write times (msec): average: 0 max: 1
+)
+dmp Thu Apr 16 22:02:03 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data8p5(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Total files 0
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (To restore this filesystem, a total of 17328843 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 22:02:34 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Phase_change (II)
+dmp Thu Apr 16 22:02:56 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Phase_change (III)
+dmp Thu Apr 16 22:03:16 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Phase_change (IV)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Phase_change (V)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Tape_close (ndmp)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) End (421 MB)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Phase 1 time: 37231
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Phase 3: tape directory blocks written: 6431
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Tape write times (msec): average: 0 max: 129
+)
+dmp Thu Apr 16 22:03:28 BST 2020 TSM /lonwdcmcp1svm1/gm_prd_data7p5(1) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 22:31:04 BST 2020 TSM /lonwdcmcp1svm1/export(0) Error (could not create "backup" snapshot.
+ snapshot deleted after creation? 
+)
+dmp Thu Apr 16 22:31:04 BST 2020 TSM /lonwdcmcp1svm1/export(0) Error (Dump failed to initialize.
+)
+dmp Thu Apr 16 22:31:04 BST 2020 TSM /lonwdcmcp1svm1/export(0) Abort (0 MB)
+dmp Thu Apr 16 22:31:04 BST 2020 TSM /lonwdcmcp1svm1/export(0) Error (DUMP IS ABORTED
+)
+dmp Thu Apr 16 22:31:04 BST 2020 TSM /lonwdcmcp1svm1/export(0) Error (deletion of "/vol/export/../snapshot_for_backup.783" snapshot failed: No such file or directory
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Start (Level 1, NDMP:19468)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Options (b=256, u, U)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Filesystem (/vol/backuptest1)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Granularity (volume)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Snapshot (snapshot_for_backup.784, Thu Apr 16 22:31:05 BST 2020)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Tape_open (ndmp)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Phase_change (I)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Total files 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Phase_change (II)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Phase_change (III)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Phase_change (IV)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Phase_change (V)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Tape_close (ndmp)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) End (0 MB)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Phase 1 time: 2
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Phase 3 throughput (MB sec): read 0 write 2
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (# filehistory entries dir: 4 node: 1 
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Dir to FH entry time stats (msec) numEntries: 4 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Tape write times (msec): average: 0 max: 13
+)
+dmp Thu Apr 16 22:31:06 BST 2020 TSM /lonwdcmcp1svm1/backuptest1(1) Log_msg (Tape changes: 1
+)

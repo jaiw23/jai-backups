@@ -1,0 +1,1230 @@
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Start (Level 1, NDMP:12789)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Options (b=256, u, U)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Filesystem (/vol/prod_dbarrt_appsx)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Granularity (volume)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Snapshot (snapshot_for_backup.863, Thu Apr 16 02:01:25 +08 2020)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Tape_open (ndmp)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Phase_change (I)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Start (Level 1, NDMP:12810)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Start (Level 1, NDMP:12800)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Options (b=256, u, U)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Options (b=256, u, U)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Filesystem (/vol/prod_fssw)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Filesystem (/vol/prod_mobileapp)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Granularity (volume)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Granularity (volume)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Snapshot (snapshot_for_backup.866, Thu Apr 16 02:01:25 +08 2020)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Snapshot (snapshot_for_backup.864, Thu Apr 16 02:01:25 +08 2020)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Tape_open (ndmp)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Tape_open (ndmp)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Phase_change (I)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Phase_change (I)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Total files 0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Total files 0
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Phase_change (II)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Start (Level 1, NDMP:12805)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Start (Level 1, NDMP:12794)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Phase_change (II)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Options (b=256, u, U)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Phase_change (III)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Options (b=256, u, U)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Filesystem (/vol/prod_ingest01)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Filesystem (/vol/prod_pub)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Phase_change (IV)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Phase_change (III)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 02:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Phase_change (V)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Granularity (volume)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Phase_change (IV)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Granularity (volume)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Tape_close (ndmp)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Snapshot (snapshot_for_backup.867, Thu Apr 16 02:01:25 +08 2020)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Phase_change (V)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Snapshot (snapshot_for_backup.865, Thu Apr 16 02:01:25 +08 2020)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Tape_open (ndmp)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Tape_close (ndmp)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Tape_open (ndmp)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Phase_change (I)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) End (0 MB)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Phase_change (I)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Phase 1 time: 2
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (# filehistory entries dir: 5 node: 1 
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Dir to FH entry time stats (msec) numEntries: 5 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Tape write times (msec): average: 0 max: 5
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_mobileapp(1) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Total files 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Phase_change (II)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) End (0 MB)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Phase 1 time: 3
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Percent of phase3 time spent for: reading inos 2% dumping ino 0%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 2%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Phase 3 average level 0 ra time in usec 1000
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Tape write times (msec): average: 0 max: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_fssw(3) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Phase_change (III)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Total count of all - reg inodes: 457 lun inodes: 0 other inodes: 0 dirs: 76 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Total size of all - reg inodes: 77983 lun inodes: 0 other inodes: 0 dirs: 920 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Dir count         65         4         7         0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Total directories 76
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (File count         56         1       293        45        15         8         9
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (File count          8         2        20         0         0         0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Total files 457
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (To restore this filesystem, a total of 97585 KB space and 533 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Phase_change (II)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Phase_change (IV)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Phase_change (V)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Tape_close (ndmp)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Phase_change (III)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) End (0 MB)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Phase 1 time: 3
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (# filehistory entries dir: 4 node: 1 
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Dir to FH entry time stats (msec) numEntries: 4 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Tape write times (msec): average: 0 max: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_pub(2) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Phase_change (IV)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Phase_change (V)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Tape_close (ndmp)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) End (78 MB)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 1 time: 51
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 3: directories dumped: 77
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 3: wafl directory blocks read: 231
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 3: tape directory blocks written: 1839
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 3 throughput (MB sec): read 26 write 52
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Percent of phase3 time spent for: reading inos 14% dumping ino 34%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 34% lev0-ra 14%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 41% 
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 3 average level 0 ra time in usec 64
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 4: inodes dumped: 457
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 4: wafl data blocks read: 19773
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 4: tape data blocks written: 78733
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Phase 4 throughput (MB sec): read 206 write 205
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Percent of phase4 time spent for: reading inos 2% reading file data 0%  processing file data 4%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Percent of phase4 time spent for: writing file data 91% unlocking bufs 1%
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (# buffers of filehistory sent dir: 22 node: 4 
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (# filehistory entries dir: 2699 node: 534 
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Dir to FH entry time stats (msec) numEntries: 2699 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Node to FH Entry time stats (msec) numEntries: 534 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Dir FH Choked Stats: numEntries: 22 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Node FH Choked Stats: numEntries: 4 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Tape write times (msec): average: 0 max: 27
+)
+dmp Thu Apr 16 02:01:29 +08 2020 TSM /sinkdcmcp1svm1/prod_ingest01(4) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Total count of all - reg inodes: 17405 lun inodes: 0 other inodes: 0 dirs: 654 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Total size of all - reg inodes: 32002465 lun inodes: 0 other inodes: 0 dirs: 88876 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Dir count        255       109       155        86
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Dir count         45         4         0         0
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Total directories 654
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (File count          0        15      8173      3384       975      1114       736
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (File count        641       713      1643        11         0         0
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Total files 17405
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (To restore this filesystem, a total of 35837862 KB space and 18059 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 02:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Phase_change (II)
+dmp Thu Apr 16 02:01:31 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Phase_change (III)
+dmp Thu Apr 16 02:02:46 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Phase_change (IV)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Phase_change (V)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Tape_close (ndmp)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) End (31574 MB)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 1 time: 2006
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 3: directories dumped: 655
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 3: wafl directory blocks read: 37489
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 3: tape directory blocks written: 459028
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 3 throughput (MB sec): read 2 write 6
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 99% lev0-ra 0%
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 3 average level 0 ra time in usec 160
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 4: inodes dumped: 17405
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 4: wafl data blocks read: 8010288
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 4: tape data blocks written: 32089487
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Phase 4 throughput (MB sec): read 179 write 180
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 1%
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Percent of phase4 time spent for: writing file data 97% unlocking bufs 1%
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (# buffers of filehistory sent dir: 5424 node: 141 
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (# times filehistory send was blocked dir: 71 node: 0
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (# filehistory entries dir: 694235 node: 18060 
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 694235 min: 0 max: 813 avg: <1 tot: 71416
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 18060 min: 0 max: 0 avg: 0 tot: 1
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Dir FH Choked Stats: numEntries: 5424 min: 0 max: 3 avg: 0 tot: 1714
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Node FH Choked Stats: numEntries: 141 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Warning (Total Node to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Tape write times (msec): average: 0 max: 3292
+)
+dmp Thu Apr 16 02:05:45 +08 2020 TSM /sinkdcmcp1svm4/prod_dbarrt_appsx(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Start (Level 1, NDMP:46636)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Options (b=256, u, U)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Filesystem (/vol/prod_P8data04)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Granularity (volume)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Snapshot (snapshot_for_backup.868, Thu Apr 16 06:01:05 +08 2020)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Tape_open (ndmp)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Phase_change (I)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Total files 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Phase_change (II)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Phase_change (III)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Phase_change (IV)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Phase_change (V)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Tape_close (ndmp)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) End (0 MB)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Phase 1 time: 2
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 2
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Tape write times (msec): average: 0 max: 49
+)
+dmp Thu Apr 16 06:01:06 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data04(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Start (Level 1, NDMP:46652)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Start (Level 1, NDMP:46646)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Options (b=256, u, U)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Options (b=256, u, U)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Filesystem (/vol/prod_P8data01)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Filesystem (/vol/prod_P8data02)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Granularity (volume)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Granularity (volume)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Snapshot (snapshot_for_backup.870, Thu Apr 16 06:01:25 +08 2020)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Snapshot (snapshot_for_backup.869, Thu Apr 16 06:01:25 +08 2020)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Tape_open (ndmp)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Tape_open (ndmp)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Phase_change (I)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Phase_change (I)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Total files 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Phase_change (II)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Phase_change (III)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Phase_change (IV)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Phase_change (V)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Tape_close (ndmp)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) End (0 MB)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Phase 1 time: 37
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 2
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Tape write times (msec): average: 0 max: 27
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data02(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Total count of all - reg inodes: 16 lun inodes: 0 other inodes: 0 dirs: 656 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Total size of all - reg inodes: 20286 lun inodes: 0 other inodes: 0 dirs: 2632 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Dir count        654         2         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Total directories 656
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (File count          0         0         7         0         0         0         1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (File count          0         0         8         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Total files 16
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (To restore this filesystem, a total of 44327 KB space and 672 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Start (Level 1, NDMP:46645)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Phase_change (II)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Options (b=256, u, U)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Filesystem (/vol/prod_P8data03)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Granularity (volume)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Snapshot (snapshot_for_backup.871, Thu Apr 16 06:01:25 +08 2020)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Tape_open (ndmp)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Phase_change (I)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Total files 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Phase_change (II)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Phase_change (III)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Phase_change (III)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Phase_change (IV)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Phase_change (V)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Tape_close (ndmp)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) End (0 MB)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Phase 1 time: 1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Phase 3 throughput (MB sec): read 1 write 2
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Tape write times (msec): average: 0 max: 1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm4/prod_P8data03(2) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 06:01:27 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Phase_change (IV)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Phase_change (V)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Tape_close (ndmp)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) End (21 MB)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 1 time: 150
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 3: directories dumped: 657
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 3: wafl directory blocks read: 659
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 3: tape directory blocks written: 2190
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 3 throughput (MB sec): read 13 write 11
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Percent of phase3 time spent for: reading inos 14% dumping ino 32%
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 17% lev0-ra 18%
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 79% 
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 3 average level 0 ra time in usec 56
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 4: inodes dumped: 16
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 4: wafl data blocks read: 5082
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 4: tape data blocks written: 20347
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Phase 4 throughput (MB sec): read 203 write 203
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 8%  processing file data 13%
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Percent of phase4 time spent for: writing file data 77% unlocking bufs 1%
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (# buffers of filehistory sent dir: 17 node: 5 
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (# filehistory entries dir: 2171 node: 673 
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Dir to FH entry time stats (msec) numEntries: 2171 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Node to FH Entry time stats (msec) numEntries: 673 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Dir FH Choked Stats: numEntries: 17 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Node FH Choked Stats: numEntries: 5 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Tape write times (msec): average: 0 max: 27
+)
+dmp Thu Apr 16 06:01:28 +08 2020 TSM /sinkdcmcp1svm1/prod_P8data01(1) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Start (Level 1, NDMP:69463)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Options (b=256, u, U)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Filesystem (/vol/sgnfshomep1)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Granularity (volume)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Snapshot (snapshot_for_backup.872, Thu Apr 16 09:01:08 +08 2020)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Tape_open (ndmp)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Phase_change (I)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Total files 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Phase_change (II)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Phase_change (III)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Phase_change (IV)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Phase_change (V)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Tape_close (ndmp)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) End (0 MB)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Phase 1 time: 1
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 2
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (# filehistory entries dir: 3 node: 1 
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Tape write times (msec): average: 0 max: 1
+)
+dmp Thu Apr 16 09:01:11 +08 2020 TSM /sinkdcmcp1svm4/sgnfshomep1(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Start (Level 1, NDMP:69477)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Options (b=256, u, U)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Filesystem (/vol/tsmbackup01)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Granularity (volume)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Snapshot (snapshot_for_backup.873, Thu Apr 16 09:01:16 +08 2020)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Tape_open (ndmp)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Phase_change (I)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Total count of all - reg inodes: 102 lun inodes: 0 other inodes: 0 dirs: 2 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Total size of all - reg inodes: 23742846 lun inodes: 0 other inodes: 0 dirs: 100 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Dir count          0         0         2         0
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Total directories 2
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (File count          0         0         1         0         0         0         1
+)
+dmp Thu Apr 16 09:01:17 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 09:01:18 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (File count          0         0        96         4         0         0
+)
+dmp Thu Apr 16 09:01:18 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Total files 102
+)
+dmp Thu Apr 16 09:01:18 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (To restore this filesystem, a total of 26128033 KB space and 104 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 09:01:18 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Phase_change (II)
+dmp Thu Apr 16 09:01:18 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Phase_change (III)
+dmp Thu Apr 16 09:01:18 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Phase_change (IV)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Start (Level 1, NDMP:69469)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Options (b=256, u, U)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Filesystem (/vol/prod_pub(1))
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Granularity (volume)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Snapshot (snapshot_for_backup.874, Thu Apr 16 09:01:28 +08 2020)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Tape_open (ndmp)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Phase_change (I)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Total directories 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Total files 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (To restore this filesystem, a total of 20480 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Phase_change (II)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Phase_change (III)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Phase_change (IV)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Phase_change (V)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Tape_close (ndmp)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) End (0 MB)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Phase 1 time: 1
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Phase 3: tape directory blocks written: 11
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Phase 3 throughput (MB sec): read 1 write 2
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (# filehistory entries dir: 5 node: 1 
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Dir to FH entry time stats (msec) numEntries: 5 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Node to FH Entry time stats (msec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Tape write times (msec): average: 0 max: 6
+)
+dmp Thu Apr 16 09:01:30 +08 2020 TSM /sinkdcmcp1svm4/prod_pub(1) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 09:01:39 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Start (Level 1, NDMP:69476)
+dmp Thu Apr 16 09:01:39 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Options (b=256, u, U)
+dmp Thu Apr 16 09:01:39 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Filesystem (/vol/prod_shared)
+dmp Thu Apr 16 09:01:39 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 09:01:39 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Granularity (volume)
+dmp Thu Apr 16 09:01:39 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Snapshot (snapshot_for_backup.875, Thu Apr 16 09:01:36 +08 2020)
+dmp Thu Apr 16 09:01:39 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Tape_open (ndmp)
+dmp Thu Apr 16 09:01:39 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Phase_change (I)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Total count of all - reg inodes: 34426 lun inodes: 0 other inodes: 0 dirs: 148 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Total size of all - reg inodes: 1257613 lun inodes: 0 other inodes: 0 dirs: 193928 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Dir count         73         2        45        20
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Dir count          4         2         1         1
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Total directories 148
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (File count         49      1242      8267     23514        19        27      1124
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (File count         27        22       135         0         0         0
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Total files 34426
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (To restore this filesystem, a total of 2643904 KB space and 34574 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 09:01:44 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Phase_change (II)
+dmp Thu Apr 16 09:01:45 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Phase_change (III)
+dmp Thu Apr 16 09:01:59 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Start (Level 1, NDMP:69486)
+dmp Thu Apr 16 09:01:59 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Options (b=256, u, U)
+dmp Thu Apr 16 09:01:59 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Filesystem (/vol/riskengineprod)
+dmp Thu Apr 16 09:01:59 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 16 09:01:59 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Granularity (volume)
+dmp Thu Apr 16 09:01:59 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Snapshot (snapshot_for_backup.876, Thu Apr 16 09:01:56 +08 2020)
+dmp Thu Apr 16 09:01:59 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Tape_open (ndmp)
+dmp Thu Apr 16 09:01:59 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Phase_change (I)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Total count of all - reg inodes: 996598 lun inodes: 0 other inodes: 11 dirs: 10178 nt dirs: 0 nt inodes: 0 acls: 13
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Total size of all - reg inodes: 49309916 lun inodes: 0 other inodes: 0 dirs: 401096 nt dirs: 0 nt inodes: 0 acls: 142
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Dir count       3466      4991      1529       135
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Dir count         21        36         0         0
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Total directories 10178
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (File count      92681       179    275346    518056     64286     18497     12614
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (File count       5626      4252      5056         4         1         0
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Total files 996598
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (To restore this filesystem, a total of 56368818 KB space and 1006800 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 16 09:02:08 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Phase_change (II)
+dmp Thu Apr 16 09:02:11 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Phase_change (III)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Phase_change (V)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Tape_close (ndmp)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) End (23232 MB)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 1 time: 8
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 3: directories dumped: 3
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 3: wafl directory blocks read: 26
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 3: tape directory blocks written: 385
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 3 throughput (MB sec): read 17 write 64
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 33%
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 33% lev0-ra 0%
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 4: inodes dumped: 102
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 4: wafl data blocks read: 5935778
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 4: tape data blocks written: 23789383
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Phase 4 throughput (MB sec): read 130 write 130
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 0%
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Percent of phase4 time spent for: writing file data 98% unlocking bufs 0%
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (# buffers of filehistory sent dir: 9 node: 0 
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (# filehistory entries dir: 1063 node: 105 
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Dir to FH entry time stats (msec) numEntries: 1063 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Node to FH Entry time stats (msec) numEntries: 105 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Dir FH Choked Stats: numEntries: 9 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Tape write times (msec): average: 0 max: 2771
+)
+dmp Thu Apr 16 09:04:20 +08 2020 TSM /sinkdcmcp1svm1/tsmbackup01(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 09:04:55 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Phase_change (IV)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Phase_change (V)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Tape_close (ndmp)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) End (1853 MB)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 1 time: 4263
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 3: directories dumped: 149
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 3: wafl directory blocks read: 139361
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 3: tape directory blocks written: 1108190
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 3 throughput (MB sec): read 2 write 5
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 98% lev0-ra 0%
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 3 average level 0 ra time in usec 247
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 4: inodes dumped: 34426
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 4: wafl data blocks read: 334331
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 4: tape data blocks written: 1317344
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Phase 4 throughput (MB sec): read 181 write 179
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 25%
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Percent of phase4 time spent for: writing file data 72% unlocking bufs 1%
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (# buffers of filehistory sent dir: 14643 node: 270 
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (# times filehistory send was blocked dir: 480 node: 0
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (# filehistory entries dir: 1874243 node: 34575 
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Dir to FH entry time stats (msec) numEntries: 1874243 min: 0 max: 818 avg: <1 tot: 180396
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Node to FH Entry time stats (msec) numEntries: 34575 min: 0 max: 0 avg: 0 tot: 1
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Dir FH Choked Stats: numEntries: 14643 min: 0 max: 4 avg: 0 tot: 5345
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Node FH Choked Stats: numEntries: 270 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Warning (Total Node to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Tape write times (msec): average: 0 max: 1097
+)
+dmp Thu Apr 16 09:05:03 +08 2020 TSM /sinkdcmcp1svm4/prod_shared(1) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 16 09:06:56 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Phase_change (IV)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Phase_change (V)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Tape_close (ndmp)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) End (50601 MB)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 1 time: 9798
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 3: directories dumped: 10179
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 3: wafl directory blocks read: 192601
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 3: tape directory blocks written: 1831378
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 3 throughput (MB sec): read 2 write 6
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 98% lev0-ra 0%
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 3 average level 0 ra time in usec 111
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 4: inodes dumped: 996609
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 4: wafl data blocks read: 12821566
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 4: tape data blocks written: 50852569
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Phase 4 throughput (MB sec): read 204 write 203
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 7%
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Percent of phase4 time spent for: writing file data 90% unlocking bufs 1%
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (# buffers of filehistory sent dir: 16536 node: 7865 
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (# times filehistory send was blocked dir: 286 node: 0
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (# filehistory entries dir: 2116583 node: 1006788 
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Dir to FH entry time stats (msec) numEntries: 2116583 min: 0 max: 818 avg: <1 tot: 265487
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Node to FH Entry time stats (msec) numEntries: 1006788 min: 0 max: 0 avg: 0 tot: 50
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Dir FH Choked Stats: numEntries: 16536 min: 0 max: 4 avg: 0 tot: 5823
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Node FH Choked Stats: numEntries: 7865 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Warning (Total Node to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Tape write times (msec): average: 0 max: 1681
+)
+dmp Thu Apr 16 09:11:07 +08 2020 TSM /sinkdcmcp1svm1/riskengineprod(2) Log_msg (Tape changes: 1
+)

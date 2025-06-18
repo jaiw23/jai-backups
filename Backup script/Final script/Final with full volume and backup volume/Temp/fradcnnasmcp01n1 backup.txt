@@ -1,0 +1,875 @@
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Start (Level 1, NDMP:38847)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Options (b=256, u, U)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Filesystem (/vol/vol_cifs)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Granularity (volume)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Snapshot (snapshot_for_backup.664, Thu Apr 28 01:01:03 CEST 202)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Tape_open (ndmp)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Phase_change (I)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Total count of all - reg inodes: 35 lun inodes: 0 other inodes: 0 dirs: 17 nt dirs: 1 nt inodes: 1 acls: 0
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Total size of all - reg inodes: 2410495 lun inodes: 0 other inodes: 0 dirs: 72 nt dirs: 4 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Dir count         17         1         0         0
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Total directories 18
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (File count          0         0         5         2         1         3         3
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (File count          2         2        17         0         1         0
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Total files 36
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (To restore this filesystem, a total of 2665801 KB space and 54 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Phase_change (II)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Phase_change (III)
+dmp Thu Apr 28 01:01:04 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Phase_change (IV)
+dmp Thu Apr 28 01:01:11 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Phase_change (V)
+dmp Thu Apr 28 01:01:11 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Tape_close (ndmp)
+dmp Thu Apr 28 01:01:11 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) End (649 MB, 6 secs, 108 MBps)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 1 time(in secs): 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 3: directories dumped: 19
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 3: wafl directory blocks read: 21
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 3: tape directory blocks written: 205
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 3 throughput (MB sec): read 9 write 22
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 22%
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 22% lev0-ra 11%
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 3 average level 0 ra time in usec 52
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 3 time(in secs): 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 4: inodes dumped: 36
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 4: wafl data blocks read: 165079
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 4: tape data blocks written: 664972
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 4 throughput (MB sec): read 96 write 96
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 14%
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Percent of phase4 time spent for: writing file data 84% unlocking bufs 0%
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Phase 4 time(in secs): 6
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (# buffers of filehistory sent dir: 3 node: 0 
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (# filehistory entries dir: 336 node: 53 
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 336 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 53 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Dir FH Choked Stats: numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Tape write times (sec): average: 0 max: 0
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 01:01:12 CEST 202 TSM /fradcnmcp1svm3/vol_cifs(0) Log_msg (Tape stats: wait_time=5s wait_count=2573 total_count=2600 avail_count=2575/2/6/17/)
+dmp Thu Apr 28 02:01:07 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Start (Level 1, NDMP:51570)
+dmp Thu Apr 28 02:01:07 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Options (b=256, u, U)
+dmp Thu Apr 28 02:01:07 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Filesystem (/vol/fradcnmcp1svm3_data_08)
+dmp Thu Apr 28 02:01:07 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 02:01:07 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Granularity (volume)
+dmp Thu Apr 28 02:01:07 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Snapshot (snapshot_for_backup.665, Thu Apr 28 02:01:06 CEST 202)
+dmp Thu Apr 28 02:01:07 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Tape_open (ndmp)
+dmp Thu Apr 28 02:01:07 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Phase_change (I)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Total count of all - reg inodes: 8568 lun inodes: 0 other inodes: 3 dirs: 1828 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Total size of all - reg inodes: 4037049 lun inodes: 0 other inodes: 0 dirs: 13912 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Dir count       1781        38         7         0
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Dir count          1         1         0         0
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Total directories 1828
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (File count         87       720      4718      1796       463       298       121
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (File count         88        42       235         0         0         0
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Total files 8568
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (To restore this filesystem, a total of 4680906 KB space and 10399 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Phase_change (II)
+dmp Thu Apr 28 02:01:09 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Phase_change (III)
+dmp Thu Apr 28 02:01:21 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Phase_change (IV)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Start (Level 1, NDMP:51582)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Options (b=256, u, U)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Filesystem (/vol/fragfsp1data14)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Granularity (volume)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Snapshot (snapshot_for_backup.666, Thu Apr 28 02:01:21 CEST 202)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Tape_open (ndmp)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Phase_change (I)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Start (Level 1, NDMP:51576)
+dmp Thu Apr 28 02:01:22 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Options (b=256, u, U)
+dmp Thu Apr 28 02:01:23 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Filesystem (/vol/fradcnmcp1svm3_data_07)
+dmp Thu Apr 28 02:01:23 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 02:01:23 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Granularity (volume)
+dmp Thu Apr 28 02:01:23 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Snapshot (snapshot_for_backup.667, Thu Apr 28 02:01:21 CEST 202)
+dmp Thu Apr 28 02:01:23 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Tape_open (ndmp)
+dmp Thu Apr 28 02:01:23 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Phase_change (I)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Total count of all - reg inodes: 8456 lun inodes: 0 other inodes: 0 dirs: 440 nt dirs: 0 nt inodes: 0 acls: 370
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Total size of all - reg inodes: 140438770 lun inodes: 0 other inodes: 0 dirs: 41664 nt dirs: 0 nt inodes: 0 acls: 7003979
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Dir count        315        53        48        17
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Dir count          4         3         0         0
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Total directories 440
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (File count       1617      1523      3237       573       236       141        97
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (File count        109       135       716        48        24         0
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Total files 8456
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (To restore this filesystem, a total of 162480191 KB space and 9266 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Phase_change (II)
+dmp Thu Apr 28 02:01:26 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Phase_change (III)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Total count of all - reg inodes: 3931 lun inodes: 0 other inodes: 0 dirs: 11871 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Total size of all - reg inodes: 5390850 lun inodes: 0 other inodes: 0 dirs: 55884 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Dir count      11277       531        43        20
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Total directories 11871
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (File count          1        73       183       813       468       889       698
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (File count        232       197       377         0         0         0
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Total files 3931
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (To restore this filesystem, a total of 6473408 KB space and 15802 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 02:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Phase_change (II)
+dmp Thu Apr 28 02:01:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Phase_change (III)
+dmp Thu Apr 28 02:01:41 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Phase_change (IV)
+dmp Thu Apr 28 02:01:44 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Start (Level 1, NDMP:51587)
+dmp Thu Apr 28 02:01:44 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Options (b=256, u, U)
+dmp Thu Apr 28 02:01:44 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Filesystem (/vol/fragfsp1data10)
+dmp Thu Apr 28 02:01:44 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 02:01:44 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Granularity (volume)
+dmp Thu Apr 28 02:01:44 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Snapshot (snapshot_for_backup.668, Thu Apr 28 02:01:41 CEST 202)
+dmp Thu Apr 28 02:01:44 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Tape_open (ndmp)
+dmp Thu Apr 28 02:01:44 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Phase_change (I)
+dmp Thu Apr 28 02:01:50 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Phase_change (V)
+dmp Thu Apr 28 02:01:50 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Tape_close (ndmp)
+dmp Thu Apr 28 02:01:50 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) End (3990 MB, 42 secs, 95 MBps)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 1 time(in secs): 2
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 3: directories dumped: 1829
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 3: wafl directory blocks read: 6054
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 3: tape directory blocks written: 45507
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 3 throughput (MB sec): read 2 write 4
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Percent of phase3 time spent for: reading inos 1% dumping ino 98%
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 97% lev0-ra 1%
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 1% 
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 3 average level 0 ra time in usec 80
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 3 time(in secs): 11
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 4: inodes dumped: 8571
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 4: wafl data blocks read: 1014950
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 4: tape data blocks written: 4058027
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 4 throughput (MB sec): read 140 write 140
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 3%
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Percent of phase4 time spent for: writing file data 95% unlocking bufs 0%
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Phase 4 time(in secs): 28
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (# buffers of filehistory sent dir: 791 node: 81 
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (# times filehistory send was blocked dir: 16 node: 0
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (# filehistory entries dir: 101233 node: 10400 
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 101233 min: 0 max: 1 avg: <1 tot: 10
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 10400 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Dir FH Choked Stats: numEntries: 791 min: 0 max: 4 avg: 0 tot: 456
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Node FH Choked Stats: numEntries: 81 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 1 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 1
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Tape write times (sec): average: 0 max: 0
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 02:01:52 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_08(0) Log_msg (Tape stats: wait_time=27s wait_count=19755 total_count=15961 avail_count=15713/80/55/113/)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Total count of all - reg inodes: 28224 lun inodes: 0 other inodes: 92 dirs: 990 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Total size of all - reg inodes: 153660072 lun inodes: 0 other inodes: 8 dirs: 28548 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Dir count        785        74        63        57
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Dir count         10         1         0         0
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Total directories 990
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (File count        197      6972      9217      3112       819       624       754
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (File count        773       811      4938         4         2         1
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Total files 28224
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (To restore this filesystem, a total of 173373495 KB space and 29306 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 02:02:03 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Phase_change (II)
+dmp Thu Apr 28 02:02:07 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Phase_change (III)
+dmp Thu Apr 28 02:02:07 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Phase_change (IV)
+dmp Thu Apr 28 02:02:19 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Phase_change (V)
+dmp Thu Apr 28 02:02:19 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Tape_close (ndmp)
+dmp Thu Apr 28 02:02:19 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) End (5329 MB, 56 secs, 95 MBps)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 1 time(in secs): 5
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 3: directories dumped: 11872
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 3: wafl directory blocks read: 13972
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 3: tape directory blocks written: 73065
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 3 throughput (MB sec): read 5 write 7
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Percent of phase3 time spent for: reading inos 6% dumping ino 91%
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 91% lev0-ra 7%
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 7% 
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 3 average level 0 ra time in usec 69
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 3 time(in secs): 10
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 4: inodes dumped: 3931
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 4: wafl data blocks read: 1349669
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 4: tape data blocks written: 5406358
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 4 throughput (MB sec): read 140 write 140
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 4%
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Percent of phase4 time spent for: writing file data 94% unlocking bufs 0%
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Phase 4 time(in secs): 38
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (# buffers of filehistory sent dir: 771 node: 123 
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (# times filehistory send was blocked dir: 1 node: 0
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (# filehistory entries dir: 98589 node: 15803 
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Dir to FH entry time stats (sec) numEntries: 98589 min: 0 max: 0 avg: <1 tot: 6
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Node to FH Entry time stats (sec) numEntries: 15803 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Dir FH Choked Stats: numEntries: 771 min: 0 max: 3 avg: 0 tot: 34
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Node FH Choked Stats: numEntries: 123 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Tape write times (sec): average: 0 max: 0
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 02:02:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_07(2) Log_msg (Tape stats: wait_time=35s wait_count=35002 total_count=21320 avail_count=20893/113/73/241/)
+dmp Thu Apr 28 02:02:29 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Phase_change (IV)
+dmp Thu Apr 28 02:11:27 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Phase_change (V)
+dmp Thu Apr 28 02:11:27 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Tape_close (ndmp)
+dmp Thu Apr 28 02:11:27 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) End (137518 MB, 604 secs, 227 MBps)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 1 time(in secs): 3
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 3: directories dumped: 441
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 3: wafl directory blocks read: 21949
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 3: tape directory blocks written: 195064
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 3 throughput (MB sec): read 2 write 4
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 99%
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 99% lev0-ra 0%
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 3 average level 0 ra time in usec 205
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 3 time(in secs): 40
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 4: inodes dumped: 8456
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 4: wafl data blocks read: 35112488
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 4: tape data blocks written: 140715387
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 4 throughput (MB sec): read 250 write 251
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 1%
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Percent of phase4 time spent for: writing file data 96% unlocking bufs 1%
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Phase 4 time(in secs): 560
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (# buffers of filehistory sent dir: 2384 node: 69 
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (# times filehistory send was blocked dir: 54 node: 0
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (# filehistory entries dir: 305087 node: 8897 
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Dir to FH entry time stats (sec) numEntries: 305087 min: 0 max: 1 avg: <1 tot: 38
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Node to FH Entry time stats (sec) numEntries: 8897 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Dir FH Choked Stats: numEntries: 2384 min: 0 max: 5 avg: 0 tot: 1779
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Node FH Choked Stats: numEntries: 69 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Tape write times (sec): average: 0 max: 1
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 02:11:28 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data14(1) Log_msg (Tape stats: wait_time=524s wait_count=925451 total_count=550073 avail_count=549102/373/272/326/)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Phase_change (V)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Tape_close (ndmp)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) End (150517 MB, 878 secs, 171 MBps)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 1 time(in secs): 18
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 3: directories dumped: 991
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 3: wafl directory blocks read: 9913
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 3: tape directory blocks written: 89380
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 3 throughput (MB sec): read 2 write 5
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 92%
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 92% lev0-ra 0%
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 3 average level 0 ra time in usec 114
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 3 time(in secs): 16
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 4: inodes dumped: 28316
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 4: wafl data blocks read: 38434939
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 4: tape data blocks written: 154003353
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 4 throughput (MB sec): read 184 write 184
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 1%
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Percent of phase4 time spent for: writing file data 97% unlocking bufs 1%
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Phase 4 time(in secs): 832
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (# buffers of filehistory sent dir: 1021 node: 228 
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (# times filehistory send was blocked dir: 7 node: 0
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (# filehistory entries dir: 130577 node: 29307 
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Dir to FH entry time stats (sec) numEntries: 130577 min: 0 max: 0 avg: <1 tot: 14
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Node to FH Entry time stats (sec) numEntries: 29307 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Dir FH Choked Stats: numEntries: 1021 min: 0 max: 3 avg: 0 tot: 318
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Node FH Choked Stats: numEntries: 228 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Tape write times (sec): average: 0 max: 1
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 02:16:23 CEST 202 TSM /fradcnmcp1svm1/fragfsp1data10(3) Log_msg (Tape stats: wait_time=790s wait_count=1084185 total_count=602070 avail_count=600489/596/368/617/)
+dmp Thu Apr 28 03:00:58 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Start (Level 1, NDMP:64633)
+dmp Thu Apr 28 03:00:58 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Options (b=256, u, U)
+dmp Thu Apr 28 03:00:58 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Filesystem (/vol/fragfsp1home10)
+dmp Thu Apr 28 03:00:58 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 03:00:58 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Granularity (volume)
+dmp Thu Apr 28 03:00:58 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Snapshot (snapshot_for_backup.669, Thu Apr 28 03:00:57 CEST 202)
+dmp Thu Apr 28 03:00:58 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Tape_open (ndmp)
+dmp Thu Apr 28 03:00:58 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Phase_change (I)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Total count of all - reg inodes: 1820 lun inodes: 0 other inodes: 0 dirs: 53 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Total size of all - reg inodes: 9585870 lun inodes: 0 other inodes: 0 dirs: 1376 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Dir count         41         3         7         1
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Dir count          1         0         0         0
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Total directories 53
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (File count          6        87       144        22        15        22        24
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (File count         43        97      1360         0         0         0
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Total files 1820
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (To restore this filesystem, a total of 11187517 KB space and 1873 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 03:01:01 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Phase_change (II)
+dmp Thu Apr 28 03:01:02 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Phase_change (III)
+dmp Thu Apr 28 03:01:04 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Phase_change (IV)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Phase_change (V)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Tape_close (ndmp)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) End (9396 MB, 78 secs, 120 MBps)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 1 time(in secs): 3
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 3: directories dumped: 54
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 3: wafl directory blocks read: 465
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 3: tape directory blocks written: 7151
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 3 throughput (MB sec): read 1 write 5
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 83%
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 83% lev0-ra 0%
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 0% 
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 3 average level 0 ra time in usec 129
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 3 time(in secs): 1
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 4: inodes dumped: 1820
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 4: wafl data blocks read: 2397463
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 4: tape data blocks written: 9606628
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 4 throughput (MB sec): read 132 write 132
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 2%
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Percent of phase4 time spent for: writing file data 96% unlocking bufs 0%
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Phase 4 time(in secs): 72
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (# buffers of filehistory sent dir: 93 node: 14 
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (# filehistory entries dir: 11814 node: 1874 
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 11814 min: 0 max: 0 avg: <1 tot: 1
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 1874 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Dir FH Choked Stats: numEntries: 93 min: 0 max: 2 avg: 0 tot: 29
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Node FH Choked Stats: numEntries: 14 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Tape write times (sec): average: 0 max: 0
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 03:02:17 CEST 202 TSM /fradcnmcp1svm1/fragfsp1home10(0) Log_msg (Tape stats: wait_time=69s wait_count=37372 total_count=37588 avail_count=37457/38/27/66/)
+dmp Thu Apr 28 18:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Start (Level 1, NDMP:60830)
+dmp Thu Apr 28 18:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Options (b=256, u, U)
+dmp Thu Apr 28 18:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Filesystem (/vol/fradcnmcp1svm3_data_03)
+dmp Thu Apr 28 18:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 18:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Granularity (volume)
+dmp Thu Apr 28 18:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Snapshot (snapshot_for_backup.670, Thu Apr 28 18:01:04 CEST 202)
+dmp Thu Apr 28 18:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Tape_open (ndmp)
+dmp Thu Apr 28 18:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Phase_change (I)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Total count of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Total size of all - reg inodes: 0 lun inodes: 0 other inodes: 0 dirs: 0 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Total directories 0
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (File count          0         0         0         0         0         0         0
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (File count          0         0         0         0         0         0
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Total files 0
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (To restore this filesystem, a total of 3242676 KB space and 0 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 18:01:20 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Phase_change (II)
+dmp Thu Apr 28 18:01:23 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Phase_change (III)
+dmp Thu Apr 28 18:01:25 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Phase_change (IV)
+dmp Thu Apr 28 18:01:27 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Phase_change (V)
+dmp Thu Apr 28 18:01:27 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Tape_close (ndmp)
+dmp Thu Apr 28 18:01:27 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) End (60 MB, 21 secs, 2 MBps)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 1 time(in secs): 14
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 3: directories dumped: 1
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 3: wafl directory blocks read: 1
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 3: tape directory blocks written: 922
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 3 throughput (MB sec): read 0 write 1
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 0%
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 0% lev0-ra 0%
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 3 average level 0 ra time in usec 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 3 time(in secs): 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 4: inodes dumped: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 4: wafl data blocks read: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 4: tape data blocks written: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 100%
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Percent of phase4 time spent for: writing file data 0% unlocking bufs 0%
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Phase 4 time(in secs): 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (# buffers of filehistory sent dir: 1 node: 0 
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (# filehistory entries dir: 6 node: 1 
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 6 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Dir FH Choked Stats: numEntries: 1 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Node FH Choked Stats: numEntries: 0 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 1
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Tape write times (sec): average: 0 max: 0
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 18:01:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_03(0) Log_msg (Tape stats: wait_time=0s wait_count=1 total_count=241 avail_count=2/1/2/236/)
+dmp Thu Apr 28 19:01:04 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Start (Level 1, NDMP:73883)
+dmp Thu Apr 28 19:01:04 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Options (b=256, u, U)
+dmp Thu Apr 28 19:01:04 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Filesystem (/vol/fradcnmcp1svm3_data_04)
+dmp Thu Apr 28 19:01:04 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 19:01:04 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Granularity (volume)
+dmp Thu Apr 28 19:01:04 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Snapshot (snapshot_for_backup.671, Thu Apr 28 19:01:03 CEST 202)
+dmp Thu Apr 28 19:01:04 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Tape_open (ndmp)
+dmp Thu Apr 28 19:01:04 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Phase_change (I)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Total count of all - reg inodes: 8175 lun inodes: 0 other inodes: 0 dirs: 1115 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Total size of all - reg inodes: 94360387 lun inodes: 0 other inodes: 0 dirs: 9972 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Dir count       1109         2         1         0
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Dir count          2         1         0         0
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Total directories 1115
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (File count       2171      1141      1082       821       216       245       217
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (File count        232       266      1759        16         9         0
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Total files 8175
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (To restore this filesystem, a total of 103947015 KB space and 9290 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Phase_change (II)
+dmp Thu Apr 28 19:01:05 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Phase_change (III)
+dmp Thu Apr 28 19:01:12 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Phase_change (IV)
+dmp Thu Apr 28 19:07:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Phase_change (V)
+dmp Thu Apr 28 19:07:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Tape_close (ndmp)
+dmp Thu Apr 28 19:07:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) End (92356 MB, 358 secs, 257 MBps)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 1 time(in secs): 0
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 3: directories dumped: 1116
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 3: wafl directory blocks read: 4545
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 3: tape directory blocks written: 28784
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 3 throughput (MB sec): read 3 write 4
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 95%
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 95% lev0-ra 1%
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 1% 
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 3 average level 0 ra time in usec 72
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 3 time(in secs): 5
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 4: inodes dumped: 8175
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 4: wafl data blocks read: 23593879
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 4: tape data blocks written: 94555022
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 4 throughput (MB sec): read 269 write 269
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 1%
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Percent of phase4 time spent for: writing file data 96% unlocking bufs 1%
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Phase 4 time(in secs): 350
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (# buffers of filehistory sent dir: 442 node: 72 
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (# times filehistory send was blocked dir: 8 node: 0
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (# filehistory entries dir: 56513 node: 9291 
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 56513 min: 0 max: 1 avg: <1 tot: 5
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 9291 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Dir FH Choked Stats: numEntries: 442 min: 0 max: 5 avg: 0 tot: 262
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Node FH Choked Stats: numEntries: 72 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Warning (Total Dir to FH time spent is greater than 15 percent of phase 3 total time. Please verify the settings of backup application and the network connectivity.)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Tape write times (sec): average: 0 max: 1
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 19:07:03 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_04(0) Log_msg (Tape stats: wait_time=325s wait_count=368767 total_count=369425 avail_count=368986/163/131/145/)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Start (Level 1, NDMP:80253)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Options (b=256, u, U)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Filesystem (/vol/fradcnmcp1svm3_data_06)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Vol-Info (RW, comp=on, dedupe=on, clone=no)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Granularity (volume)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Snapshot (snapshot_for_backup.672, Thu Apr 28 19:31:01 CEST 202)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Tape_open (ndmp)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Phase_change (I)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Total count of all - reg inodes: 436 lun inodes: 0 other inodes: 0 dirs: 12 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Total size of all - reg inodes: 43588892 lun inodes: 0 other inodes: 0 dirs: 304 nt dirs: 0 nt inodes: 0 acls: 0
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Dir size         =4K     <=20K    <=128K    <=512K
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Dir count          8         0         3         1
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Dir size        <=2M     <=32M    <=128M     >128M
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Dir count          0         0         0         0
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Total directories 12
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (File size          =0      <=64      <=4K     <=32K     <=64K    <=128K    <=256K
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (File count          0         0       108       204        61        19         8
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (File size      <=512K      <=1M    <=512M      <=1G     <=10G      >10G
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (File count         10         9        12         0         3         2
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Total files 436
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (To restore this filesystem, a total of 47962288 KB space and 448 number of free inodes is required. For a data copy operation, ensure that the destination has sufficient space to perform the restore
+)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Phase_change (II)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Phase_change (III)
+dmp Thu Apr 28 19:31:02 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Phase_change (IV)
+dmp Thu Apr 28 19:34:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Phase_change (V)
+dmp Thu Apr 28 19:34:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Tape_close (ndmp)
+dmp Thu Apr 28 19:34:28 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) End (42651 MB, 206 secs, 207 MBps)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 1 time(in secs): 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 3: directories dumped: 13
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 3: wafl directory blocks read: 77
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 3: tape directory blocks written: 1085
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 3 throughput (MB sec): read 28 write 98
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Percent of phase3 time spent for: reading inos 0% dumping ino 45%
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Percent of phase3 time spent for: convert-wafl-dirs 45% lev0-ra 9%
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 3: Percent of convert-wafl-dirs spent in loading buf 20% 
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 3 average level 0 ra time in usec 76
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 3 time(in secs): 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 4: inodes dumped: 436
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 4: wafl data blocks read: 10897415
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 4: tape data blocks written: 43674636
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 4 throughput (MB sec): read 211 write 211
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Percent of phase4 time spent for: reading inos 0% reading file data 0%  processing file data 1%
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Percent of phase4 time spent for: writing file data 97% unlocking bufs 1%
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Phase 4 time(in secs): 206
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (# buffers of filehistory sent dir: 13 node: 3 
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (# times filehistory send was blocked dir: 0 node: 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (# filehistory flush operations dir: 1 node: 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (# filehistory entries dir: 1565 node: 449 
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Dir to FH entry time stats (sec) numEntries: 1565 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Node to FH Entry time stats (sec) numEntries: 449 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Dir FH Choked Stats: numEntries: 13 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Node FH Choked Stats: numEntries: 3 min: 0 max: 0 avg: 0 tot: 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Time taken(in secs) to close maps: 0 remove maps: 0 p1 cleanup: 0 p4 cleanup: 0 overall cleanup: 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Tape write times (sec): average: 0 max: 0
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Tape changes: 1
+)
+dmp Thu Apr 28 19:34:29 CEST 202 TSM /fradcnmcp1svm3/fradcnmcp1svm3_data_06(0) Log_msg (Tape stats: wait_time=195s wait_count=170593 total_count=170608 avail_count=170595/5/3/5/)
